@@ -1,0 +1,1080 @@
+{
+  "key": 3,
+  "value": "Hyundai",
+  "addon": [
+    {
+      "key": 2024,
+      "value": "2024",
+      "addon": [
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 29948,
+          "value": "Elantra N",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 29378,
+          "value": "Ioniq 5",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 30940,
+          "value": "Ioniq 6",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 27184,
+          "value": "Kona",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27345,
+          "value": "Kona Electric",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27427,
+          "value": "Nexo",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27567,
+          "value": "Palisade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 29289,
+          "value": "Santa Cruz",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 4 Ft Bed"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27658,
+          "value": "Venue",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2023,
+      "value": "2023",
+      "addon": [
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 29948,
+          "value": "Elantra N",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 29378,
+          "value": "Ioniq 5",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 30940,
+          "value": "Ioniq 6",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 27184,
+          "value": "Kona",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27345,
+          "value": "Kona Electric",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 29270,
+          "value": "Kona N",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27427,
+          "value": "Nexo",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27567,
+          "value": "Palisade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 29289,
+          "value": "Santa Cruz",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 4 Ft Bed"
+          ]
+        },
+        {
+          "key": 26,
+          "value": "Santa Fe",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27658,
+          "value": "Venue",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2022,
+      "value": "2022",
+      "addon": [
+        {
+          "key": 24,
+          "value": "Accent",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 29948,
+          "value": "Elantra N",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26417,
+          "value": "Ioniq",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 29378,
+          "value": "Ioniq 5",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27184,
+          "value": "Kona",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27345,
+          "value": "Kona Electric",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 29270,
+          "value": "Kona N",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27427,
+          "value": "Nexo",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27567,
+          "value": "Palisade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 29289,
+          "value": "Santa Cruz",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 4 Ft Bed"
+          ]
+        },
+        {
+          "key": 26,
+          "value": "Santa Fe",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27434,
+          "value": "Veloster N",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27658,
+          "value": "Venue",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2021,
+      "value": "2021",
+      "addon": [
+        {
+          "key": 24,
+          "value": "Accent",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26417,
+          "value": "Ioniq",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27184,
+          "value": "Kona",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27345,
+          "value": "Kona Electric",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27427,
+          "value": "Nexo",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27567,
+          "value": "Palisade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 26,
+          "value": "Santa Fe",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21524,
+          "value": "Veloster",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27434,
+          "value": "Veloster N",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27658,
+          "value": "Venue",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2020,
+      "value": "2020",
+      "addon": [
+        {
+          "key": 24,
+          "value": "Accent",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23540,
+          "value": "Elantra GT",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26417,
+          "value": "Ioniq",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27184,
+          "value": "Kona",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27345,
+          "value": "Kona Electric",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27427,
+          "value": "Nexo",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27567,
+          "value": "Palisade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 26,
+          "value": "Santa Fe",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21524,
+          "value": "Veloster",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27434,
+          "value": "Veloster N",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27658,
+          "value": "Venue",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2019,
+      "value": "2019",
+      "addon": [
+        {
+          "key": 24,
+          "value": "Accent",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23540,
+          "value": "Elantra GT",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26417,
+          "value": "Ioniq",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27184,
+          "value": "Kona",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27345,
+          "value": "Kona Electric",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27427,
+          "value": "Nexo",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 26,
+          "value": "Santa Fe",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23537,
+          "value": "Santa Fe XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21524,
+          "value": "Veloster",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27434,
+          "value": "Veloster N",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2018,
+      "value": "2018",
+      "addon": [
+        {
+          "key": 24,
+          "value": "Accent",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23540,
+          "value": "Elantra GT",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26417,
+          "value": "Ioniq",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27184,
+          "value": "Kona",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 26,
+          "value": "Santa Fe",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27201,
+          "value": "Santa Fe Sport",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23537,
+          "value": "Santa Fe XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2017,
+      "value": "2017",
+      "addon": [
+        {
+          "key": 24,
+          "value": "Accent",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2849,
+          "value": "Azera",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23540,
+          "value": "Elantra GT",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26417,
+          "value": "Ioniq",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26,
+          "value": "Santa Fe",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27201,
+          "value": "Santa Fe Sport",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23537,
+          "value": "Santa Fe XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21524,
+          "value": "Veloster",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2016,
+      "value": "2016",
+      "addon": [
+        {
+          "key": 24,
+          "value": "Accent",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2849,
+          "value": "Azera",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23540,
+          "value": "Elantra GT",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 16213,
+          "value": "Equus",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 6832,
+          "value": "Genesis",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 6864,
+          "value": "Genesis Coupe",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 26,
+          "value": "Santa Fe",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27201,
+          "value": "Santa Fe Sport",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23537,
+          "value": "Santa Fe XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21524,
+          "value": "Veloster",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2015,
+      "value": "2015",
+      "addon": [
+        {
+          "key": 24,
+          "value": "Accent",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2849,
+          "value": "Azera",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23540,
+          "value": "Elantra GT",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 16213,
+          "value": "Equus",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 6832,
+          "value": "Genesis",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 6864,
+          "value": "Genesis Coupe",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 26,
+          "value": "Santa Fe",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27201,
+          "value": "Santa Fe Sport",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23537,
+          "value": "Santa Fe XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21524,
+          "value": "Veloster",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2014,
+      "value": "2014",
+      "addon": [
+        {
+          "key": 24,
+          "value": "Accent",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2849,
+          "value": "Azera",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23,
+          "value": "Elantra",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23522,
+          "value": "Elantra Coupe",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 23540,
+          "value": "Elantra GT",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 16213,
+          "value": "Equus",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 6832,
+          "value": "Genesis",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 6864,
+          "value": "Genesis Coupe",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 26,
+          "value": "Santa Fe",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27201,
+          "value": "Santa Fe Sport",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23537,
+          "value": "Santa Fe XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21,
+          "value": "Sonata",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2640,
+          "value": "Tucson",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21524,
+          "value": "Veloster",
+          "addon": [
+            "3 Dr Hatchback"
+          ]
+        }
+      ]
+    }
+  ]
+}

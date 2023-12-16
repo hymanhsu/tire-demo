@@ -1,0 +1,160 @@
+{
+  "key": 15,
+  "value": "Yugo",
+  "addon": [
+    {
+      "key": 1992,
+      "value": "1992",
+      "addon": [
+        {
+          "key": 79,
+          "value": "Cabrio",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 75,
+          "value": "GV",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1991,
+      "value": "1991",
+      "addon": [
+        {
+          "key": 79,
+          "value": "Cabrio",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 75,
+          "value": "GV",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1990,
+      "value": "1990",
+      "addon": [
+        {
+          "key": 79,
+          "value": "Cabrio",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 75,
+          "value": "GV",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1989,
+      "value": "1989",
+      "addon": [
+        {
+          "key": 75,
+          "value": "GV",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 76,
+          "value": "GVL",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 78,
+          "value": "GVX",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1988,
+      "value": "1988",
+      "addon": [
+        {
+          "key": 75,
+          "value": "GV",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 76,
+          "value": "GVL",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 77,
+          "value": "GVS",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 78,
+          "value": "GVX",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1987,
+      "value": "1987",
+      "addon": [
+        {
+          "key": 75,
+          "value": "GV",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 78,
+          "value": "GVX",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1986,
+      "value": "1986",
+      "addon": [
+        {
+          "key": 75,
+          "value": "GV",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        }
+      ]
+    }
+  ]
+}

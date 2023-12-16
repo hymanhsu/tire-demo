@@ -1,0 +1,261 @@
+{
+  "key": 90,
+  "value": "Lada",
+  "addon": [
+    {
+      "key": 1993,
+      "value": "1993",
+      "addon": [
+        {
+          "key": 1843,
+          "value": "Niva",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 1844,
+          "value": "Samara",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 1845,
+          "value": "Signet",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1992,
+      "value": "1992",
+      "addon": [
+        {
+          "key": 1843,
+          "value": "Niva",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 1844,
+          "value": "Samara",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 1845,
+          "value": "Signet",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1991,
+      "value": "1991",
+      "addon": [
+        {
+          "key": 1843,
+          "value": "Niva",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 1844,
+          "value": "Samara",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 1845,
+          "value": "Signet",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1990,
+      "value": "1990",
+      "addon": [
+        {
+          "key": 1843,
+          "value": "Niva",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 1844,
+          "value": "Samara",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 1845,
+          "value": "Signet",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1989,
+      "value": "1989",
+      "addon": [
+        {
+          "key": 1843,
+          "value": "Niva",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 1844,
+          "value": "Samara",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 1845,
+          "value": "Signet",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1988,
+      "value": "1988",
+      "addon": [
+        {
+          "key": 1843,
+          "value": "Niva",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 1844,
+          "value": "Samara",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 1845,
+          "value": "Signet",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1987,
+      "value": "1987",
+      "addon": [
+        {
+          "key": 1843,
+          "value": "Niva",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 1845,
+          "value": "Signet",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1986,
+      "value": "1986",
+      "addon": [
+        {
+          "key": 1843,
+          "value": "Niva",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 1845,
+          "value": "Signet",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1985,
+      "value": "1985",
+      "addon": [
+        {
+          "key": 1843,
+          "value": "Niva",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 1845,
+          "value": "Signet",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1984,
+      "value": "1984",
+      "addon": [
+        {
+          "key": 1843,
+          "value": "Niva",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 1845,
+          "value": "Signet",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1983,
+      "value": "1983",
+      "addon": [
+        {
+          "key": 6022,
+          "value": "1300",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    }
+  ]
+}

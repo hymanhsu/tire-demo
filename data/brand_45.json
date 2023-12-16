@@ -1,0 +1,485 @@
+{
+  "key": 45,
+  "value": "Buick",
+  "addon": [
+    {
+      "key": 2024,
+      "value": "2024",
+      "addon": [
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27839,
+          "value": "Encore GX",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25218,
+          "value": "Envision",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 31571,
+          "value": "Envista",
+          "addon": [
+            "4 Dr Sport Utility Coupe"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2023,
+      "value": "2023",
+      "addon": [
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27839,
+          "value": "Encore GX",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25218,
+          "value": "Envision",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2022,
+      "value": "2022",
+      "addon": [
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23465,
+          "value": "Encore",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27839,
+          "value": "Encore GX",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25218,
+          "value": "Envision",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2021,
+      "value": "2021",
+      "addon": [
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23465,
+          "value": "Encore",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27839,
+          "value": "Encore GX",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25218,
+          "value": "Envision",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2020,
+      "value": "2020",
+      "addon": [
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23465,
+          "value": "Encore",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27839,
+          "value": "Encore GX",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25218,
+          "value": "Envision",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 26880,
+          "value": "Regal Sportback",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26432,
+          "value": "Regal TourX",
+          "addon": [
+            "4 Dr Wagon"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2019,
+      "value": "2019",
+      "addon": [
+        {
+          "key": 25104,
+          "value": "Cascada",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23465,
+          "value": "Encore",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25218,
+          "value": "Envision",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2543,
+          "value": "LaCrosse",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26880,
+          "value": "Regal Sportback",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26432,
+          "value": "Regal TourX",
+          "addon": [
+            "4 Dr Wagon"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2018,
+      "value": "2018",
+      "addon": [
+        {
+          "key": 25104,
+          "value": "Cascada",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23465,
+          "value": "Encore",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25218,
+          "value": "Envision",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2543,
+          "value": "LaCrosse",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26880,
+          "value": "Regal Sportback",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26432,
+          "value": "Regal TourX",
+          "addon": [
+            "4 Dr Wagon"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2017,
+      "value": "2017",
+      "addon": [
+        {
+          "key": 25104,
+          "value": "Cascada",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23465,
+          "value": "Encore",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25218,
+          "value": "Envision",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2543,
+          "value": "LaCrosse",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 392,
+          "value": "Regal",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 21527,
+          "value": "Verano",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2016,
+      "value": "2016",
+      "addon": [
+        {
+          "key": 25104,
+          "value": "Cascada",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23465,
+          "value": "Encore",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25218,
+          "value": "Envision",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2543,
+          "value": "LaCrosse",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 392,
+          "value": "Regal",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 21527,
+          "value": "Verano",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2015,
+      "value": "2015",
+      "addon": [
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23465,
+          "value": "Encore",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2543,
+          "value": "LaCrosse",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 392,
+          "value": "Regal",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 21527,
+          "value": "Verano",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2014,
+      "value": "2014",
+      "addon": [
+        {
+          "key": 6333,
+          "value": "Enclave",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23465,
+          "value": "Encore",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2543,
+          "value": "LaCrosse",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 392,
+          "value": "Regal",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 21527,
+          "value": "Verano",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    }
+  ]
+}

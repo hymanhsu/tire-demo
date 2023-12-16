@@ -1,0 +1,696 @@
+{
+  "key": 78,
+  "value": "Ferrari",
+  "addon": [
+    {
+      "key": 2024,
+      "value": "2024",
+      "addon": [
+        {
+          "key": 29403,
+          "value": "296 GTB",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 30217,
+          "value": "296 GTS",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 28779,
+          "value": "812 GTS",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 28781,
+          "value": "F8 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 31361,
+          "value": "Purosangue",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 28297,
+          "value": "Roma",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 29617,
+          "value": "SF90 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 27726,
+          "value": "SF90 Stradale",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 32992,
+          "value": "SF90 XX Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 32993,
+          "value": "SF90 XX Stradale",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2023,
+      "value": "2023",
+      "addon": [
+        {
+          "key": 29403,
+          "value": "296 GTB",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 30217,
+          "value": "296 GTS",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 28779,
+          "value": "812 GTS",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 28781,
+          "value": "F8 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 27887,
+          "value": "F8 Tributo",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 29649,
+          "value": "Portofino M",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 28297,
+          "value": "Roma",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 29617,
+          "value": "SF90 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 27726,
+          "value": "SF90 Stradale",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2022,
+      "value": "2022",
+      "addon": [
+        {
+          "key": 29403,
+          "value": "296 GTB",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 28779,
+          "value": "812 GTS",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 26883,
+          "value": "812 Superfast",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 28781,
+          "value": "F8 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 27887,
+          "value": "F8 Tributo",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 29649,
+          "value": "Portofino M",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 28297,
+          "value": "Roma",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 29617,
+          "value": "SF90 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 27726,
+          "value": "SF90 Stradale",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2021,
+      "value": "2021",
+      "addon": [
+        {
+          "key": 27433,
+          "value": "488 Pista",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 27725,
+          "value": "488 Pista Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 28779,
+          "value": "812 GTS",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 26883,
+          "value": "812 Superfast",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 28781,
+          "value": "F8 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 27887,
+          "value": "F8 Tributo",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 29649,
+          "value": "Portofino M",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 28297,
+          "value": "Roma",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 29617,
+          "value": "SF90 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 27726,
+          "value": "SF90 Stradale",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2020,
+      "value": "2020",
+      "addon": [
+        {
+          "key": 27433,
+          "value": "488 Pista",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 27725,
+          "value": "488 Pista Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 28779,
+          "value": "812 GTS",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 26883,
+          "value": "812 Superfast",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 27887,
+          "value": "F8 Tributo",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 25835,
+          "value": "GTC4Lusso",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27394,
+          "value": "GTC4Lusso T",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26884,
+          "value": "Portofino",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 28297,
+          "value": "Roma",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 27726,
+          "value": "SF90 Stradale",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2019,
+      "value": "2019",
+      "addon": [
+        {
+          "key": 25172,
+          "value": "488 GTB",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 27433,
+          "value": "488 Pista",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 27725,
+          "value": "488 Pista Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 25171,
+          "value": "488 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 26883,
+          "value": "812 Superfast",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 25835,
+          "value": "GTC4Lusso",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27394,
+          "value": "GTC4Lusso T",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26884,
+          "value": "Portofino",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2018,
+      "value": "2018",
+      "addon": [
+        {
+          "key": 25172,
+          "value": "488 GTB",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 25171,
+          "value": "488 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 26883,
+          "value": "812 Superfast",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 25835,
+          "value": "GTC4Lusso",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 27394,
+          "value": "GTC4Lusso T",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 26884,
+          "value": "Portofino",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2017,
+      "value": "2017",
+      "addon": [
+        {
+          "key": 25172,
+          "value": "488 GTB",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 25171,
+          "value": "488 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 24265,
+          "value": "California T",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 22796,
+          "value": "F12 Berlinetta",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 27206,
+          "value": "F12tdf",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 25835,
+          "value": "GTC4Lusso",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 23969,
+          "value": "LaFerrari",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2016,
+      "value": "2016",
+      "addon": [
+        {
+          "key": 25172,
+          "value": "488 GTB",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 25171,
+          "value": "488 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 24265,
+          "value": "California T",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 22796,
+          "value": "F12 Berlinetta",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 27206,
+          "value": "F12tdf",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 21563,
+          "value": "FF",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 23969,
+          "value": "LaFerrari",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2015,
+      "value": "2015",
+      "addon": [
+        {
+          "key": 16146,
+          "value": "458 Italia",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 24266,
+          "value": "458 Speciale",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 22673,
+          "value": "458 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 24265,
+          "value": "California T",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 22796,
+          "value": "F12 Berlinetta",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 21563,
+          "value": "FF",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 23969,
+          "value": "LaFerrari",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2014,
+      "value": "2014",
+      "addon": [
+        {
+          "key": 16146,
+          "value": "458 Italia",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 22673,
+          "value": "458 Spider",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 6840,
+          "value": "California",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 22796,
+          "value": "F12 Berlinetta",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 21563,
+          "value": "FF",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 23969,
+          "value": "LaFerrari",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    }
+  ]
+}

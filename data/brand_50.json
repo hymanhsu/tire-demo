@@ -1,0 +1,316 @@
+{
+  "key": 50,
+  "value": "Geo",
+  "addon": [
+    {
+      "key": 1997,
+      "value": "1997",
+      "addon": [
+        {
+          "key": 469,
+          "value": "Metro",
+          "addon": [
+            "2 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 476,
+          "value": "Prizm",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 500,
+          "value": "Tracker",
+          "addon": [
+            "2 Dr Sport Utility",
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1996,
+      "value": "1996",
+      "addon": [
+        {
+          "key": 469,
+          "value": "Metro",
+          "addon": [
+            "2 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 476,
+          "value": "Prizm",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 500,
+          "value": "Tracker",
+          "addon": [
+            "2 Dr Sport Utility",
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1995,
+      "value": "1995",
+      "addon": [
+        {
+          "key": 469,
+          "value": "Metro",
+          "addon": [
+            "2 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 476,
+          "value": "Prizm",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 500,
+          "value": "Tracker",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1994,
+      "value": "1994",
+      "addon": [
+        {
+          "key": 469,
+          "value": "Metro",
+          "addon": [
+            "2 Dr Hatchback",
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 476,
+          "value": "Prizm",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 500,
+          "value": "Tracker",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1993,
+      "value": "1993",
+      "addon": [
+        {
+          "key": 469,
+          "value": "Metro",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hatchback",
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 476,
+          "value": "Prizm",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 562,
+          "value": "Storm",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Wagon"
+          ]
+        },
+        {
+          "key": 500,
+          "value": "Tracker",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1992,
+      "value": "1992",
+      "addon": [
+        {
+          "key": 469,
+          "value": "Metro",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hatchback",
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 476,
+          "value": "Prizm",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 562,
+          "value": "Storm",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Wagon"
+          ]
+        },
+        {
+          "key": 500,
+          "value": "Tracker",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1991,
+      "value": "1991",
+      "addon": [
+        {
+          "key": 469,
+          "value": "Metro",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hatchback",
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 476,
+          "value": "Prizm",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 562,
+          "value": "Storm",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Wagon"
+          ]
+        },
+        {
+          "key": 500,
+          "value": "Tracker",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1990,
+      "value": "1990",
+      "addon": [
+        {
+          "key": 469,
+          "value": "Metro",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hatchback",
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 476,
+          "value": "Prizm",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 562,
+          "value": "Storm",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Wagon"
+          ]
+        },
+        {
+          "key": 500,
+          "value": "Tracker",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1989,
+      "value": "1989",
+      "addon": [
+        {
+          "key": 469,
+          "value": "Metro",
+          "addon": [
+            "2 Dr Hatchback",
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 476,
+          "value": "Prizm",
+          "addon": [
+            "4 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 496,
+          "value": "Spectrum",
+          "addon": [
+            "2 Dr Hatchback",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 500,
+          "value": "Tracker",
+          "addon": [
+            "2 Dr Sport Utility"
+          ]
+        }
+      ]
+    }
+  ]
+}

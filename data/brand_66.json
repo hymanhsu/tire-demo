@@ -1,0 +1,305 @@
+{
+  "key": 66,
+  "value": "American Motors",
+  "addon": [
+    {
+      "key": 1988,
+      "value": "1988",
+      "addon": [
+        {
+          "key": 865,
+          "value": "Eagle",
+          "addon": [
+            "4 Dr Wagon"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1987,
+      "value": "1987",
+      "addon": [
+        {
+          "key": 865,
+          "value": "Eagle",
+          "addon": [
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1986,
+      "value": "1986",
+      "addon": [
+        {
+          "key": 865,
+          "value": "Eagle",
+          "addon": [
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1985,
+      "value": "1985",
+      "addon": [
+        {
+          "key": 865,
+          "value": "Eagle",
+          "addon": [
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1984,
+      "value": "1984",
+      "addon": [
+        {
+          "key": 865,
+          "value": "Eagle",
+          "addon": [
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1983,
+      "value": "1983",
+      "addon": [
+        {
+          "key": 864,
+          "value": "Concord",
+          "addon": [
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 865,
+          "value": "Eagle",
+          "addon": [
+            "2 Dr Hatchback",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 328,
+          "value": "Spirit",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1982,
+      "value": "1982",
+      "addon": [
+        {
+          "key": 864,
+          "value": "Concord",
+          "addon": [
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 865,
+          "value": "Eagle",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 328,
+          "value": "Spirit",
+          "addon": [
+            "2 Dr Coupe",
+            "2 Dr Hatchback",
+            "2 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1981,
+      "value": "1981",
+      "addon": [
+        {
+          "key": 864,
+          "value": "Concord",
+          "addon": [
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 865,
+          "value": "Eagle",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 328,
+          "value": "Spirit",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1980,
+      "value": "1980",
+      "addon": [
+        {
+          "key": 863,
+          "value": "AMX",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 864,
+          "value": "Concord",
+          "addon": [
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 865,
+          "value": "Eagle",
+          "addon": [
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 869,
+          "value": "Pacer",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Wagon"
+          ]
+        },
+        {
+          "key": 328,
+          "value": "Spirit",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1979,
+      "value": "1979",
+      "addon": [
+        {
+          "key": 863,
+          "value": "AMX",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 864,
+          "value": "Concord",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 869,
+          "value": "Pacer",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Wagon"
+          ]
+        },
+        {
+          "key": 328,
+          "value": "Spirit",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1978,
+      "value": "1978",
+      "addon": [
+        {
+          "key": 863,
+          "value": "AMX",
+          "addon": [
+            "2 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 864,
+          "value": "Concord",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 866,
+          "value": "Gremlin",
+          "addon": [
+            "2 Dr Sedan"
+          ]
+        },
+        {
+          "key": 868,
+          "value": "Matador",
+          "addon": [
+            "2 Dr Coupe",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 869,
+          "value": "Pacer",
+          "addon": [
+            "2 Dr Hatchback",
+            "2 Dr Wagon"
+          ]
+        }
+      ]
+    }
+  ]
+}

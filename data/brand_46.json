@@ -1,0 +1,673 @@
+{
+  "key": 46,
+  "value": "Cadillac",
+  "addon": [
+    {
+      "key": 2024,
+      "value": "2024",
+      "addon": [
+        {
+          "key": 27679,
+          "value": "CT4",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 27662,
+          "value": "CT5",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 29646,
+          "value": "LYRIQ",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27350,
+          "value": "XT4",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25217,
+          "value": "XT5",
+          "addon": [
+            "4 Dr Hearse",
+            "4 Dr Limousine",
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27639,
+          "value": "XT6",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2023,
+      "value": "2023",
+      "addon": [
+        {
+          "key": 27679,
+          "value": "CT4",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 27662,
+          "value": "CT5",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 29646,
+          "value": "LYRIQ",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27350,
+          "value": "XT4",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25217,
+          "value": "XT5",
+          "addon": [
+            "4 Dr Hearse",
+            "4 Dr Limousine",
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27639,
+          "value": "XT6",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2022,
+      "value": "2022",
+      "addon": [
+        {
+          "key": 27679,
+          "value": "CT4",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 27662,
+          "value": "CT5",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27350,
+          "value": "XT4",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25217,
+          "value": "XT5",
+          "addon": [
+            "4 Dr Hearse",
+            "4 Dr Limousine",
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27639,
+          "value": "XT6",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2021,
+      "value": "2021",
+      "addon": [
+        {
+          "key": 27679,
+          "value": "CT4",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 27662,
+          "value": "CT5",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27350,
+          "value": "XT4",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25217,
+          "value": "XT5",
+          "addon": [
+            "4 Dr Hearse",
+            "4 Dr Limousine",
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27639,
+          "value": "XT6",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2020,
+      "value": "2020",
+      "addon": [
+        {
+          "key": 27679,
+          "value": "CT4",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 27662,
+          "value": "CT5",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25105,
+          "value": "CT6",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27350,
+          "value": "XT4",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25217,
+          "value": "XT5",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27639,
+          "value": "XT6",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2019,
+      "value": "2019",
+      "addon": [
+        {
+          "key": 21609,
+          "value": "ATS",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 25105,
+          "value": "CT6",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 402,
+          "value": "CTS",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27350,
+          "value": "XT4",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25217,
+          "value": "XT5",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21595,
+          "value": "XTS",
+          "addon": [
+            "4 Dr Hearse",
+            "4 Dr Limousine",
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2018,
+      "value": "2018",
+      "addon": [
+        {
+          "key": 21609,
+          "value": "ATS",
+          "addon": [
+            "2 Dr Coupe",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25105,
+          "value": "CT6",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 402,
+          "value": "CTS",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25217,
+          "value": "XT5",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21595,
+          "value": "XTS",
+          "addon": [
+            "4 Dr Hearse",
+            "4 Dr Limousine",
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2017,
+      "value": "2017",
+      "addon": [
+        {
+          "key": 21609,
+          "value": "ATS",
+          "addon": [
+            "2 Dr Coupe",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25105,
+          "value": "CT6",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 402,
+          "value": "CTS",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25217,
+          "value": "XT5",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21595,
+          "value": "XTS",
+          "addon": [
+            "4 Dr Hearse",
+            "4 Dr Limousine",
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2016,
+      "value": "2016",
+      "addon": [
+        {
+          "key": 21609,
+          "value": "ATS",
+          "addon": [
+            "2 Dr Coupe",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25105,
+          "value": "CT6",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 402,
+          "value": "CTS",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23528,
+          "value": "ELR",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2417,
+          "value": "SRX",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21595,
+          "value": "XTS",
+          "addon": [
+            "4 Dr Hearse",
+            "4 Dr Limousine",
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2015,
+      "value": "2015",
+      "addon": [
+        {
+          "key": 21609,
+          "value": "ATS",
+          "addon": [
+            "2 Dr Coupe",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 402,
+          "value": "CTS",
+          "addon": [
+            "2 Dr Coupe",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 23528,
+          "value": "ELR",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2417,
+          "value": "SRX",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21595,
+          "value": "XTS",
+          "addon": [
+            "4 Dr Hearse",
+            "4 Dr Limousine",
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2014,
+      "value": "2014",
+      "addon": [
+        {
+          "key": 21609,
+          "value": "ATS",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 402,
+          "value": "CTS",
+          "addon": [
+            "2 Dr Coupe",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 23528,
+          "value": "ELR",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 410,
+          "value": "Escalade",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23452,
+          "value": "Escalade ESV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2417,
+          "value": "SRX",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 21595,
+          "value": "XTS",
+          "addon": [
+            "4 Dr Hearse",
+            "4 Dr Limousine",
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    }
+  ]
+}

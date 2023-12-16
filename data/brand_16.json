@@ -1,0 +1,237 @@
+{
+  "key": 16,
+  "value": "Alfa Romeo",
+  "addon": [
+    {
+      "key": 2024,
+      "value": "2024",
+      "addon": [
+        {
+          "key": 5954,
+          "value": "Giulia",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26418,
+          "value": "Stelvio",
+          "addon": [
+            "4 Dr Sedan",
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 29852,
+          "value": "Tonale",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2023,
+      "value": "2023",
+      "addon": [
+        {
+          "key": 5954,
+          "value": "Giulia",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26418,
+          "value": "Stelvio",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2022,
+      "value": "2022",
+      "addon": [
+        {
+          "key": 5954,
+          "value": "Giulia",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26418,
+          "value": "Stelvio",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2021,
+      "value": "2021",
+      "addon": [
+        {
+          "key": 5954,
+          "value": "Giulia",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26418,
+          "value": "Stelvio",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2020,
+      "value": "2020",
+      "addon": [
+        {
+          "key": 23965,
+          "value": "4C",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 5954,
+          "value": "Giulia",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26418,
+          "value": "Stelvio",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2019,
+      "value": "2019",
+      "addon": [
+        {
+          "key": 23965,
+          "value": "4C",
+          "addon": [
+            "2 Dr Convertible"
+          ]
+        },
+        {
+          "key": 5954,
+          "value": "Giulia",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26418,
+          "value": "Stelvio",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2018,
+      "value": "2018",
+      "addon": [
+        {
+          "key": 23965,
+          "value": "4C",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 5954,
+          "value": "Giulia",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 26418,
+          "value": "Stelvio",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2017,
+      "value": "2017",
+      "addon": [
+        {
+          "key": 23965,
+          "value": "4C",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 5954,
+          "value": "Giulia",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2016,
+      "value": "2016",
+      "addon": [
+        {
+          "key": 23965,
+          "value": "4C",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2015,
+      "value": "2015",
+      "addon": [
+        {
+          "key": 23965,
+          "value": "4C",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2008,
+      "value": "2008",
+      "addon": [
+        {
+          "key": 6856,
+          "value": "8C",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    }
+  ]
+}

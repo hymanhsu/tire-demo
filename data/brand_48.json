@@ -1,0 +1,1305 @@
+{
+  "key": 48,
+  "value": "GMC",
+  "addon": [
+    {
+      "key": 2024,
+      "value": "2024",
+      "addon": [
+        {
+          "key": 2427,
+          "value": "Canyon",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 5 Ft Bed"
+          ]
+        },
+        {
+          "key": 29405,
+          "value": "Hummer EV Pickup",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 5 Ft Bed"
+          ]
+        },
+        {
+          "key": 30968,
+          "value": "Hummer EV SUV",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23973,
+          "value": "Yukon XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2023,
+      "value": "2023",
+      "addon": [
+        {
+          "key": 6089,
+          "value": "Acadia",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2427,
+          "value": "Canyon",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 5 Ft Bed"
+          ]
+        },
+        {
+          "key": 29405,
+          "value": "Hummer EV Pickup",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 5 Ft Bed"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Extended Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23973,
+          "value": "Yukon XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2022,
+      "value": "2022",
+      "addon": [
+        {
+          "key": 6089,
+          "value": "Acadia",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2427,
+          "value": "Canyon",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 5 Ft Bed",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 5 Ft Bed",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed"
+          ]
+        },
+        {
+          "key": 29405,
+          "value": "Hummer EV Pickup",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 5 Ft Bed"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Extended Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 27207,
+          "value": "Sierra 1500 Limited",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23973,
+          "value": "Yukon XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2021,
+      "value": "2021",
+      "addon": [
+        {
+          "key": 6089,
+          "value": "Acadia",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2427,
+          "value": "Canyon",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 5 Ft Bed",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 5 Ft Bed",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Extended Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23973,
+          "value": "Yukon XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2020,
+      "value": "2020",
+      "addon": [
+        {
+          "key": 6089,
+          "value": "Acadia",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2427,
+          "value": "Canyon",
+          "addon": [
+            "4 Dr Crew Cab Pickup, 5 Ft Bed",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 5 Ft Bed",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23973,
+          "value": "Yukon XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2019,
+      "value": "2019",
+      "addon": [
+        {
+          "key": 6089,
+          "value": "Acadia",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2427,
+          "value": "Canyon",
+          "addon": [
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 5 Ft Bed",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 5 Ft Bed",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 27207,
+          "value": "Sierra 1500 Limited",
+          "addon": [
+            "4 Dr Extended Cab Pickup, 7 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23973,
+          "value": "Yukon XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2018,
+      "value": "2018",
+      "addon": [
+        {
+          "key": 6089,
+          "value": "Acadia",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2427,
+          "value": "Canyon",
+          "addon": [
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 5 Ft Bed",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 5 Ft Bed",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Extended Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23973,
+          "value": "Yukon XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2017,
+      "value": "2017",
+      "addon": [
+        {
+          "key": 6089,
+          "value": "Acadia",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25751,
+          "value": "Acadia Limited",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2427,
+          "value": "Canyon",
+          "addon": [
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 5 Ft Bed",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 5 Ft Bed",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23973,
+          "value": "Yukon XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2016,
+      "value": "2016",
+      "addon": [
+        {
+          "key": 6089,
+          "value": "Acadia",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2427,
+          "value": "Canyon",
+          "addon": [
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 5 Ft Bed",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 5 Ft Bed",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23973,
+          "value": "Yukon XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2015,
+      "value": "2015",
+      "addon": [
+        {
+          "key": 6089,
+          "value": "Acadia",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 2427,
+          "value": "Canyon",
+          "addon": [
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 5 Ft Bed",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 5 Ft Bed",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 23973,
+          "value": "Yukon XL",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2014,
+      "value": "2014",
+      "addon": [
+        {
+          "key": 6089,
+          "value": "Acadia",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 522,
+          "value": "Savana 1500",
+          "addon": [
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 525,
+          "value": "Savana 2500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 528,
+          "value": "Savana 3500",
+          "addon": [
+            "3 Dr Extended Cargo Van",
+            "3 Dr Extended Passenger Van",
+            "3 Dr Standard Cargo Van",
+            "3 Dr Standard Passenger Van",
+            "4 Dr Standard Cargo Van",
+            "4 Dr Standard Passenger Van"
+          ]
+        },
+        {
+          "key": 548,
+          "value": "Sierra 1500",
+          "addon": [
+            "2 Dr Standard Cab Pickup, 6 Ft Bed",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup, 6 Ft Bed",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed",
+            "4 Dr Extended Cab Pickup, 6 Ft Bed",
+            "4 Dr Extended Cab Pickup, 7 Ft Bed",
+            "4 Dr Extended Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 551,
+          "value": "Sierra 2500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup",
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6581,
+          "value": "Sierra 3500 HD",
+          "addon": [
+            "2 Dr Standard Cab Pickup, 7 Ft Bed",
+            "2 Dr Standard Cab Pickup, 8 Ft Bed",
+            "4 Dr Crew Cab Pickup",
+            "4 Dr Crew Cab Pickup, 7 Ft Bed",
+            "4 Dr Crew Cab Pickup, 8 Ft Bed"
+          ]
+        },
+        {
+          "key": 6867,
+          "value": "Terrain",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 558,
+          "value": "Yukon",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 559,
+          "value": "Yukon XL 1500",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    }
+  ]
+}

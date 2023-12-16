@@ -1,0 +1,46 @@
+{
+  "key": 1412,
+  "value": "VinFast",
+  "addon": [
+    {
+      "key": 2024,
+      "value": "2024",
+      "addon": [
+        {
+          "key": 30967,
+          "value": "VF8",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 30970,
+          "value": "VF9",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2023,
+      "value": "2023",
+      "addon": [
+        {
+          "key": 30967,
+          "value": "VF8",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 30970,
+          "value": "VF9",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    }
+  ]
+}

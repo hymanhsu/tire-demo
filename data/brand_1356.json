@@ -1,0 +1,85 @@
+{
+  "key": 1356,
+  "value": "Polestar",
+  "addon": [
+    {
+      "key": 2024,
+      "value": "2024",
+      "addon": [
+        {
+          "key": 28639,
+          "value": "Polestar 2",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        },
+        {
+          "key": 32945,
+          "value": "Polestar 3",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2023,
+      "value": "2023",
+      "addon": [
+        {
+          "key": 28639,
+          "value": "Polestar 2",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2022,
+      "value": "2022",
+      "addon": [
+        {
+          "key": 28639,
+          "value": "Polestar 2",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2021,
+      "value": "2021",
+      "addon": [
+        {
+          "key": 28638,
+          "value": "Polestar 1",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 28639,
+          "value": "Polestar 2",
+          "addon": [
+            "4 Dr Hatchback"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2020,
+      "value": "2020",
+      "addon": [
+        {
+          "key": 28638,
+          "value": "Polestar 1",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        }
+      ]
+    }
+  ]
+}

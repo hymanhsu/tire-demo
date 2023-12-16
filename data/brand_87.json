@@ -1,0 +1,451 @@
+{
+  "key": 87,
+  "value": "Studebaker",
+  "addon": [
+    {
+      "key": 1966,
+      "value": "1966",
+      "addon": [
+        {
+          "key": 4716,
+          "value": "Commander",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 6530,
+          "value": "Cruiser",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 301,
+          "value": "Daytona",
+          "addon": [
+            "2 Dr Hardtop",
+            "2 Dr Wagon",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 2360,
+          "value": "Wagonaire",
+          "addon": [
+            "4 Dr Wagon"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1965,
+      "value": "1965",
+      "addon": [
+        {
+          "key": 4716,
+          "value": "Commander",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 6530,
+          "value": "Cruiser",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 301,
+          "value": "Daytona",
+          "addon": [
+            "2 Dr Hardtop",
+            "2 Dr Wagon",
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1964,
+      "value": "1964",
+      "addon": [
+        {
+          "key": 6635,
+          "value": "Avanti",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 286,
+          "value": "Challenger",
+          "addon": [
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 6098,
+          "value": "Champ",
+          "addon": [
+            "2 Dr Standard Cab Pickup"
+          ]
+        },
+        {
+          "key": 4716,
+          "value": "Commander",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 6530,
+          "value": "Cruiser",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 301,
+          "value": "Daytona",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 2353,
+          "value": "Gran",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 5876,
+          "value": "Hawk",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 2355,
+          "value": "Lark",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop",
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 21392,
+          "value": "Taxi",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1963,
+      "value": "1963",
+      "addon": [
+        {
+          "key": 6635,
+          "value": "Avanti",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 6098,
+          "value": "Champ",
+          "addon": [
+            "2 Dr Standard Cab Pickup"
+          ]
+        },
+        {
+          "key": 6530,
+          "value": "Cruiser",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 301,
+          "value": "Daytona",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 2353,
+          "value": "Gran",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 5876,
+          "value": "Hawk",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 2355,
+          "value": "Lark",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop",
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 21392,
+          "value": "Taxi",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1962,
+      "value": "1962",
+      "addon": [
+        {
+          "key": 6098,
+          "value": "Champ",
+          "addon": [
+            "2 Dr Standard Cab Pickup"
+          ]
+        },
+        {
+          "key": 6530,
+          "value": "Cruiser",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 301,
+          "value": "Daytona",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 2353,
+          "value": "Gran",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 5876,
+          "value": "Hawk",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 2355,
+          "value": "Lark",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop",
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 21392,
+          "value": "Taxi",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1961,
+      "value": "1961",
+      "addon": [
+        {
+          "key": 6098,
+          "value": "Champ",
+          "addon": [
+            "2 Dr Standard Cab Pickup"
+          ]
+        },
+        {
+          "key": 5876,
+          "value": "Hawk",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 2355,
+          "value": "Lark",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop",
+            "2 Dr Sedan",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 21392,
+          "value": "Taxi",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1960,
+      "value": "1960",
+      "addon": [
+        {
+          "key": 6098,
+          "value": "Champ",
+          "addon": [
+            "2 Dr Standard Cab Pickup"
+          ]
+        },
+        {
+          "key": 5876,
+          "value": "Hawk",
+          "addon": [
+            "2 Dr Coupe"
+          ]
+        },
+        {
+          "key": 2355,
+          "value": "Lark",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop",
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 21392,
+          "value": "Taxi",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1959,
+      "value": "1959",
+      "addon": [
+        {
+          "key": 2355,
+          "value": "Lark",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Hardtop",
+            "2 Dr Sedan",
+            "4 Dr Sedan",
+            "4 Dr Wagon"
+          ]
+        },
+        {
+          "key": 21392,
+          "value": "Taxi",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1958,
+      "value": "1958",
+      "addon": [
+        {
+          "key": 4716,
+          "value": "Commander",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Coupe",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 21392,
+          "value": "Taxi",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1957,
+      "value": "1957",
+      "addon": [
+        {
+          "key": 4716,
+          "value": "Commander",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Coupe",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 21392,
+          "value": "Taxi",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1956,
+      "value": "1956",
+      "addon": [
+        {
+          "key": 4716,
+          "value": "Commander",
+          "addon": [
+            "2 Dr Convertible",
+            "2 Dr Coupe",
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 21392,
+          "value": "Taxi",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    }
+  ]
+}

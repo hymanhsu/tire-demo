@@ -1,0 +1,292 @@
+{
+  "key": 1319,
+  "value": "Genesis",
+  "addon": [
+    {
+      "key": 2024,
+      "value": "2024",
+      "addon": [
+        {
+          "key": 30646,
+          "value": "Electrified G80",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 31176,
+          "value": "Electrified GV70",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 25831,
+          "value": "G80",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25832,
+          "value": "G90",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 30319,
+          "value": "GV60",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 29379,
+          "value": "GV70",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 28482,
+          "value": "GV80",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2023,
+      "value": "2023",
+      "addon": [
+        {
+          "key": 30646,
+          "value": "Electrified G80",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 31176,
+          "value": "Electrified GV70",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 27344,
+          "value": "G70",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25831,
+          "value": "G80",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25832,
+          "value": "G90",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 30319,
+          "value": "GV60",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 29379,
+          "value": "GV70",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 28482,
+          "value": "GV80",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2022,
+      "value": "2022",
+      "addon": [
+        {
+          "key": 27344,
+          "value": "G70",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25831,
+          "value": "G80",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25832,
+          "value": "G90",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 29379,
+          "value": "GV70",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        },
+        {
+          "key": 28482,
+          "value": "GV80",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2021,
+      "value": "2021",
+      "addon": [
+        {
+          "key": 27344,
+          "value": "G70",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25831,
+          "value": "G80",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25832,
+          "value": "G90",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 28482,
+          "value": "GV80",
+          "addon": [
+            "4 Dr Sport Utility"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2020,
+      "value": "2020",
+      "addon": [
+        {
+          "key": 27344,
+          "value": "G70",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25831,
+          "value": "G80",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25832,
+          "value": "G90",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2019,
+      "value": "2019",
+      "addon": [
+        {
+          "key": 27344,
+          "value": "G70",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25831,
+          "value": "G80",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25832,
+          "value": "G90",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2018,
+      "value": "2018",
+      "addon": [
+        {
+          "key": 25831,
+          "value": "G80",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25832,
+          "value": "G90",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 2017,
+      "value": "2017",
+      "addon": [
+        {
+          "key": 25831,
+          "value": "G80",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        },
+        {
+          "key": 25832,
+          "value": "G90",
+          "addon": [
+            "4 Dr Sedan"
+          ]
+        }
+      ]
+    }
+  ]
+}
