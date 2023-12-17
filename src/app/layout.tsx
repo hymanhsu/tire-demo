@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
           <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <TireHeader />
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center w-full">
             {children}
             </div>
             <FooterWithSocialLinks />

@@ -16,9 +16,6 @@ export default function SearchProductByTire() {
       <form className="mt-8 mb-2 w-600 max-w-screen-lg ">
         <div className="mb-1 flex flex-col gap-5">
 
-        <div className="w-full">
-        <Input label="Username" crossOrigin={undefined} />
-        </div>
 
 
       <Select label="Select Version" placeholder={""}>
@@ -26,6 +23,21 @@ export default function SearchProductByTire() {
         <Option>Material Tailwind React</Option>
         <Option>Material Tailwind Vue</Option>
         <Option>Material Tailwind Angular</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
+        <Option>Material Tailwind Svelte</Option>
         <Option>Material Tailwind Svelte</Option>
       </Select>
 
