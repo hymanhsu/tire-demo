@@ -11,13 +11,12 @@ import MasterCardPic from "@/public/mastercard.svg";
 import PaypalPic from "@/public/paypal.svg";
 import UnionpayPic from "@/public/unionpay.svg";
 
-
 const currentYear = new Date().getFullYear();
 
 export default function TireFooter() {
   return (
     <footer>
-      <Container>
+      <Container className="p-3 mb-2 bg-dark text-white">
         <Row>
           <Col>
             <h5>
@@ -29,44 +28,70 @@ export default function TireFooter() {
           <Col>
             <Nav defaultActiveKey="/" className="flex-column">
               <Nav.Link eventKey="link-1" href="/">
-                News
+                <span className="p-3 mb-2 bg-dark text-white">News</span>
               </Nav.Link>
               <Nav.Link eventKey="link-2" href="/">
-                Resources
+                <span className="p-3 mb-2 bg-dark text-white">Resources</span>
               </Nav.Link>
               <Nav.Link eventKey="link-3" href="/">
-                Solutions
+                <span className="p-3 mb-2 bg-dark text-white">Solutions</span>
               </Nav.Link>
             </Nav>
           </Col>
           <Col>
             <Nav defaultActiveKey="/" className="flex-column">
-              <Nav.Link eventKey="link-1">About us</Nav.Link>
-              <Nav.Link eventKey="link-2">Contact</Nav.Link>
+              <Nav.Link eventKey="link-1">
+                <span className="p-3 mb-2 bg-dark text-white">About us</span>
+              </Nav.Link>
+              <Nav.Link eventKey="link-2">
+                <span className="p-3 mb-2 bg-dark text-white"> Contact</span>
+              </Nav.Link>
             </Nav>
           </Col>
         </Row>
         <Row>
           <Col>
-          <div className="p-2">
-              &copy; {currentYear}{" "}
-              <a href="https://material-tailwind.com/">Tire of Crestmont</a>.
-              All Rights Reserved.
+            <div>
+              &copy; {currentYear} Tire of Crestmont. All Rights Reserved.
             </div>
           </Col>
           <Col>
             <Stack direction="horizontal" gap={3}>
               <div className="p-1">
-                <Image src={VisaPic} alt="visa" width="30" height="30" className="d-inline-block align-top"/>
+                <Image
+                  src={VisaPic}
+                  alt="visa"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />
               </div>
               <div className="p-1">
-              <Image src={MasterCardPic} alt="mastercard" width="30" height="30" className="d-inline-block align-top"/>
+                <Image
+                  src={MasterCardPic}
+                  alt="mastercard"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />
               </div>
               <div className="p-1">
-              <Image src={PaypalPic} alt="paypal" width="30" height="30" className="d-inline-block align-top"/>
+                <Image
+                  src={PaypalPic}
+                  alt="paypal"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />
               </div>
               <div className="p-1">
-              <Image src={UnionpayPic} alt="unionpay" width="30" height="30" className="d-inline-block align-top"/>
+                <Image
+                  src={UnionpayPic}
+                  alt="unionpay"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />
               </div>
             </Stack>
           </Col>
