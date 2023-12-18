@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import TireHeader from "@/components/header";
-import FooterWithSocialLinks from "@/components/footer";
+import TireFooter from "@/components/footer";
 import "./globals.css";
-import { ThemeProvider } from "@material-tailwind/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,14 +18,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Tire of Crestmont</title>
+      </head>
       <body className={inter.className}>
-          <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <TireHeader />
-            <div className="flex items-center justify-center">
-            {children}
-            </div>
-            <FooterWithSocialLinks />
-          </main>
+        <main>
+          <TireHeader />
+          <div className="flex items-center justify-center">{children}</div>
+          <TireFooter />
+        </main>
       </body>
     </html>
   );

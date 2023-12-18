@@ -1,11 +1,11 @@
 import SearchProduct from "@/components/searchProduct";
-import Image from "next/image";
+import Stack from 'react-bootstrap/Stack';
 
 
 export default function Home() {
   return (
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <SearchProduct/>
-      </div>
+    <Stack gap={2} className="col-md-5 mx-auto">
+      <SearchProduct/>
+    </Stack>
   );
 }

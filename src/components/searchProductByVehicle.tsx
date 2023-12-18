@@ -1,15 +1,8 @@
 "use client";
 
-import {
-  Card,
-  Input,
-  Checkbox,
-  Button,
-  Typography,
-  Select,
-  Option,
-} from "@material-tailwind/react";
-import { useState, useEffect, FormEvent } from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import { useState, useEffect, FormEvent, ChangeEvent } from "react";
 import axios from "axios";
 import { ItemRec } from "@/dao/car";
 import { queryAllBrands } from "@/dao/car_inquiry";
@@ -59,119 +52,133 @@ export default function SearchProductByVehicle() {
   }
 
   return (
-    <Card color="transparent" shadow={false} placeholder={""} className="w-600">
-      <form className="mt-8 mb-2 w-600 max-w-screen-lg ">
-        <div className="mb-1 flex flex-col gap-5">
-          <Select
-            label="Select brand"
-            placeholder={""}
-            onChange={(value?: string): void => {
-              setSelectedOptions({
-                brand: Number(value),
-                year: -1,
-                model: -1,
-                body: "",
-              });
-              // if brand have been selected, then update years,
-              // OR clear years
-              if (Number(value) !== -1) {
-                fetchYears(Number(value));
-              } else {
-                setYearList([]);
-              }
-            }}
-          >
-            {brandList.map((item: ItemRec) => (
-              <Option key={item.key} value={String(item.key)}>
-                {item.value}
-              </Option>
-            ))}
-          </Select>
+    <Form>
 
-          <Select
-            label="Select year"
-            placeholder={""}
-            onChange={(value?: string): void => {
-              setSelectedOptions({
-                ...selectedOptions,
-                year: Number(value),
-                model: -1,
-                body: "",
-              });
-              // if brand and year have been selected, then update models,
-              // OR clear models
-              if (selectedOptions.brand !== -1 && Number(value) !== -1) {
-                fetchModels(selectedOptions.brand, Number(value));
-              } else {
-                setModelList([]);
-              }
-            }}
-          >
-            {yearList.map((item: ItemRec) => (
-              <Option key={item.key} value={String(item.key)}>
-                {item.value}
-              </Option>
-            ))}
-          </Select>
+      <Form.Select
+        aria-label="Select brand"
+        name="brand"
+        onChange={(event: FormEvent<HTMLSelectElement>): void => {
+          const newValue = event.currentTarget.value;
+          setSelectedOptions({
+            brand: Number(newValue),
+            year: -1,
+            model: -1,
+            body: "",
+          });
+          // if brand have been selected, then update years,
+          // OR clear years
+          if (Number(newValue) !== -1) {
+            fetchYears(Number(newValue));
+          } else {
+            setYearList([]);
+          }
+        }}
+      >
+        <option key={-1} value={-1}>
+          Select brand
+        </option>
+        {brandList.map((item: ItemRec) => (
+          <option key={String(item.key)} value={String(item.key)}>
+            {item.value}
+          </option>
+        ))}
+      </Form.Select>
+      <br />
 
-          <Select
-            label="Select model"
-            placeholder={""}
-            onChange={(value?: string): void => {
-              setSelectedOptions({
-                ...selectedOptions,
-                model: Number(value),
-                body: "",
-              });
-              // if brand, year and model have been selected, then update bodies,
-              // OR clear bodies
-              if (
-                selectedOptions.brand !== -1 &&
-                selectedOptions.year !== -1 &&
-                Number(value) != -1
-              ) {
-                fetchBodies(
-                  selectedOptions.brand,
-                  selectedOptions.year,
-                  Number(value)
-                );
-              } else {
-                setBodyList([]);
-              }
-            }}
-          >
-            {modelList.map((item: ItemRec) => (
-              <Option key={item.key} value={String(item.key)}>
-                {item.value}
-              </Option>
-            ))}
-          </Select>
+      <Form.Select
+        aria-label="Select year"
+        name="year"
+        onChange={(event: FormEvent<HTMLSelectElement>): void => {
+          const newValue = event.currentTarget.value;
+          setSelectedOptions({
+            ...selectedOptions,
+            year: Number(newValue),
+            model: -1,
+            body: "",
+          });
+          // if brand and year have been selected, then update models,
+          // OR clear models
+          if (selectedOptions.brand !== -1 && Number(newValue) !== -1) {
+            fetchModels(selectedOptions.brand, Number(newValue));
+          } else {
+            setModelList([]);
+          }
+        }}
+      >
+        <option key={-1} value={-1}>
+          Select year
+        </option>
+        {yearList.map((item: ItemRec) => (
+          <option key={String(item.key)} value={String(item.key)}>
+            {item.value}
+          </option>
+        ))}
+      </Form.Select>
+      <br />
 
-          <Select
-            label="Select body"
-            placeholder={""}
-            onChange={(value?: string): void => {
-              return setSelectedOptions({
-                ...selectedOptions,
-                body: value ?? "",
-              });
-            }}
-          >
-            {bodyList.map((item: string) => (
-              <Option key={item} value={item}>
-                {item}
-              </Option>
-            ))}
-          </Select>
+      <Form.Select
+        aria-label="Select model"
+        name="model"
+        onChange={(event: FormEvent<HTMLSelectElement>): void => {
+          const newValue = event.currentTarget.value;
+          setSelectedOptions({
+            ...selectedOptions,
+            model: Number(newValue),
+            body: "",
+          });
+          // if brand, year and model have been selected, then update bodies,
+          // OR clear bodies
+          if (
+            selectedOptions.brand !== -1 &&
+            selectedOptions.year !== -1 &&
+            Number(newValue) != -1
+          ) {
+            fetchBodies(
+              selectedOptions.brand,
+              selectedOptions.year,
+              Number(newValue)
+            );
+          } else {
+            setBodyList([]);
+          }
+        }}
+      >
+        <option key={-1} value={-1}>
+          Select model
+        </option>
+        {modelList.map((item: ItemRec) => (
+          <option key={String(item.key)} value={String(item.key)}>
+            {item.value}
+          </option>
+        ))}
+      </Form.Select>
+      <br />
 
-          <Button
-            className="btn bg-blue-600 text-white px-3 py-2"
-            placeholder={""}
-          >
-            Search
-          </Button>
-        </div>
-      </form>
-    </Card>
+      <Form.Select
+        aria-label="Select body"
+        name="body"
+        onChange={(event: FormEvent<HTMLSelectElement>): void => {
+          const newValue = event.currentTarget.value;
+          setSelectedOptions({
+            ...selectedOptions,
+            body: newValue,
+          });
+        }}
+      >
+        <option key={-1} value={-1}>
+          Select model
+        </option>
+        {bodyList.map((item: string) => (
+          <option key={item} value={item}>
+            {item}
+          </option>
+        ))}
+      </Form.Select>
+      <br />
+
+      <Button variant="primary" type="submit">
+        Search
+      </Button>
+    </Form>
   );
 }
