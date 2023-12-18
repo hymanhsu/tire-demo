@@ -2,7 +2,7 @@
 const path = require('path')
 
 const nextConfig = {
-    distDir: 'build',
+    // distDir: 'build',
     logging: {
         fetches: {
             fullUrl: true,
