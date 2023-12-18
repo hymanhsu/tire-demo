@@ -1,10 +1,15 @@
 /** @type {import('next').NextConfig} */
+const path = require('path')
+
 const nextConfig = {
     distDir: 'build',
     logging: {
         fetches: {
             fullUrl: true,
         },
+    },
+    sassOptions: {
+        includePaths: [path.join(__dirname, 'styles')],
     },
 }
 
