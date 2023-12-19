@@ -11,7 +11,8 @@ CREATE TABLE brands (
     -- 1: Premium Tyres, 2: Mid-range Tyres, 3: Economy Tyres, 4: Budget Tyres
     introduction JSON DEFAULT '{}',
     -- introduction of the brand
-    c_at TIMESTAMP DEFAULT now()
+    c_at TIMESTAMP DEFAULT now(),
+    u_at TIMESTAMP DEFAULT now()
 );
 
 

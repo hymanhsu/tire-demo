@@ -21,16 +21,6 @@ export interface ItemRec {
   value: string;
 }
 
-function compareBrands(a: BrandItem, b: BrandItem) {
-  if (a.value < b.value) {
-    return -1;
-  }
-  if (a.value > b.value) {
-    return 1;
-  }
-  return 0;
-}
-
 export const allBrands: BrandItem[] = [
   {
     key: 1,
@@ -38224,5 +38214,14 @@ export const allBrands: BrandItem[] = [
   },
 ];
 
+function compareBrands(a: BrandItem, b: BrandItem) {
+  if (a.value < b.value) {
+    return -1;
+  }
+  if (a.value > b.value) {
+    return 1;
+  }
+  return 0;
+}
 
 export const sortedBrands = allBrands.sort(compareBrands);
