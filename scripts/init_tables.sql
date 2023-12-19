@@ -2,7 +2,7 @@
 DROP TABLE IF EXISTS brands;
 
 CREATE TABLE brands (
-    id CHAR(4),
+    id CHAR(4) PRIMARY KEY,
     -- id, format : xxdd
     -- xx rules :  10 : Premium | 20 : Mid-range | 30,40,50 : Economy | 60,70,80,90 : Budget
     brand VARCHAR(50),

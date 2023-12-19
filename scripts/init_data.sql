@@ -12,7 +12,6 @@ INSERT INTO brands (id, brand, grade) VALUES ('1004', 'Continental', 1);
 INSERT INTO brands (id, brand, grade) VALUES ('1005', 'Goodyear', 1);
 INSERT INTO brands (id, brand, grade) VALUES ('1006', 'Dunlop', 1);
 INSERT INTO brands (id, brand, grade) VALUES ('1007', 'Hankook', 1);
-INSERT INTO brands (id, brand, grade) VALUES ('1007', 'Hankook', 1);
 
 -- Mid-range brands of tyres
 ---------------------------------------------------
