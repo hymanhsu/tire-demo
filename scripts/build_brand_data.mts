@@ -3,7 +3,7 @@
  * Written by Hyman @ Dec.14th 2023
  * NOTE : 
  * To execute this script file, MUST DO LIKE THIS : 
- * node --loader ts-node/esm .\src\scripts\build_brand_data.mts
+ * node --loader ts-node/esm .\scripts\build_brand_data.mts
  * If you use *.ts, it does not work.
  * If you use ts-node-esm, it does not work.
  */
