@@ -1,6 +1,7 @@
 -- This file is used to initialize the tables for the project Tire
-DROP TABLE IF EXISTS brands;
 
+-- brands of tires
+DROP TABLE IF EXISTS brands;
 CREATE TABLE brands (
     id CHAR(4) PRIMARY KEY,
     -- id, format : xxdd
@@ -14,6 +15,22 @@ CREATE TABLE brands (
     c_at TIMESTAMP DEFAULT now(),
     u_at TIMESTAMP DEFAULT now()
 );
+
+-- categories of all products
+DROP TABLE IF EXISTS categories;
+CREATE TABLE categories (
+    id CHAR(3) PRIMARY KEY,
+    -- id, format : xdd
+    -- x rules :  1 : tire&wheel | 2 : accessories
+    name VARCHAR(50),
+    img_url VARCHAR(500) DEFAULT '',
+    introduction VARCHAR(200) DEFAULT '',
+    -- introduction of the category
+    c_at TIMESTAMP DEFAULT now(),
+    u_at TIMESTAMP DEFAULT now()
+);
+
+
 
 
 -- DROP TABLE IF EXISTS tires;

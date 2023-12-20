@@ -223,4 +223,26 @@ INSERT INTO brands (id, brand, grade) VALUES('6096', 'Winda', 4);
 INSERT INTO brands (id, brand, grade) VALUES('6097', 'Winrun', 4);
 
 
+-- Categories of products
+---------------------------------------------------
+INSERT INTO categories (id, name) VALUES('101', 'Tire');
+INSERT INTO categories (id, name) VALUES('102', 'Wheel');
+INSERT INTO categories (id, name) VALUES('201', 'Auto Detailing');
+INSERT INTO categories (id, name) VALUES('202', 'Electronics');
+INSERT INTO categories (id, name) VALUES('203', 'Towing');
+INSERT INTO categories (id, name) VALUES('204', 'Bumper');
+INSERT INTO categories (id, name) VALUES('205', 'Body Protection');
+INSERT INTO categories (id, name) VALUES('206', 'Suspension');
+INSERT INTO categories (id, name) VALUES('207', 'TPMS');
+INSERT INTO categories (id, name) VALUES('208', 'Floor Mats and Liners');
+INSERT INTO categories (id, name) VALUES('209', 'Tire Accessories');
+INSERT INTO categories (id, name) VALUES('210', 'Wheel Accessories');
+INSERT INTO categories (id, name) VALUES('211', 'Winter Accessories');
+INSERT INTO categories (id, name) VALUES('212', 'Automotive Lighting and Lighting Accessories');
+INSERT INTO categories (id, name) VALUES('213', 'Exhaust');
+
+
+
+
+
 
