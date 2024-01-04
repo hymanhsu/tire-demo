@@ -1,26 +1,33 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import LogoPic from "@/public/car-wheel.svg";
-import ShoppingCartPic from '@/public/cart4.svg';
+import ShoppingCartPic from "@/public/cart4.svg";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-
 
 function TireHeader() {
+  const [userInfo, setUserInfo] = useState({ nick_name: "" });
+  useEffect(() => {
+    const localData = localStorage.getItem("userinfo");
+    const userInfoUp = localData ? JSON.parse(localData) : {};
+    setUserInfo({ ...userInfo, ...userInfoUp });
+  }, []);
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="/">
-        <Image src={LogoPic} alt="Logo" width="30" height="30" className="d-inline-block align-top"/>
-        {' '}
-        Tire of Crestmont
+          <Image
+            src={LogoPic}
+            alt="Logo"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{" "}
+          Tire of Crestmont
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -40,11 +47,27 @@ function TireHeader() {
             </NavDropdown>
           </Nav>
           <Nav>
-          <Nav.Link href="#deets">
-          <Image src={ShoppingCartPic} alt="Logo" width="30" height="30" className="d-inline-block align-top"/>
-          </Nav.Link>
-            <Nav.Link href="#deets">Sign up</Nav.Link>
-            <Nav.Link href="#memes">Login in</Nav.Link>
+            <Nav.Link href="#deets">
+              <Image
+                src={ShoppingCartPic}
+                alt="Logo"
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />
+            </Nav.Link>
+            {userInfo.nick_name == "" && (
+              <>
+                <Nav.Link href="/auth/signup">Sign up</Nav.Link>
+                <Nav.Link href="/auth/login">Login in</Nav.Link>
+              </>
+            )}
+            {userInfo.nick_name != "" && (
+              <>
+                <span>{userInfo.nick_name}</span>
+                <Nav.Link href="/auth/logout">Login out</Nav.Link>
+              </>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

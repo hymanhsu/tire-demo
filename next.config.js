@@ -8,9 +8,15 @@ const nextConfig = {
             fullUrl: true,
         },
     },
-    sassOptions: {
-        includePaths: [path.join(__dirname, 'styles')],
+    api: {
+        bodyParser: {
+            sizeLimit: '1mb',
+        },
+        responseLimit: '8mb',
     },
+    // sassOptions: {
+    //     includePaths: [path.join(__dirname, 'styles')],
+    // },
 }
 
 module.exports = nextConfig
