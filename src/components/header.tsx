@@ -13,7 +13,7 @@ function TireHeader() {
   const [userInfo, setUserInfo] = useState({ nick_name: "" });
   useEffect(() => {
     const localData = localStorage.getItem("userinfo");
-    const userInfoUp = localData ? JSON.parse(localData) : {};
+    const userInfoUp = localData ? JSON.parse(localData) : { nick_name: "" };
     setUserInfo({ ...userInfo, ...userInfoUp });
   }, []);
   return (
@@ -64,8 +64,8 @@ function TireHeader() {
             )}
             {userInfo.nick_name != "" && (
               <>
-                <span>{userInfo.nick_name}</span>
-                <Nav.Link href="/auth/logout">Login out</Nav.Link>
+                <Navbar.Text>Welcome, {userInfo.nick_name}!</Navbar.Text>
+                <Nav.Link href="/auth/logout">{">>"}Login out</Nav.Link>
               </>
             )}
           </Nav>

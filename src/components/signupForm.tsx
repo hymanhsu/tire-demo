@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import { SubmitButton } from "./submitButton";
 
 const call_signup = async (formData: any) => {
   try {
@@ -91,9 +92,10 @@ export default function SignupForm() {
           value={formData.password}
         />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      {/* <Button variant="primary" type="submit">
         Sign up
-      </Button>
+      </Button> */}
+      <SubmitButton normalLabel="Sign up" pendingLabel="Sign up ..." />
     </Form>
   );
 }

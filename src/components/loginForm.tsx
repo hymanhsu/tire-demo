@@ -3,7 +3,8 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { FormEvent, useState } from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
+import { SubmitButton } from "./submitButton";
 
 const call_login = async (formData: any) => {
   try {
@@ -39,7 +40,7 @@ const call_query_userinfo = async () => {
 };
 
 export default function LoginForm() {
-  const Router = useRouter();
+  // const Router = useRouter();
   const [formData, setFormData] = useState({
     loginName: "",
     password: "",
@@ -61,7 +62,7 @@ export default function LoginForm() {
       if (userResp.meta.status == true) {
         localStorage.setItem("userinfo", JSON.stringify(userResp.data));
         console.log("------------save userinfo-------------");
-        Router.push("/");
+        window.location.href = "/";
       }
     } else {
       setLoding(false);
@@ -92,9 +93,10 @@ export default function LoginForm() {
           value={formData.password}
         />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      {/* <Button variant="primary" type="submit">
         Login in
-      </Button>
+      </Button> */}
+      <SubmitButton normalLabel="Login in" pendingLabel="Login in ..." />
     </Form>
   );
 }
