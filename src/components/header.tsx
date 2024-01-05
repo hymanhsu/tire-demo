@@ -98,8 +98,8 @@ export function TireHeader() {
             </Nav.Link>
             {userInfo.nick_name == "" && (
               <>
-                <Nav.Link href="/auth/signup">Sign up</Nav.Link>
-                <Nav.Link href="/auth/login">Login in</Nav.Link>
+                <Nav.Link href="/d/auth/signup">Sign up</Nav.Link>
+                <Nav.Link href="/d/auth/login">Login in</Nav.Link>
               </>
             )}
             {userInfo.nick_name != "" && (
