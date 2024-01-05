@@ -53,7 +53,7 @@ export default function LoginForm() {
     const resp = await call_login(formData);
     console.log(resp);
     if (resp.meta.status === true) {
-      console.log("------------ok-------------");
+      console.log("------------login-------------");
       setLoding(false);
       localStorage.setItem("token", resp.data.token);
       localStorage.setItem("role", resp.data.session.role_id);
@@ -62,7 +62,11 @@ export default function LoginForm() {
       if (userResp.meta.status == true) {
         localStorage.setItem("userinfo", JSON.stringify(userResp.data));
         console.log("------------save userinfo-------------");
-        window.location.href = "/";
+        if(resp.data.session.role_id == "CUST"){
+          window.location.href = "/";
+        }else{
+          window.location.href = "/admin/dashboard";
+        }
       }
     } else {
       setLoding(false);

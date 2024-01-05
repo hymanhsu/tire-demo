@@ -5,7 +5,7 @@ export async function GET(
 ) {
 
   // *******  invoke backend server start ******* 
-  const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/user/userinfo`, {
+  const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/auth/logout`, {
     method: "GET",
     headers: generateHeaders(request),
   })

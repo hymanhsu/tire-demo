@@ -1,3 +1,4 @@
+import { generateHeaders } from "@/app/api/utils"
 
 export async function POST(
   request: Request
@@ -8,9 +9,7 @@ export async function POST(
   // *******  invoke backend server start ******* 
   const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/auth/login`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
+    headers: generateHeaders(request),
     body: JSON.stringify(requestBody),
   })
   const data = await res.json();
