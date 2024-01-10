@@ -1,11 +1,13 @@
 import { generateHeaders } from "@/app/api/utils"
+import { NextRequest } from "next/server";
 
 export async function GET(
-  request: Request
+  request: NextRequest
 ) {
+  const url = request.nextUrl.searchParams.get("url");
 
   // *******  invoke backend server start ******* 
-  const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/auth/logout`, {
+  const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
     method: "GET",
     headers: generateHeaders(request),
   })

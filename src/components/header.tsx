@@ -8,26 +8,10 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
-const call_logout = async () => {
-  try {
-    const token = localStorage.getItem("token");
-    const res = await fetch(`/api/auth/logout`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    });
-    const data = await res.json();
-    return data;
-  } catch (error) {
-    console.log("error in userinfo (service) => ", error);
-  }
-};
+import {call_get} from "@/dao/call"
 
 const onLogout = async (event: React.MouseEvent<HTMLElement>) => {
-  const resp = await call_logout();
+  const resp = await call_get("/api/auth/logout", true);
   console.log(resp);
   console.log("------------logout-------------");
   localStorage.removeItem("token");
@@ -144,7 +128,7 @@ export function AdminHeader() {
           <Nav className="me-auto">
             {allowDisplay(role, ["ROOT", "ADMN"]) && 
               <NavDropdown title="Partner" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/service/maintence">
+                <NavDropdown.Item href="/admin/merchant/listO">
                   Merchants
                 </NavDropdown.Item>
               </NavDropdown>
@@ -189,8 +173,8 @@ export function AdminHeader() {
           <Nav>
             {userInfo.nick_name == "" && (
               <>
-                <Nav.Link href="/auth/signup">Sign up</Nav.Link>
-                <Nav.Link href="/auth/login">Login in</Nav.Link>
+                <Nav.Link href="/d/auth/signup">Sign up</Nav.Link>
+                <Nav.Link href="/d/auth/login">Login in</Nav.Link>
               </>
             )}
             {userInfo.nick_name != "" && (

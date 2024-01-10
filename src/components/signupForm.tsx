@@ -5,28 +5,14 @@ import Button from "react-bootstrap/Button";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { SubmitButton } from "./submitButton";
+import { call_post } from "@/dao/call";
 
-const call_signup = async (formData: any) => {
-  try {
-    const res = await fetch(`/api/auth/signup`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-    const data = await res.json();
-    return data;
-  } catch (error) {
-    console.log("error in signup (service) => ", error);
-  }
-};
 
 export default function SignupForm() {
   const Router = useRouter();
   const [formData, setFormData] = useState({
-    loginName: "",
-    phoneNumber: "",
+    login_name: "",
+    phone_number: "",
     email: "",
     password: "",
   });
@@ -35,7 +21,7 @@ export default function SignupForm() {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoding(true);
-    const data = await call_signup(formData);
+    const data = await call_post("/api/auth/signup",formData, false);
     console.log(data);
     if (data.meta.status === true) {
       console.log("------------ok-------------");
@@ -54,9 +40,9 @@ export default function SignupForm() {
           type="text"
           placeholder="your login name"
           onChange={(e) => {
-            setFormData({ ...formData, loginName: e.target.value });
+            setFormData({ ...formData, login_name: e.target.value });
           }}
-          value={formData.loginName}
+          value={formData.login_name}
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="signupForm.phonenumber">
@@ -65,9 +51,9 @@ export default function SignupForm() {
           type="text"
           placeholder="your phone number"
           onChange={(e) => {
-            setFormData({ ...formData, phoneNumber: e.target.value });
+            setFormData({ ...formData, phone_number: e.target.value });
           }}
-          value={formData.phoneNumber}
+          value={formData.phone_number}
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="signupForm.email">

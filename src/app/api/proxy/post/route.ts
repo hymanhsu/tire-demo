@@ -1,13 +1,14 @@
 import { generateHeaders } from "@/app/api/utils"
+import { NextRequest } from "next/server";
 
 export async function POST(
-  request: Request
+  request: NextRequest
 ) {
+  const url = request.nextUrl.searchParams.get("url");
   const requestBody = await request.json();
-  console.log("requestBody=" + JSON.stringify(requestBody));
 
   // *******  invoke backend server start ******* 
-  const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/auth/login`, {
+  const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
     method: "POST",
     headers: generateHeaders(request),
     body: JSON.stringify(requestBody),
