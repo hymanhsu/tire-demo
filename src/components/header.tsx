@@ -14,8 +14,6 @@ const onLogout = async (event: React.MouseEvent<HTMLElement>) => {
   const resp = await call_get("/api/auth/logout");
   console.log(resp);
   console.log("------------logout-------------");
-  localStorage.removeItem("token");
-  localStorage.removeItem("role");
   localStorage.removeItem("userinfo");
   console.log("------------remove userinfo/token/role-------------");
   window.location.href = "/";
@@ -108,7 +106,7 @@ export function AdminHeader() {
     const localData = localStorage.getItem("userinfo");
     const userInfoUp = localData ? JSON.parse(localData) : { nick_name: "" };
     setUserInfo({ ...userInfo, ...userInfoUp });
-    const roleData = localStorage.getItem("role");
+    const roleData = userInfoUp.role_id;
     setRole(roleData ? roleData as string : "");
   }, []);
 

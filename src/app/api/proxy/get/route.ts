@@ -1,19 +1,16 @@
-import { generateHeaders } from "@/app/api/utils"
+import { generateHeaders, get_backend, reset_token, try_refresh_token,  } from "@/dao/call4server"
+import { cookies } from "next/headers";
 import { NextRequest } from "next/server";
 
 export async function GET(
   request: NextRequest
 ) {
   const url = request.nextUrl.searchParams.get("url");
-
-  // *******  invoke backend server start ******* 
-  const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
-    method: "GET",
-    headers: generateHeaders(),
-  })
-  const data = await res.json();
-  // *******  invoke backend server end ******* 
-
+  const data = await get_backend(url as string);
+  // const ntoken = await try_refresh_token(data);
+  // if(ntoken != null){
+  //   cookies().set('token', ntoken, { secure: true });
+  // }
   return Response.json(data);
 }
 

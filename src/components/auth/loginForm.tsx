@@ -40,8 +40,6 @@ export default function LoginForm() {
     if (resp.meta.status === true) {
       console.log("------------login-------------");
       setLoding(false);
-      localStorage.setItem("token", resp.data.token);
-      localStorage.setItem("role", resp.data.session.role_id);
       console.log("------------save token and role-------------");
       const userResp = await call_get("/api/user/userinfo");
       if (userResp.meta.status == true) {

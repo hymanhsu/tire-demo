@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
-import { SubmitButton } from "./submitButton";
+import { SubmitButton } from "../submitButton";
 import { call_post } from "@/dao/call";
 
 

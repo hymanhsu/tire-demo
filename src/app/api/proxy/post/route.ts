@@ -1,4 +1,5 @@
-import { generateHeaders } from "@/app/api/utils"
+import { generateHeaders, post_backend, reset_token, try_refresh_token } from "@/dao/call4server"
+import { cookies } from "next/headers";
 import { NextRequest } from "next/server";
 
 export async function POST(
@@ -6,16 +7,11 @@ export async function POST(
 ) {
   const url = request.nextUrl.searchParams.get("url");
   const requestBody = await request.json();
-
-  // *******  invoke backend server start ******* 
-  const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
-    method: "POST",
-    headers: generateHeaders(),
-    body: JSON.stringify(requestBody),
-  })
-  const data = await res.json();
-  // *******  invoke backend server end ******* 
-
+  const data = await post_backend(url as string, requestBody);
+  // const ntoken = await try_refresh_token(data);
+  // if(ntoken != null){
+  //   cookies().set('token', ntoken, { secure: true });
+  // }
   return Response.json(data);
 }
 

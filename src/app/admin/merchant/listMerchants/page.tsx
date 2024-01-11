@@ -1,24 +1,12 @@
+'use server'
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import MerchantList from "@/components/merchant/merchantList";
 import ListMerchants from "@/components/merchant/listMerchants";
-import type { InferGetServerSidePropsType, GetServerSideProps } from 'next';
-import { get_backend } from "@/dao/call4server";
+import { get_backend, reset_token, try_refresh_token } from "@/dao/call4server";
+import { cookies } from "next/headers";
  
-
-async function getData() {
-  const res = await get_backend("/api/merchant/queryAll");
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
- 
-  if (!res.meta.status) {
-    // This will activate the closest `error.js` Error Boundary
-    return [];
-  }
- 
-  return res.data;
-}
 
 export default async  function MerchantsPage({
   params,
@@ -27,6 +15,18 @@ export default async  function MerchantsPage({
   params: { slug: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }) {
+  const getData = async () => {
+    const data = await get_backend("/api/merchant/queryAll");
+    // const ntoken = await try_refresh_token(data);
+    // if(ntoken != null){
+    //   // reset_token(ntoken);
+    //   cookies().set('token', ntoken, { secure: true });
+    // }
+    if (!data.meta.status) {
+      return [];
+    }
+    return data.data;
+  };
   const data = await getData();
   return (
     <Container>

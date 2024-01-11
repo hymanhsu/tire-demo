@@ -36,8 +36,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.jsx",
     ".next/types/**/*.ts",
-    "build/types/**/*.ts", "src/components/CustomPagination.jsx", "src/components/merchant/EmpReports.jsx",
+    "build/types/**/*.ts",
    ],
   "exclude": [
     "node_modules"

@@ -7,7 +7,6 @@
 import { headers, cookies } from 'next/headers';
 
 export const post_backend = async (url: string, formData: any) => {
-    
     // *******  invoke backend server start ******* 
     const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
         method: "POST",
@@ -21,7 +20,6 @@ export const post_backend = async (url: string, formData: any) => {
 
 
 export const get_backend = async (url: string) => {
-
     // *******  invoke backend server start ******* 
     const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
         method: "GET",
@@ -33,7 +31,40 @@ export const get_backend = async (url: string) => {
 };
 
 
-const generateHeaders = () : Headers => {
+export const try_refresh_token = async (respData:any):Promise<string|null> => {
+    'use server'
+    if(respData.meta.status == false && respData.meta.message == "Current user have not login!"){
+        // check cookie
+        const cookieStore = cookies();
+        let token = cookieStore.get("token")?.value;
+        if(token != undefined){
+            //refresh token
+            const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/auth/check`, {
+                method: "POST",
+                headers: generateHeaders(),
+                body: JSON.stringify({
+                    token: token as string,
+                    update: true
+                }),
+            });
+            const data = await res.json();
+            if (data.meta.status == true) {
+                // save token into cookie
+                // reset_token(data.data.new_token);
+                return Promise.resolve(data.data.new_token);
+            }
+        }
+    }
+    return Promise.resolve(null);
+}
+
+
+export async function reset_token(token:string) {
+    cookies().set('token', token, { secure: true });
+}
+
+
+export const generateHeaders = () : Headers => {
     const headersList = headers();
     const cookieStore = cookies();
     // let auth: string | null = headersList.get("Authorization");

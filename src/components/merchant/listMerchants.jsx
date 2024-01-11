@@ -4,7 +4,9 @@ import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import CustomPagination from '@/components/CustomPagination';
 import { call_get } from "@/dao/call";
-
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 // const requireData = async () => {
 //   const data = await call_get("/api/merchant/queryAll", true);
@@ -15,7 +17,7 @@ const ListMerchants = ({merchants}) => {
   const [apiData, setApiData] = useState(merchants); // set the api data 
   const [searchFilter, setSearchFilter] = useState(''); // filter the search
   const [currentPage, setCurrentPage] = useState(1); // set the current page
-  const pageSize = 5; // show row in table
+  const pageSize = 3; // show row in table
 
   // useEffect(() => {
   //   requireData();
@@ -48,13 +50,22 @@ const ListMerchants = ({merchants}) => {
   return (
     <div className='fluid container'>
       <div className='mb-2 fw-50'>Merchants</div>
-      <input
+
+    <Container>
+      <Row>
+        <Col>
+        <input
         style={{ width: "200px" }}
         className='form-control mb-2'
         placeholder='Search'
         value={searchFilter}
         onChange={handleFilter}
       />
+        </Col>
+        <Col></Col>
+        <Col>Add new Merchant</Col>
+      </Row>
+    </Container>
       <Table striped bordered hover id='table'>
         <tbody>
           <tr>
@@ -100,4 +111,4 @@ const ListMerchants = ({merchants}) => {
   );
 };
 
-export default EmpReports;
+export default ListMerchants;
