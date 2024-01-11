@@ -9,7 +9,7 @@ export async function GET(
   // *******  invoke backend server start ******* 
   const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
     method: "GET",
-    headers: generateHeaders(request),
+    headers: generateHeaders(),
   })
   const data = await res.json();
   // *******  invoke backend server end ******* 

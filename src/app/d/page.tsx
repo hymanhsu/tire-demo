@@ -1,4 +1,4 @@
-import SearchProduct from "@/components/searchProduct";
+import SearchProduct from "@/components/product/searchProduct";
 import Stack from 'react-bootstrap/Stack';
 
 

@@ -21,7 +21,7 @@ export default function SignupForm() {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoding(true);
-    const data = await call_post("/api/auth/signup",formData, false);
+    const data = await call_post("/api/auth/signup",formData);
     console.log(data);
     if (data.meta.status === true) {
       console.log("------------ok-------------");

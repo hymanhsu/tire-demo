@@ -11,7 +11,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import {call_get} from "@/dao/call"
 
 const onLogout = async (event: React.MouseEvent<HTMLElement>) => {
-  const resp = await call_get("/api/auth/logout", true);
+  const resp = await call_get("/api/auth/logout");
   console.log(resp);
   console.log("------------logout-------------");
   localStorage.removeItem("token");
@@ -128,7 +128,7 @@ export function AdminHeader() {
           <Nav className="me-auto">
             {allowDisplay(role, ["ROOT", "ADMN"]) && 
               <NavDropdown title="Partner" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/admin/merchant/listO">
+                <NavDropdown.Item href="/admin/merchant/listMerchants">
                   Merchants
                 </NavDropdown.Item>
               </NavDropdown>

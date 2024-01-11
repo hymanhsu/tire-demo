@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { FormEvent, useState } from "react";
 // import { useRouter } from "next/navigation";
-import { SubmitButton } from "./submitButton";
+import { SubmitButton } from "../submitButton";
 import { call_get, call_post } from "@/dao/call";
 
 
@@ -16,10 +16,26 @@ export default function LoginForm() {
   });
   const [loading, setLoding] = useState(false);
 
+  const call_login = async (formData: any) => {
+    try {
+        const res = await fetch(`/api/auth/login`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+        });
+        const respData = await res.json();
+        return respData;
+    } catch (error: any) {
+        console.log("error in call_post() => ", error);
+    }
+};
+
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoding(true);
-    const resp = await call_post("/api/auth/login",formData, false);
+    const resp = await call_login(formData);
     console.log(resp);
     if (resp.meta.status === true) {
       console.log("------------login-------------");
@@ -27,7 +43,7 @@ export default function LoginForm() {
       localStorage.setItem("token", resp.data.token);
       localStorage.setItem("role", resp.data.session.role_id);
       console.log("------------save token and role-------------");
-      const userResp = await call_get("/api/user/userinfo",true);
+      const userResp = await call_get("/api/user/userinfo");
       if (userResp.meta.status == true) {
         localStorage.setItem("userinfo", JSON.stringify(userResp.data));
         console.log("------------save userinfo-------------");
