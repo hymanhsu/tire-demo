@@ -21,6 +21,7 @@ export async function middleware(request: NextRequest) {
     let token: string | undefined = request.cookies.get('token')?.value;
     // check cookie
     const cookieStore = cookies();
+    const response = NextResponse.next();
     if (token != undefined) {
         //refresh token
         const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/auth/check`, {
@@ -32,19 +33,22 @@ export async function middleware(request: NextRequest) {
             }),
         });
         const data = await res.json();
+        if (data.meta.status == false) {
+            // clear token in the cookie if token is too old or invalid
+            console.log("response.cookies.clear token ");
+            response.cookies.delete('token');
+        }
         if (data.meta.status == true && data.data.new_token != "") {
-            // save token into cookie
-            // reset_token(data.data.new_token);
+            // update token into the cookie if previous token expired in 3 days
             const ntoken = data.data.new_token;
-            const response = NextResponse.next();
-            console.log("response.cookies.set ... "+ntoken.substr(ntoken.length - 300));
+            console.log("response.cookies.set token ... "+ntoken.substr(ntoken.length - 300));
             response.cookies.set({
                 name: 'token',
                 value: ntoken,
                 path: '/',
             });
-            return response;
         }
     }
+    return response;
 }
 

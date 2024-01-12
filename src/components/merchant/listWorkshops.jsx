@@ -9,13 +9,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from 'react-bootstrap/Button';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import Card from 'react-bootstrap/Card';
 
 // const requireData = async () => {
 //   const data = await call_get("/api/merchant/queryAll", true);
 //   return data;
 // }
 
-const ListWorkshops = ({ workshops }) => {
+const ListWorkshops = ({ workshops, merchant }) => {
   const [apiData, setApiData] = useState(workshops); // set the api data 
   const [searchFilter, setSearchFilter] = useState(''); // filter the search
   const [currentPage, setCurrentPage] = useState(1); // set the current page
@@ -55,6 +56,20 @@ const ListWorkshops = ({ workshops }) => {
         </Breadcrumb.Item>
         <Breadcrumb.Item active>Workshops</Breadcrumb.Item>
       </Breadcrumb>
+      <Card style={{ width: '36rem' }}>
+        <Card.Body>
+          <Card.Title>Name : {merchant.merchant_name}, SN = {merchant.merchant_sn}</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">At {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
+          <Card.Text>
+            {merchant.address}{' '}
+            {merchant.introduction}
+          </Card.Text>
+          <Card.Link href={
+            merchant.website_url == "" ? "#": merchant.website_url
+          }>Website</Card.Link>
+        </Card.Body>
+      </Card>
+      <hr></hr>
       <Container>
         <Row>
           <Col>
@@ -68,9 +83,9 @@ const ListWorkshops = ({ workshops }) => {
           </Col>
           <Col></Col>
           <Col>
-          <Button variant="primary" onClick={(e)=>{
-          window.location.href = "/admin/merchant/addWorkshop";
-        }}>Add</Button>{' '}
+            <Button variant="primary" onClick={(e) => {
+              window.location.href = "/admin/merchant/addWorkshop?merchant="+merchant.id;
+            }}>Add</Button>{' '}
           </Col>
         </Row>
       </Container>

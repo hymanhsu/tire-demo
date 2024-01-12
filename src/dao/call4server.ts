@@ -74,14 +74,14 @@ export const generateHeaders = () : Headers => {
     let auth = cookieStore.get("token")?.value;
     const userAgent: string | null = headersList.get("User-Agent");
     if (auth == undefined) {
-        console.log("not found Authorization");
+        // console.log("not found Authorization");
         return new Headers({
             "Accept": "application/json",
             "Content-Type": "application/json",
             "User-Agent": userAgent as string,
         });
     } else {
-        console.log("found Authorization");
+        // console.log("found Authorization");
         return new Headers({
             "Accept": "application/json",
             "Content-Type": "application/json",

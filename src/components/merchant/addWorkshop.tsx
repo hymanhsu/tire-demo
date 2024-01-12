@@ -9,30 +9,40 @@ import { call_post } from "@/dao/call";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
+import SelectPos from "../selectPos";
 
-export default function AddMerchantForm() {
+
+export default function AddWorkshopForm({merchantId}:{merchantId:string}) {
   const Router = useRouter();
   const [formData, setFormData] = useState({
-    nation: "",
-    province: "",
-    city: "",
-    merchant_sn: "",
-    merchant_name: "",
+    merchant_id: merchantId,
+    workshop_sn: "",
+    workshop_name: "",
     introduction: "",
-    website_url: "",
     address: "",
     phone_number: "",
+    latitude: "",
+    longitude: "",
   });
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const data = await call_post("/api/merchant/add", formData);
+    const data = await call_post("/api/merchant/addWorkshop", formData);
     console.log(data);
     if (data.meta.status == true) {
       console.log("------------ok-------------");
-      Router.push("/admin/merchant/listMerchants");
-    }
+      Router.push("/admin/merchant/listWorkshops?merchant="+merchantId);
+    } 
   };
+
+  const handleSelect = async (x:number, y:number) => {
+    console.log(`x=${x} , y=${y}`);
+    setFormData({ 
+      ...formData, 
+      latitude : x.toString(),
+      longitude : y.toString(),
+    });
+  }
 
   return (
     <div className="fluid container">
@@ -41,57 +51,9 @@ export default function AddMerchantForm() {
         <Breadcrumb.Item href="/admin/merchant/listMerchants">
           Merchants
         </Breadcrumb.Item>
-        <Breadcrumb.Item active>Add</Breadcrumb.Item>
+        <Breadcrumb.Item active>Add Workshop</Breadcrumb.Item>
       </Breadcrumb>
       <Form onSubmit={handleSubmit}>
-        <Form.Group as={Row} className="mb-3" controlId="targetForm.nation">
-          <Form.Label column sm="2">
-            Nation
-          </Form.Label>
-          <Col sm="10">
-            <Form.Control
-              type="text"
-              placeholder="Nation name"
-              onChange={(e) => {
-                setFormData({ ...formData, nation: e.target.value });
-              }}
-              value={formData.nation}
-            />
-          </Col>
-        </Form.Group>
-
-        <Form.Group as={Row} className="mb-3" controlId="targetForm.province">
-          <Form.Label column sm="2">
-            Province
-          </Form.Label>
-          <Col sm="10">
-            <Form.Control
-              type="text"
-              placeholder="Province name"
-              onChange={(e) => {
-                setFormData({ ...formData, province: e.target.value });
-              }}
-              value={formData.province}
-            />
-          </Col>
-        </Form.Group>
-
-        <Form.Group as={Row} className="mb-3" controlId="targetForm.city">
-          <Form.Label column sm="2">
-            City
-          </Form.Label>
-          <Col sm="10">
-            <Form.Control
-              type="text"
-              placeholder="City name"
-              onChange={(e) => {
-                setFormData({ ...formData, city: e.target.value });
-              }}
-              value={formData.city}
-            />
-          </Col>
-        </Form.Group>
-
         <Form.Group as={Row} className="mb-3" controlId="targetForm.sn">
           <Form.Label column sm="2">
             SN
@@ -101,9 +63,9 @@ export default function AddMerchantForm() {
               type="text"
               placeholder="SN"
               onChange={(e) => {
-                setFormData({ ...formData, merchant_sn: e.target.value });
+                setFormData({ ...formData, workshop_sn: e.target.value });
               }}
-              value={formData.merchant_sn}
+              value={formData.workshop_sn}
             />
           </Col>
         </Form.Group>
@@ -117,9 +79,9 @@ export default function AddMerchantForm() {
               type="text"
               placeholder="Name"
               onChange={(e) => {
-                setFormData({ ...formData, merchant_name: e.target.value });
+                setFormData({ ...formData, workshop_name: e.target.value });
               }}
-              value={formData.merchant_name}
+              value={formData.workshop_name}
             />
           </Col>
         </Form.Group>
@@ -149,19 +111,19 @@ export default function AddMerchantForm() {
         <Form.Group
           as={Row}
           className="mb-3"
-          controlId="targetForm.website_url"
+          controlId="targetForm.phone_number"
         >
           <Form.Label column sm="2">
-            Website
+            Phone number
           </Form.Label>
           <Col sm="10">
             <Form.Control
               type="text"
-              placeholder="Website url"
+              placeholder="Phone number"
               onChange={(e) => {
-                setFormData({ ...formData, website_url: e.target.value });
+                setFormData({ ...formData, phone_number: e.target.value });
               }}
-              value={formData.website_url}
+              value={formData.phone_number}
             />
           </Col>
         </Form.Group>
@@ -183,24 +145,19 @@ export default function AddMerchantForm() {
         </Form.Group>
 
         <Form.Group
-          as={Row}
           className="mb-3"
-          controlId="targetForm.phone_number"
+          controlId="targetForm.position"
         >
           <Form.Label column sm="2">
-            Phone number
+            Position
           </Form.Label>
           <Col sm="10">
-            <Form.Control
-              type="text"
-              placeholder="Phone number"
-              onChange={(e) => {
-                setFormData({ ...formData, phone_number: e.target.value });
-              }}
-              value={formData.phone_number}
-            />
+            latitude = {formData.latitude},  longitude = {formData.longitude}
           </Col>
+          <SelectPos setPosition={handleSelect} />
+          
         </Form.Group>
+
 
         {/* <Button variant="primary" type="submit">
         Sign up

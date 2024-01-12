@@ -26,11 +26,21 @@ export default async  function WorkshopsPage({
     return data.data;
   };
   const data = await getData();
+  const getMerchant = async () => {
+    const data = await post_backend("/api/merchant/queryOne", {
+      id : merchantId
+    });
+    if (!data.meta.status) {
+      return {};
+    }
+    return data.data;
+  };
+  const merchant = await getMerchant();
   return (
     <Container>
       <Row>
         <Col>
-          <ListWorkshops workshops={data}/>
+          <ListWorkshops workshops={data} merchant={merchant}/>
         </Col>
       </Row>
     </Container>

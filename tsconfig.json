@@ -37,7 +37,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "build/types/**/*.ts",
+    "build/types/**/*.ts", "src/components/selectPos.jsx", "src/components/selectPos.jsx",
    ],
   "exclude": [
     "node_modules"
