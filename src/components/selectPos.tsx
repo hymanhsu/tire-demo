@@ -40,7 +40,7 @@ const center = {
 export default function SelectPos({setPosition}:{setPosition:(x:number,y:number)=>{}}) {
   const myRef = useRef<StandaloneSearchBox|null|undefined>();
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_API_KEY as string,
+    googleMapsApiKey: atob(process.env.NEXT_PUBLIC_API_KEY as string),
     libraries,
   });
 

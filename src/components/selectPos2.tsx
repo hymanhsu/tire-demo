@@ -33,7 +33,7 @@ export default function SelectPos2({setPosition}:{setPosition:(x:number,y:number
   return (
     <div style={{ height: '70vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_API_KEY as string }}
+        bootstrapURLKeys={{ key: atob(process.env.NEXT_PUBLIC_API_KEY as string) }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
         yesIWantToUseGoogleMapApiInternals
