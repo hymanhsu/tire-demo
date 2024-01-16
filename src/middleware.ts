@@ -15,7 +15,7 @@ function judgeExclude(path: string, exludes: string[]): boolean {
 
 // This function can be marked `async` if using `await` inside
 export async function middleware(request: NextRequest) {
-    console.log("path = "+request.nextUrl.pathname);
+    // console.log("path = "+request.nextUrl.pathname);
     if (request.nextUrl.pathname.startsWith("/d/")) {
         return fileterForCustumer(request);
     }
