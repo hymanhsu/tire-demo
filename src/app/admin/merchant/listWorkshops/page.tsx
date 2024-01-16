@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ListWorkshops from "@/components/merchant/listWorkshops";
-import { get_backend, post_backend, reset_token, try_refresh_token } from "@/dao/call4server";
+import { post_backend_as_user } from "@/dao/call4server";
 import { cookies } from "next/headers";
  
 
@@ -17,7 +17,7 @@ export default async  function WorkshopsPage({
 }) {
   const merchantId = searchParams["merchant"];
   const getData = async () => {
-    const data = await post_backend("/api/merchant/queryAllWorkshops", {
+    const data = await post_backend_as_user("/api/merchant/queryAllWorkshops", {
       merchant_id : merchantId
     });
     if (!data.meta.status) {
@@ -27,7 +27,7 @@ export default async  function WorkshopsPage({
   };
   const data = await getData();
   const getMerchant = async () => {
-    const data = await post_backend("/api/merchant/queryOne", {
+    const data = await post_backend_as_user("/api/merchant/queryOne", {
       id : merchantId
     });
     if (!data.meta.status) {

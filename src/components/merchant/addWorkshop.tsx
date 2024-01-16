@@ -5,14 +5,17 @@ import Button from "react-bootstrap/Button";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { SubmitButton } from "../submitButton";
-import { call_post } from "@/dao/call";
+import { call_post_as_user } from "@/dao/call";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import SelectPos from "../selectPos";
 
-
-export default function AddWorkshopForm({merchantId}:{merchantId:string}) {
+export default function AddWorkshopForm({
+  merchantId,
+}: {
+  merchantId: string;
+}) {
   const Router = useRouter();
   const [formData, setFormData] = useState({
     merchant_id: merchantId,
@@ -27,22 +30,23 @@ export default function AddWorkshopForm({merchantId}:{merchantId:string}) {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const data = await call_post("/api/merchant/addWorkshop", formData);
-    console.log(data);
-    if (data.meta.status == true) {
-      console.log("------------ok-------------");
-      Router.push("/admin/merchant/listWorkshops?merchant="+merchantId);
-    } 
+    call_post_as_user("/api/merchant/addWorkshop", formData).then(
+      (resp: any) => {
+        if (resp.meta.status == true) {
+          Router.push("/admin/merchant/listWorkshops?merchant=" + merchantId);
+        }
+      }
+    );
   };
 
-  const handleSelect = async (x:number, y:number) => {
+  const handleSelect = async (x: number, y: number) => {
     console.log(`x=${x} , y=${y}`);
-    setFormData({ 
-      ...formData, 
-      latitude : x.toString(),
-      longitude : y.toString(),
+    setFormData({
+      ...formData,
+      latitude: x.toString(),
+      longitude: y.toString(),
     });
-  }
+  };
 
   return (
     <div className="fluid container">
@@ -144,20 +148,15 @@ export default function AddWorkshopForm({merchantId}:{merchantId:string}) {
           </Col>
         </Form.Group>
 
-        <Form.Group
-          className="mb-3"
-          controlId="targetForm.position"
-        >
+        <Form.Group className="mb-3" controlId="targetForm.position">
           <Form.Label column sm="2">
             Position
           </Form.Label>
           <Col sm="10">
-            latitude = {formData.latitude},  longitude = {formData.longitude}
+            latitude = {formData.latitude}, longitude = {formData.longitude}
           </Col>
           <SelectPos setPosition={handleSelect} />
-          
         </Form.Group>
-
 
         {/* <Button variant="primary" type="submit">
         Sign up

@@ -3,21 +3,19 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { FormEvent, useState } from "react";
-// import { useRouter } from "next/navigation";
 import { SubmitButton } from "../submitButton";
 import { useRouter } from "next/navigation";
 
-export default function LoginForm() {
+export default function LoginAsUserForm() {
   const Router = useRouter();
   const [formData, setFormData] = useState({
     login_name: "",
     password: "",
   });
-  const [loading, setLoding] = useState(false);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    fetch(`/api/d/auth/login`, {
+    fetch(`/api/admin/auth/loginAsUser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,12 +23,13 @@ export default function LoginForm() {
       body: JSON.stringify(formData),
     })
     .then(response => response.json())
-    .then((resp: any) => {
-      if (resp.meta.status === true) {
-        console.log("------------login as cust-------------");
-        Router.push("/d/");
+    .then((resp:any) => {
+      console.log(resp);
+      if (resp.meta.status == true) {
+        console.log("------------login as user-------------");
+        Router.push("/admin/");
       }
-    });
+    })
   };
 
   return (

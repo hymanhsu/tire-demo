@@ -3,8 +3,6 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import AddMerchantForm from "@/components/merchant/addMerchant";
-import { get_backend, post_backend, reset_token, try_refresh_token } from "@/dao/call4server";
 import AddWorkshopForm from "@/components/merchant/addWorkshop";
  
 

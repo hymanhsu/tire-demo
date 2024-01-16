@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { SubmitButton } from "../submitButton";
-import { call_post } from "@/dao/call";
+import { call_post_as_user } from "@/dao/call";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
@@ -24,14 +24,13 @@ export default function AddMerchantForm() {
     phone_number: "",
   });
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const data = await call_post("/api/merchant/add", formData);
-    console.log(data);
-    if (data.meta.status == true) {
-      console.log("------------ok-------------");
-      Router.push("/admin/merchant/listMerchants");
-    }
+    call_post_as_user("/api/merchant/add", formData).then((resp: any) => {
+      if (resp.meta.status == true) {
+        Router.push("/admin/merchant/listMerchants");
+      }
+    });
   };
 
   return (

@@ -1,6 +1,6 @@
 "use server";
 
-import { generateHeaders } from "@/dao/call4server"
+import { generateUserHeaders } from "@/dao/call4server"
 import { NextRequest } from "next/server";
 import { cookies } from 'next/headers';
 
@@ -11,10 +11,11 @@ export async function POST(
   const requestBody = await request.json();
 
   // *******  invoke backend server start ******* 
-  const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/auth/login`, {
+  const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/auth/loginProceedAsUser`, {
     method: "POST",
-    headers: generateHeaders(),
+    headers: generateUserHeaders(),
     body: JSON.stringify(requestBody),
+    cache: "no-cache",
   })
   const data = await res.json();
   // *******  invoke backend server end ******* 
@@ -22,7 +23,7 @@ export async function POST(
   if(data.meta.status == true){
     // save token into cookie
     cookies().set({
-      name: 'token',
+      name: 'token_u',
       value: data.data.token,
       httpOnly: true,
       path: '/',

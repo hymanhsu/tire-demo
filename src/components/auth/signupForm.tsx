@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { SubmitButton } from "../submitButton";
-import { call_post } from "@/dao/call";
+import { call_post_as_cust } from "@/dao/call";
 
 
 export default function SignupForm() {
@@ -18,18 +18,15 @@ export default function SignupForm() {
   });
   const [loading, setLoding] = useState(false);
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setLoding(true);
-    const data = await call_post("/api/auth/signup",formData);
-    console.log(data);
-    if (data.meta.status === true) {
-      console.log("------------ok-------------");
-      setLoding(false);
-      Router.push("/auth/login");
-    } else {
-      setLoding(false);
-    }
+    call_post_as_cust("/api/auth/signup",formData)
+    .then((resp:any) => {
+      if (resp.meta.status === true) {
+        console.log("------------ok-------------");
+        Router.push("/d/auth/login");
+      }
+    });
   };
 
   return (

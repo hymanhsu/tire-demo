@@ -3,66 +3,51 @@
  */
 "use client";
 
-interface LooseObject {
+export interface LooseObject {
     [key: string]: any
 }
 
-export const call_post = async (url:string, formData: any) => {
-    try {
-        let headers:LooseObject = {
+export const call_post_as_cust = (url: string, formData: any) => {
+    return fetch(`/api/d/proxy/post?url=${url}`, {
+        method: "POST",
+        headers: {
             "Content-Type": "application/json",
-        };
-        // if(auth){
-        //     const token = localStorage.getItem("token");
-        //     headers.Authorization = `Bearer ${token}`;
-        // }
-        const res = await fetch(`/api/proxy/post?url=${url}`, {
-            method: "POST",
-            headers: headers,
-            body: JSON.stringify(formData),
-        });
-        const respData = await res.json();
-        if(respData.meta.status == false && respData.meta.message == "Current user have not login!"){
-            // token have been expired, need to login again
-            localStorage.removeItem("token");
-            localStorage.removeItem("role");
-            localStorage.removeItem("userinfo");
-            window.location.href = "/d/auth/login";
-        }
-        return respData;
-    } catch (error: any) {
-        console.log("error in call_post() => ", error);
-    }
+        },
+        body: JSON.stringify(formData),
+    })
+    .then(response => response.json());
 };
 
 
-export const call_get = async (url:string) => {
-    try {
-        let headers:LooseObject = {
+export const call_get_as_cust = (url: string) => {
+    return fetch(`/api/d/proxy/get?url=${url}`, {
+        method: "GET",
+        headers: {
             "Content-Type": "application/json",
-        };
-        // if(auth){
-        //     const token = localStorage.getItem("token");
-        //     headers.Authorization = `Bearer ${token}`;
-        // }
-        const res = await fetch(`/api/proxy/get?url=${url}`, {
-            method: "GET",
-            headers: headers,
-        });
-        const respData = await res.json();
-        if(respData.meta.status == false && respData.meta.message == "Current user have not login!"){
-            // token have been expired, need to login again
-            localStorage.removeItem("token");
-            localStorage.removeItem("role");
-            localStorage.removeItem("userinfo");
-            window.location.href = "/d/auth/login";
-        }
-        return respData;
-    } catch (error: any) {
-        console.log("error in call_get() => ", error);
-        if(error.message == 'Current user have not login!'){
-            window.location.href = "/d/auth/login";
-        }
-    }
+        },
+    })
+    .then(response => response.json());
 };
 
+
+export const call_post_as_user = (url: string, formData: any) => {
+    return fetch(`/api/admin/proxy/post?url=${url}`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+    })
+    .then(response => response.json());
+};
+
+
+export const call_get_as_user = (url: string) => {
+    return fetch(`/api/admin/proxy/get?url=${url}`, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    .then(response => response.json());
+};
