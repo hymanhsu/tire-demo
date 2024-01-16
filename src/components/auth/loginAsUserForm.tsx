@@ -15,7 +15,7 @@ export default function LoginAsUserForm() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    fetch(`/api/admin/auth/loginAsUser`, {
+    fetch(`/admin/api/auth/loginAsUser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,7 +28,8 @@ export default function LoginAsUserForm() {
       if (resp.meta.status == true) {
         console.log("------------login as user-------------");
         Router.push("/admin/");
-      }
+        Router.refresh();
+      } 
     })
   };
 

@@ -8,7 +8,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import {LooseObject, call_get_as_cust} from "@/dao/call"
 import { useRouter } from "next/navigation";
 
 
@@ -17,7 +16,7 @@ export function TireHeader({userinfo}:{userinfo:{nick_name:string}}) {
 
   const onLogout = (event: React.MouseEvent<HTMLElement>) => {
     event.preventDefault();
-    fetch("/api/d/auth/logout", {
+    fetch("/d/api/auth/logout", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -25,8 +24,9 @@ export function TireHeader({userinfo}:{userinfo:{nick_name:string}}) {
     })
     .then(response => response.json())
     .then((resp:any) => {
-      console.log("------------logout-------------");
+      console.log("------------logout as cust-------------");
       Router.push("/d/");
+      Router.refresh();
     });
     // localStorage.removeItem("userinfo");
     // console.log("------------remove userinfo/token/role-------------");

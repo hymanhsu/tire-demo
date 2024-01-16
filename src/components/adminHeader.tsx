@@ -8,22 +8,19 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { call_get_as_user } from "@/dao/call";
 import { useRouter } from "next/navigation";
-
-
 
 
 const allowDisplay = (role: string, targets: string[]): boolean => {
   return targets.includes(role);
 };
 
-export async function AdminHeader({userinfo, role}:{userinfo:{nick_name:string}, role:string}) {
+export function AdminHeader({userinfo, role}:{userinfo:{nick_name:string}, role:string}) {
   const Router = useRouter();
 
   const onLogout = (event: React.MouseEvent<HTMLElement>) => {
     event.preventDefault();
-    fetch("/api/admin/auth/logoutAsUser", {
+    fetch("/admin/api/auth/logoutAsUser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -31,11 +28,10 @@ export async function AdminHeader({userinfo, role}:{userinfo:{nick_name:string},
     })
     .then(response => response.json())
     .then((resp:any) => {
-      console.log("------------logout-------------");
+      console.log("------------logout as user-------------");
       Router.push("/admin/auth/login");
+      Router.refresh();
     });
-    // localStorage.removeItem("userinfo");
-    // console.log("------------remove userinfo/token/role-------------");
     // window.location.href = "/admin/";
   };
 
