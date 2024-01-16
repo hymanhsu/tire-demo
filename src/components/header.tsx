@@ -16,7 +16,15 @@ export function TireHeader({userinfo}:{userinfo:{nick_name:string}}) {
   const Router = useRouter();
 
   const onLogout = (event: React.MouseEvent<HTMLElement>) => {
-    call_get_as_cust("/api/auth/logout").then((resp:any) => {
+    event.preventDefault();
+    fetch("/api/d/auth/logout", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+    .then(response => response.json())
+    .then((resp:any) => {
       console.log("------------logout-------------");
       Router.push("/d/");
     });

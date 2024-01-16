@@ -22,9 +22,17 @@ export async function AdminHeader({userinfo, role}:{userinfo:{nick_name:string},
   const Router = useRouter();
 
   const onLogout = (event: React.MouseEvent<HTMLElement>) => {
-    call_get_as_user("/api/auth/logout").then((resp:any) => {
+    event.preventDefault();
+    fetch("/api/admin/auth/logoutAsUser", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+    .then(response => response.json())
+    .then((resp:any) => {
       console.log("------------logout-------------");
-      Router.push("/admin/");
+      Router.push("/admin/auth/login");
     });
     // localStorage.removeItem("userinfo");
     // console.log("------------remove userinfo/token/role-------------");

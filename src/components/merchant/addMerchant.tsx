@@ -26,7 +26,8 @@ export default function AddMerchantForm() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    call_post_as_user("/api/merchant/add", formData).then((resp: any) => {
+    call_post_as_user("/api/merchant/add", formData)
+    .then((resp: any) => {
       if (resp.meta.status == true) {
         Router.push("/admin/merchant/listMerchants");
       }
