@@ -42,9 +42,9 @@ export function AdminHeader({userinfo, role}:{userinfo:{nick_name:string}, role:
           <NavDropdown.Item href="/admin/merchant/listMerchants">
             Merchants
           </NavDropdown.Item>
-          <NavDropdown.Item href="/admin/merchant/listMerchants">
+          <NavDropdown.Item href="/admin/merchant/listAdministrators">
             Administrators
-          </NavDropdown.Item>
+          </NavDropdown.Item> 
         </NavDropdown>
       </>
     );
