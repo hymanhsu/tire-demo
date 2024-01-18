@@ -24,10 +24,10 @@ export default function AddMerchantForm() {
     phone_number: "",
   });
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     call_post_as_user("/api/merchant/add", formData)
-    .then((resp: any) => {
+    .then((resp) => {
       if (resp.meta.status == true) {
         Router.push("/m/merchant/listMerchants");
         Router.refresh();

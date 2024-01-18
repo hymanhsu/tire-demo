@@ -20,10 +20,10 @@ export default function AddAdministratorForm() {
     password: ""
   });
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     call_post_as_user("/api/user/addAdministrator", formData)
-    .then((resp: any) => {
+    .then((resp) => {
       if (resp.meta.status == true) {
         Router.push("/m/merchant/listAdministrators");
         Router.refresh();

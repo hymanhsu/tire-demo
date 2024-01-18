@@ -6,14 +6,13 @@ import Col from "react-bootstrap/Col";
 import AddAdministratorForm from "@/components/merchant/addAdministrator";
  
 
-export default async  function AddMerchantPage({
+export default async  function AddAdministratorPage({
   params,
   searchParams,
 }: {
   params: { slug: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }) {
-  const merchantId = searchParams["merchant"] as string;
   return (
     <Container>
       <Row>

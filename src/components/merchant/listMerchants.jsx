@@ -58,7 +58,7 @@ const ListMerchants = ({merchants}) => {
   const handleClose = () => setShow(false);
   const handleSure = () => {
     setShow(false);
-    console.log("delete "+merchantId);
+    // console.log("delete "+merchantId);
     deleteMerchant(merchantId);
   };  
   const deleteMerchant = (userId) => {
@@ -128,6 +128,11 @@ const ListMerchants = ({merchants}) => {
                   e.preventDefault();
                   handleShow(item.id);
                 }}>Delete</Button>
+                {' '}
+                <Button variant="outline-primary" onClick={(e)=>{
+                  e.preventDefault();
+                  Router.push("/m/merchant/listMerchantOwners?merchant="+item.id);
+                }}>Owners</Button>
                 </td>
               </tr>
             ))

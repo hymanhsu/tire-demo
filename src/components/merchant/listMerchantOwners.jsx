@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import CustomPagination from '@/components/CustomPagination';
 import { useRouter } from "next/navigation";
@@ -9,19 +9,19 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from 'react-bootstrap/Button';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import Modal from 'react-bootstrap/Modal';
+import Card from 'react-bootstrap/Card';
 import {ConfirmDialog} from '@/components/confirmDialog';
 import { call_post_as_user } from "@/dao/call";
 
 
-const ListAdministrators = ({administrators}) => {
+const ListMerchantOwners = ({ owners, merchant }) => {
   const [show, setShow] = useState(false);
   const [userId, setUserId] = useState("");
   const Router = useRouter();
-  const [apiData, setApiData] = useState(administrators); // set the api data 
+  const [apiData, setApiData] = useState(owners); // set the api data 
   const [searchFilter, setSearchFilter] = useState(''); // filter the search
   const [currentPage, setCurrentPage] = useState(1); // set the current page
-  const pageSize = 5; // show row in table  
+  const pageSize = 3; // show row in table
 
   useEffect(() => {
     setCurrentPage(1);
@@ -36,10 +36,9 @@ const ListAdministrators = ({administrators}) => {
       return true;
     }
     return item.nick_name.toLowerCase().includes(searchFilter.toLowerCase()) ||
-      item.email.toLowerCase().includes(searchFilter.toLowerCase()) ||
       item.phone_number.toLowerCase().includes(searchFilter.toLowerCase());
   });
-  // console.log("filteredData.length = "+filteredData.length);
+  // console.log("filteredData.length = " + filteredData.length);
   const paginatedData = filteredData.slice(
     (currentPage - 1) * pageSize,
     currentPage * pageSize
@@ -58,14 +57,14 @@ const ListAdministrators = ({administrators}) => {
   const handleSure = () => {
     setShow(false);
     // console.log("delete "+userId);
-    deleteAdministrator(userId);
+    deleteMerchantOwner(userId);
   };  
-  const deleteAdministrator = (userId) => {
+  const deleteMerchantOwner = (userId) => {
     call_post_as_user("/api/user/deleteUser", {id:userId})
     .then((resp) => {
       if (resp.meta.status == true) {
         removeRecord(userId);
-        Router.push("/m/merchant/listAdministrators");
+        Router.push("/m/merchant/listMerchantOwners?merchant="+merchant.id);
         //Router.refresh();
       }
     });
@@ -75,31 +74,45 @@ const ListAdministrators = ({administrators}) => {
     <div className='fluid container'>
       <Breadcrumb>
         <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
-        <Breadcrumb.Item active>
-          Administrators
+        <Breadcrumb.Item href="/m/merchant/listMerchants">
+          Merchants
         </Breadcrumb.Item>
+        <Breadcrumb.Item active>Owners</Breadcrumb.Item>
       </Breadcrumb>
-
-    <Container>
-      <Row>
-        <Col>
-        <input
-        style={{ width: "200px" }}
-        className='form-control mb-2'
-        placeholder='Search'
-        value={searchFilter}
-        onChange={handleFilter}
-      />
-        </Col>
-        <Col></Col>
-        <Col>
-        <Button variant="primary" onClick={(e)=>{
-          e.preventDefault();
-          Router.push("/m/merchant/addAdministrator");
-        }}>Add</Button>{' '}
-        </Col>
-      </Row>
-    </Container>
+      <Card style={{ width: '36rem' }}>
+        <Card.Body>
+          <Card.Title>Name : {merchant.merchant_name}, SN = {merchant.merchant_sn}</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">At {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
+          <Card.Text>
+            {merchant.address}{' '}
+            {merchant.introduction}
+          </Card.Text>
+          <Card.Link href={
+            merchant.website_url == "" ? "#": merchant.website_url
+          }>Website</Card.Link>
+        </Card.Body>
+      </Card>
+      <hr></hr>
+      <Container>
+        <Row>
+          <Col>
+            <input
+              style={{ width: "200px" }}
+              className='form-control mb-2'
+              placeholder='Search'
+              value={searchFilter}
+              onChange={handleFilter}
+            />
+          </Col>
+          <Col></Col>
+          <Col>
+            <Button variant="primary" onClick={(e) => {
+              e.preventDefault();              
+              Router.push("/m/merchant/addMerchantOwner?merchant="+merchant.id);
+            }}>Add</Button>{' '}
+          </Col>
+        </Row>
+      </Container>
       <Table striped bordered hover id='table'>
         <tbody>
           <tr>
@@ -126,7 +139,7 @@ const ListAdministrators = ({administrators}) => {
             ))
           ) : (
             <tr>
-              <td colSpan="5">No data found</td>
+              <td colSpan="4">No data found</td>
             </tr>
           )}
         </tbody>
@@ -152,4 +165,4 @@ const ListAdministrators = ({administrators}) => {
   );
 };
 
-export default ListAdministrators;
+export default ListMerchantOwners;

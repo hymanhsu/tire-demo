@@ -11,14 +11,10 @@ import Row from "react-bootstrap/Row";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import SelectPos from "../selectPos";
 
-export default function AddWorkshopForm({
-  merchantId,
-}: {
-  merchantId: string;
-}) {
+export default function AddWorkshopForm({merchant}) {
   const Router = useRouter();
   const [formData, setFormData] = useState({
-    merchant_id: merchantId,
+    merchant_id: merchant.id,
     workshop_sn: "",
     workshop_name: "",
     introduction: "",
@@ -28,10 +24,10 @@ export default function AddWorkshopForm({
     longitude: "",
   });
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     call_post_as_user("/api/merchant/addWorkshop", formData)
-    .then((resp: any) => {
+    .then((resp) => {
         if (resp.meta.status == true) {
           Router.push("/m/merchant/listWorkshops?merchant=" + merchantId);
         }
@@ -39,7 +35,7 @@ export default function AddWorkshopForm({
     );
   };
 
-  const handleSelect = async (x: number, y: number) => {
+  const handleSelect = async (x, y) => {
     console.log(`x=${x} , y=${y}`);
     setFormData({
       ...formData,

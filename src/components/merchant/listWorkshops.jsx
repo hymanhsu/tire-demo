@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import CustomPagination from '@/components/CustomPagination';
-import { call_get } from "@/dao/call";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -50,8 +49,8 @@ const ListWorkshops = ({ workshops, merchant }) => {
   return (
     <div className='fluid container'>
       <Breadcrumb>
-        <Breadcrumb.Item href="/admin">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="/admin/merchant/listMerchants">
+        <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/m/merchant/listMerchants">
           Merchants
         </Breadcrumb.Item>
         <Breadcrumb.Item active>Workshops</Breadcrumb.Item>
