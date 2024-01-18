@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
+import { useRouter } from "next/navigation";
 import CustomPagination from '@/components/CustomPagination';
 import { call_post_as_user } from "@/dao/call";
 import Container from "react-bootstrap/Container";
@@ -9,21 +10,17 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from 'react-bootstrap/Button';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import {ConfirmDialog} from '@/components/confirmDialog';
 
-// const requireData = async () => {
-//   const data = await call_get("/api/merchant/queryAll", true);
-//   return data;
-// }
 
 const ListMerchants = ({merchants}) => {
+  const [show, setShow] = useState(false);
+  const [merchantId, setMerchantId] = useState("");  
+  const Router = useRouter();
   const [apiData, setApiData] = useState(merchants); // set the api data 
   const [searchFilter, setSearchFilter] = useState(''); // filter the search
   const [currentPage, setCurrentPage] = useState(1); // set the current page
-  const pageSize = 3; // show row in table
-
-  // useEffect(() => {
-  //   requireData();
-  // }, []);
+  const pageSize = 5; // show row in table
 
   useEffect(() => {
     setCurrentPage(1);
@@ -43,16 +40,42 @@ const ListMerchants = ({merchants}) => {
       item.merchant_sn.toLowerCase().includes(searchFilter.toLowerCase()) ||
       item.merchant_name.toLowerCase().includes(searchFilter.toLowerCase());
   });
-  console.log("filteredData.length = "+filteredData.length);
+  // console.log("filteredData.length = "+filteredData.length);
   const paginatedData = filteredData.slice(
     (currentPage - 1) * pageSize,
     currentPage * pageSize
   );
 
+  const removeRecord = (id) => {
+    const result = Array.from(apiData).filter((item) => item.id != id);
+    setApiData(result);
+  }; 
+
+  const handleShow = (merchantId) => {
+    setMerchantId(merchantId);
+    setShow(true);
+  };
+  const handleClose = () => setShow(false);
+  const handleSure = () => {
+    setShow(false);
+    console.log("delete "+merchantId);
+    deleteMerchant(merchantId);
+  };  
+  const deleteMerchant = (userId) => {
+    call_post_as_user("/api/merchant/remove", {id:merchantId})
+    .then((resp) => {
+      if (resp.meta.status == true) {
+        removeRecord(merchantId);
+        Router.push("/m/merchant/listMerchants");
+        //Router.refresh();
+      }
+    });
+  }
+
   return (
     <div className='fluid container'>
       <Breadcrumb>
-        <Breadcrumb.Item href="/admin">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
         <Breadcrumb.Item active>
           Merchants
         </Breadcrumb.Item>
@@ -72,7 +95,8 @@ const ListMerchants = ({merchants}) => {
         <Col></Col>
         <Col>
         <Button variant="primary" onClick={(e)=>{
-          window.location.href = "/admin/merchant/add";
+          e.preventDefault();
+          Router.push("/m/merchant/add");
         }}>Add</Button>{' '}
         </Col>
       </Row>
@@ -101,12 +125,9 @@ const ListMerchants = ({merchants}) => {
                 <td>{item.phone_number}</td>
                 <td>
                 <Button variant="outline-primary" onClick={(e)=>{
-                  window.location.href = "/admin/merchant/listWorkshops?merchant="+item.id;
-                }}>disable</Button>
-                {' '}
-                <Button variant="outline-primary" onClick={(e)=>{
-                  window.location.href = "/admin/merchant/listWorkshops?merchant="+item.id;
-                }}>delete</Button>
+                  e.preventDefault();
+                  handleShow(item.id);
+                }}>Delete</Button>
                 </td>
               </tr>
             ))
@@ -128,6 +149,12 @@ const ListMerchants = ({merchants}) => {
           />
         </>
       }
+      <ConfirmDialog 
+        title={'Confirmation for deletion'} 
+        content={'Unable to recover data after deletion! Are you sure to delete data?'} 
+        show={show} 
+        handleClose={handleClose} 
+        handleSure={handleSure}/>
     </div>
   );
 };

@@ -16,7 +16,7 @@ export function TireHeader({userinfo}:{userinfo:{nick_name:string}}) {
 
   const onLogout = (event: React.MouseEvent<HTMLElement>) => {
     event.preventDefault();
-    fetch("/d/api/auth/logout", {
+    fetch("/w/api/auth/logout", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -82,8 +82,8 @@ export function TireHeader({userinfo}:{userinfo:{nick_name:string}}) {
             </Nav.Link>
             {userinfo.nick_name == "" && (
               <>
-                <Nav.Link href="/d/auth/signup">Sign up</Nav.Link>
-                <Nav.Link href="/d/auth/login">Login in</Nav.Link>
+                <Nav.Link href="/w/auth/signup">Sign up</Nav.Link>
+                <Nav.Link href="/w/auth/login">Login in</Nav.Link>
               </>
             )}
             {userinfo.nick_name != "" && (

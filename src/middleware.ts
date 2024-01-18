@@ -16,10 +16,10 @@ function judgeExclude(path: string, exludes: string[]): boolean {
 // This function can be marked `async` if using `await` inside
 export async function middleware(request: NextRequest) {
     // console.log("path = "+request.nextUrl.pathname);
-    if (request.nextUrl.pathname.startsWith("/d/")) {
+    if (request.nextUrl.pathname.startsWith("/w/")) {
         return fileterForCustumer(request);
     }
-    if (request.nextUrl.pathname.startsWith("/admin/")) {
+    if (request.nextUrl.pathname.startsWith("/m/")) {
         return fileterForUser(request);
     }
     return NextResponse.next();
@@ -28,8 +28,8 @@ export async function middleware(request: NextRequest) {
 
 export async function fileterForCustumer(request: NextRequest) {
     if (judgeExclude(request.nextUrl.pathname, 
-        ["/d/auth/login", "/d/auth/signup", 
-        "/d/api/auth/login", "/d/api/auth/logout"])) {
+        ["/w/auth/login", "/w/auth/signup", 
+        "/w/api/auth/login", "/w/api/auth/logout"])) {
         return NextResponse.next();
     }
     let token: string | undefined = request.cookies.get('token')?.value;
@@ -48,7 +48,7 @@ export async function fileterForCustumer(request: NextRequest) {
         if (data.meta.status == false) {
             // clear token in the cookie if token is too old or invalid
             console.log("response.cookies.clear token ");
-            const response = NextResponse.redirect(new URL('/d/auth/login', request.url));
+            const response = NextResponse.redirect(new URL('/w/auth/login', request.url));
             response.cookies.delete('token');
             return response;
         }
@@ -72,8 +72,8 @@ export async function fileterForCustumer(request: NextRequest) {
 export async function fileterForUser(request: NextRequest) {
     console.log("fileterForUser()");
     if (judgeExclude(request.nextUrl.pathname, 
-        ["/admin/auth/login", "/admin/api/auth/loginAsUser", 
-        "/admin/api/auth/loginProceedAsUser", "/admin/api/auth/logoutAsUser"])) {
+        ["/m/auth/login", "/m/api/auth/loginAsUser", 
+        "/m/api/auth/loginProceedAsUser", "/m/api/auth/logoutAsUser"])) {
         console.log("ignored");
         return NextResponse.next();
     }
@@ -93,7 +93,7 @@ export async function fileterForUser(request: NextRequest) {
         if (data.meta.status == false) {
             // clear token in the cookie if token is too old or invalid
             console.log("response.cookies.clear token_u ");
-            const response = NextResponse.redirect(new URL('/admin/auth/login', request.url));
+            const response = NextResponse.redirect(new URL('/m/auth/login', request.url));
             response.cookies.delete('token_u');
             return response;
         }
@@ -110,7 +110,7 @@ export async function fileterForUser(request: NextRequest) {
             return response;
         }
     }else{
-        return NextResponse.redirect(new URL('/admin/auth/login', request.url));
+        return NextResponse.redirect(new URL('/m/auth/login', request.url));
     }
     return NextResponse.next();
 }

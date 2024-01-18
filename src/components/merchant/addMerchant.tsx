@@ -29,7 +29,8 @@ export default function AddMerchantForm() {
     call_post_as_user("/api/merchant/add", formData)
     .then((resp: any) => {
       if (resp.meta.status == true) {
-        Router.push("/admin/merchant/listMerchants");
+        Router.push("/m/merchant/listMerchants");
+        Router.refresh();
       }
     });
   };
@@ -37,8 +38,8 @@ export default function AddMerchantForm() {
   return (
     <div className="fluid container">
       <Breadcrumb>
-        <Breadcrumb.Item href="/admin">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="/admin/merchant/listMerchants">
+        <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/m/merchant/listMerchants">
           Merchants
         </Breadcrumb.Item>
         <Breadcrumb.Item active>Add</Breadcrumb.Item>

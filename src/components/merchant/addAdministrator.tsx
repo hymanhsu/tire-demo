@@ -25,7 +25,7 @@ export default function AddAdministratorForm() {
     call_post_as_user("/api/user/addAdministrator", formData)
     .then((resp: any) => {
       if (resp.meta.status == true) {
-        Router.push("/admin/merchant/listAdministrators");
+        Router.push("/m/merchant/listAdministrators");
         Router.refresh();
       }
     });
@@ -34,8 +34,8 @@ export default function AddAdministratorForm() {
   return (
     <div className="fluid container">
       <Breadcrumb>
-        <Breadcrumb.Item href="/admin">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="/admin/merchant/listAdministrators">
+        <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/m/merchant/listAdministrators">
           Administrators
         </Breadcrumb.Item>
         <Breadcrumb.Item active>Add</Breadcrumb.Item>

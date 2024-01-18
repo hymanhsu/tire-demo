@@ -33,7 +33,7 @@ export default function AddWorkshopForm({
     call_post_as_user("/api/merchant/addWorkshop", formData)
     .then((resp: any) => {
         if (resp.meta.status == true) {
-          Router.push("/admin/merchant/listWorkshops?merchant=" + merchantId);
+          Router.push("/m/merchant/listWorkshops?merchant=" + merchantId);
         }
       }
     );
@@ -51,8 +51,8 @@ export default function AddWorkshopForm({
   return (
     <div className="fluid container">
       <Breadcrumb>
-        <Breadcrumb.Item href="/admin">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="/admin/merchant/listMerchants">
+        <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/m/merchant/listMerchants">
           Merchants
         </Breadcrumb.Item>
         <Breadcrumb.Item active>Add Workshop</Breadcrumb.Item>

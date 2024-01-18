@@ -8,7 +8,7 @@ export interface LooseObject {
 }
 
 export const call_post_as_cust = (url: string, formData: any) => {
-    return fetch(`/d/api/proxy/post?url=${url}`, {
+    return fetch(`/w/api/proxy/post?url=${url}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -20,7 +20,7 @@ export const call_post_as_cust = (url: string, formData: any) => {
 
 
 export const call_get_as_cust = (url: string) => {
-    return fetch(`/d/api/proxy/get?url=${url}`, {
+    return fetch(`/w/api/proxy/get?url=${url}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export const call_get_as_cust = (url: string) => {
 
 
 export const call_post_as_user = (url: string, formData: any) => {
-    return fetch(`/admin/api/proxy/post?url=${url}`, {
+    return fetch(`/m/api/proxy/post?url=${url}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -43,7 +43,7 @@ export const call_post_as_user = (url: string, formData: any) => {
 
 
 export const call_get_as_user = (url: string) => {
-    return fetch(`/admin/api/proxy/get?url=${url}`, {
+    return fetch(`/m/api/proxy/get?url=${url}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",

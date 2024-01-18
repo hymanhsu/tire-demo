@@ -20,7 +20,7 @@ export default function LoginAsUserForm() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    fetch(`/admin/api/auth/loginAsUser`, {
+    fetch(`/m/api/auth/loginAsUser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ export default function LoginAsUserForm() {
 
   const handleChoose = (index: number) => {
     setShow(false);
-    fetch(`/admin/api/auth/loginProceedAsUser`, {
+    fetch(`/m/api/auth/loginProceedAsUser`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

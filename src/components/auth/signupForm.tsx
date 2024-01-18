@@ -24,7 +24,7 @@ export default function SignupForm() {
     .then((resp:any) => {
       if (resp.meta.status === true) {
         console.log("------------ok-------------");
-        Router.push("/d/auth/login");
+        Router.push("/w/auth/login");
       }
     });
   };

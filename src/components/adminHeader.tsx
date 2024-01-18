@@ -10,28 +10,33 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { useRouter } from "next/navigation";
 
-
 const allowDisplay = (role: string, targets: string[]): boolean => {
   return targets.includes(role);
 };
 
-export function AdminHeader({userinfo, role}:{userinfo:{nick_name:string}, role:string}) {
+export function AdminHeader({
+  userinfo,
+  role,
+}: {
+  userinfo: { nick_name: string };
+  role: string;
+}) {
   const Router = useRouter();
 
   const onLogout = (event: React.MouseEvent<HTMLElement>) => {
     event.preventDefault();
-    fetch("/admin/api/auth/logoutAsUser", {
+    fetch("/m/api/auth/logoutAsUser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
     })
-    .then(response => response.json())
-    .then((resp:any) => {
-      console.log("------------logout as user-------------");
-      Router.push("/admin/auth/login");
-      Router.refresh();
-    });
+      .then((response) => response.json())
+      .then((resp: any) => {
+        console.log("------------logout as user-------------");
+        Router.push("/m/auth/login");
+        Router.refresh();
+      });
     // window.location.href = "/admin/";
   };
 
@@ -39,12 +44,12 @@ export function AdminHeader({userinfo, role}:{userinfo:{nick_name:string}, role:
     return (
       <>
         <NavDropdown title="Partners" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/admin/merchant/listMerchants">
+          <NavDropdown.Item href="/m/merchant/listAdministrators">
+            Administrators
+          </NavDropdown.Item>
+          <NavDropdown.Item href="/m/merchant/listMerchants">
             Merchants
           </NavDropdown.Item>
-          <NavDropdown.Item href="/admin/merchant/listAdministrators">
-            Administrators
-          </NavDropdown.Item> 
         </NavDropdown>
       </>
     );
@@ -88,7 +93,6 @@ export function AdminHeader({userinfo, role}:{userinfo:{nick_name:string}, role:
     );
   };
 
-
   return (
     <Navbar
       fixed="top"
@@ -104,25 +108,17 @@ export function AdminHeader({userinfo, role}:{userinfo:{nick_name:string}, role:
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             {allowDisplay(role, ["ROOT", "ADMN"]) && (
-              <>
-              {menuOfAdministrator()}
-              </>
+              <>{menuOfAdministrator()}</>
             )}
-            {allowDisplay(role, ["MERT"]) && (
-              <>
-              {menuOfMerchantOwner()}
-              </>
-            )}
+            {allowDisplay(role, ["MERT"]) && <>{menuOfMerchantOwner()}</>}
             {allowDisplay(role, ["MANR", "STAF"]) && (
-              <>
-              {menuOfWorkshopMember()}
-              </>
+              <>{menuOfWorkshopMember()}</>
             )}
           </Nav>
           <Nav>
             {userinfo.nick_name == "" && (
               <>
-                <Nav.Link href="/admin/auth/login">Login in</Nav.Link>
+                <Nav.Link href="/m/auth/login">Login in</Nav.Link>
               </>
             )}
             {userinfo.nick_name != "" && (

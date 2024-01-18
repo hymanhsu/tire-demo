@@ -17,7 +17,7 @@ export default function LoginForm() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    fetch(`/d/api/auth/login`, {
+    fetch(`/w/api/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,7 +28,7 @@ export default function LoginForm() {
     .then((resp: any) => {
       if (resp.meta.status === true) {
         console.log("------------login as cust-------------");
-        Router.push("/d/");
+        Router.push("/w/");
         Router.refresh();
       }
     });
