@@ -21,7 +21,7 @@ export default function SearchProductByVehicle() {
   });
 
   // fetch years
-  async function fetchYears(brand: number) {
+  async function fetchYears(brand) {
     await axios({
       method: "get",
       url: `/api/car/year?brand=${brand}`,
@@ -31,7 +31,7 @@ export default function SearchProductByVehicle() {
     });
   }
   // fetch models
-  async function fetchModels(brand: number, year: number) {
+  async function fetchModels(brand, year) {
     await axios({
       method: "get",
       url: `/api/car/model?brand=${brand}&year=${year}`,
@@ -41,7 +41,7 @@ export default function SearchProductByVehicle() {
     });
   }
   // fetch bodies
-  async function fetchBodies(brand: number, year: number, model: number) {
+  async function fetchBodies(brand, year, model) {
     await axios({
       method: "get",
       url: `/api/car/body?brand=${brand}&year=${year}&model=${model}`,
@@ -57,7 +57,7 @@ export default function SearchProductByVehicle() {
       <Form.Select
         aria-label="Select brand"
         name="brand"
-        onChange={(event: FormEvent<HTMLSelectElement>): void => {
+        onChange={(event) => {
           const newValue = event.currentTarget.value;
           setSelectedOptions({
             brand: Number(newValue),
@@ -77,7 +77,7 @@ export default function SearchProductByVehicle() {
         <option key={-1} value={-1}>
           Select brand
         </option>
-        {brandList.map((item: ItemRec) => (
+        {brandList.map((item) => (
           <option key={String(item.key)} value={String(item.key)}>
             {item.value}
           </option>
@@ -88,7 +88,7 @@ export default function SearchProductByVehicle() {
       <Form.Select
         aria-label="Select year"
         name="year"
-        onChange={(event: FormEvent<HTMLSelectElement>): void => {
+        onChange={(event) => {
           const newValue = event.currentTarget.value;
           setSelectedOptions({
             ...selectedOptions,
@@ -108,7 +108,7 @@ export default function SearchProductByVehicle() {
         <option key={-1} value={-1}>
           Select year
         </option>
-        {yearList.map((item: ItemRec) => (
+        {yearList.map((item) => (
           <option key={String(item.key)} value={String(item.key)}>
             {item.value}
           </option>
@@ -119,7 +119,7 @@ export default function SearchProductByVehicle() {
       <Form.Select
         aria-label="Select model"
         name="model"
-        onChange={(event: FormEvent<HTMLSelectElement>): void => {
+        onChange={(ChangeEvent) => {
           const newValue = event.currentTarget.value;
           setSelectedOptions({
             ...selectedOptions,
@@ -146,7 +146,7 @@ export default function SearchProductByVehicle() {
         <option key={-1} value={-1}>
           Select model
         </option>
-        {modelList.map((item: ItemRec) => (
+        {modelList.map((item) => (
           <option key={String(item.key)} value={String(item.key)}>
             {item.value}
           </option>
@@ -157,7 +157,7 @@ export default function SearchProductByVehicle() {
       <Form.Select
         aria-label="Select body"
         name="body"
-        onChange={(event: FormEvent<HTMLSelectElement>): void => {
+        onChange={(event) => {
           const newValue = event.currentTarget.value;
           setSelectedOptions({
             ...selectedOptions,
@@ -168,7 +168,7 @@ export default function SearchProductByVehicle() {
         <option key={-1} value={-1}>
           Select model
         </option>
-        {bodyList.map((item: string) => (
+        {bodyList.map((item) => (
           <option key={item} value={item}>
             {item}
           </option>

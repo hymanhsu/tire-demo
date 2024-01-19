@@ -7,7 +7,7 @@
 import { headers, cookies } from 'next/headers';
 
 
-export const post_backend_as_cust = async (url: string, formData: any) => {
+export const post_backend_as_cust = async (url: string, formData: any): Promise<any> => {
     // *******  invoke backend server start ******* 
     const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
         method: "POST",
@@ -21,7 +21,7 @@ export const post_backend_as_cust = async (url: string, formData: any) => {
 };
 
 
-export const get_backend_as_cust = async (url: string) => {
+export const get_backend_as_cust = async (url: string): Promise<any> => {
     // *******  invoke backend server start ******* 
     const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
         method: "GET",
@@ -34,7 +34,7 @@ export const get_backend_as_cust = async (url: string) => {
 };
 
 
-export const post_backend_as_user = async (url: string, formData: any) => {
+export const post_backend_as_user = async (url: string, formData: any): Promise<any> => {
     // *******  invoke backend server start ******* 
     const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
         method: "POST",
@@ -48,7 +48,7 @@ export const post_backend_as_user = async (url: string, formData: any) => {
 };
 
 
-export const get_backend_as_user = async (url: string) => {
+export const get_backend_as_user = async (url: string): Promise<any> => {
     // *******  invoke backend server start ******* 
     const res = await fetch(`${process.env.BACKEND_API_BASE_URL}${url}`, {
         method: "GET",
@@ -61,7 +61,7 @@ export const get_backend_as_user = async (url: string) => {
 };
 
 
-export const generateCustHeaders = () : Headers => {
+export const generateCustHeaders = (): Headers => {
     const headersList = headers();
     const cookieStore = cookies();
     // let auth: string | null = headersList.get("Authorization");
@@ -83,13 +83,13 @@ export const generateCustHeaders = () : Headers => {
             "Accept": "application/json",
             "Content-Type": "application/json",
             "User-Agent": userAgent as string,
-            "Authorization": "Bearer "+(auth as string),
+            "Authorization": "Bearer " + (auth as string),
         });
     }
 }
 
 
-export const generateUserHeaders = () : Headers => {
+export const generateUserHeaders = (): Headers => {
     const headersList = headers();
     const cookieStore = cookies();
     // let auth: string | null = headersList.get("Authorization");
@@ -111,15 +111,15 @@ export const generateUserHeaders = () : Headers => {
             "Accept": "application/json",
             "Content-Type": "application/json",
             "User-Agent": userAgent as string,
-            "Authorization": "Bearer "+(auth as string),
+            "Authorization": "Bearer " + (auth as string),
         });
     }
 }
 
 
-export const get_session_as_cust = async () => {
+export const get_session_as_cust = async (): Promise<any> => {
     let token: string | undefined = cookies().get('token')?.value;
-    if(token == undefined){
+    if (token == undefined) {
         return Promise.resolve(null);
     }
     const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/auth/check`, {
@@ -131,16 +131,16 @@ export const get_session_as_cust = async () => {
         }),
     });
     const data = await res.json();
-    if(data.meta.status == false){
+    if (data.meta.status == false) {
         return Promise.resolve(null);
     }
     return Promise.resolve(data.data.session);
 }
 
 
-export const get_session_as_user = async () => {
+export const get_session_as_user = async (): Promise<any> => {
     let token: string | undefined = cookies().get('token_u')?.value;
-    if(token == undefined){
+    if (token == undefined) {
         return Promise.resolve(null);
     }
     const res = await fetch(`${process.env.BACKEND_API_BASE_URL}/api/auth/check`, {
@@ -152,7 +152,7 @@ export const get_session_as_user = async () => {
         }),
     });
     const data = await res.json();
-    if(data.meta.status == false){
+    if (data.meta.status == false) {
         return Promise.resolve(null);
     }
     return Promise.resolve(data.data.session);
