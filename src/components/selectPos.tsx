@@ -142,6 +142,14 @@ export default function SelectPos({
               e.preventDefault();
               setPla(e.target.value);
             }}
+            onKeyDown={(e) => {
+              if (e.keyCode === 13){
+                // disable "Enter" key down
+                e.preventDefault();
+                // console.log("enter");
+              }
+              // other key down still be supported
+            }}
             onBlur={(e) => {
               e.preventDefault();
               const newPlace = e.target.value;
