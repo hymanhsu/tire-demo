@@ -61,7 +61,7 @@ const ListMerchants = ({merchants}) => {
     // console.log("delete "+merchantId);
     deleteMerchant(merchantId);
   };  
-  const deleteMerchant = (userId) => {
+  const deleteMerchant = (merchantId) => {
     call_post_as_user("/api/merchant/remove", {id:merchantId})
     .then((resp) => {
       if (resp.meta.status == true) {

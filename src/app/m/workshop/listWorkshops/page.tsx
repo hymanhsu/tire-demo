@@ -4,8 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ListWorkshops from "@/components/merchant/listWorkshops";
-import { post_backend_as_user } from "@/dao/call4server";
-import { cookies } from "next/headers";
+import { extract_user_basicinfo, post_backend_as_user } from "@/dao/call4server";
  
 
 export default async  function WorkshopsPage({
@@ -15,8 +14,9 @@ export default async  function WorkshopsPage({
   params: { slug: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }) {
-  const merchantId = searchParams["merchant"];
-  const getData = async () => {
+  const [userId, role, merchantId, workshopId] = await extract_user_basicinfo();
+
+  const getWorkshops = async () => {
     const data = await post_backend_as_user("/api/merchant/queryAllWorkshops", {
       merchant_id : merchantId
     });
@@ -25,7 +25,7 @@ export default async  function WorkshopsPage({
     }
     return data.data;
   };
-  const data = await getData();
+  const workshops = await getWorkshops();
   const getMerchant = async () => {
     const data = await post_backend_as_user("/api/merchant/queryOne", {
       id : merchantId
@@ -40,7 +40,7 @@ export default async  function WorkshopsPage({
     <Container>
       <Row>
         <Col>
-          <ListWorkshops workshops={data} merchant={merchant}/>
+          <ListWorkshops workshops={workshops} merchant={merchant}/>
         </Col>
       </Row>
     </Container>

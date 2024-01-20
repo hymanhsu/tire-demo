@@ -9,38 +9,42 @@ import { call_post_as_user } from "@/dao/call";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
+import Card from 'react-bootstrap/Card';
 import SelectPos from "../selectPos";
 
-export default function AddWorkshopForm({merchant}) {
+
+export default function AddWorkshopForm({ merchant }) {
   const Router = useRouter();
   const [formData, setFormData] = useState({
     merchant_id: merchant.id,
     workshop_sn: "",
     workshop_name: "",
     introduction: "",
-    address: "",
     phone_number: "",
+    address: "ABC",
     latitude: "",
     longitude: "",
   });
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    // console.log(formData);
     call_post_as_user("/api/merchant/addWorkshop", formData)
-    .then((resp) => {
+      .then((resp) => {
         if (resp.meta.status == true) {
-          Router.push("/m/merchant/listWorkshops?merchant=" + merchantId);
+          Router.push("/m/workshop/listWorkshops");
         }
       }
-    );
+      );
   };
 
-  const handleSelect = async (x, y) => {
-    console.log(`x=${x} , y=${y}`);
+  const handleSelectPosition = async (addr, lat, lng) => {
+    console.log(`handleSelectPosition : addr=${addr}, lat=${lat} , lng=${lng}`);
     setFormData({
       ...formData,
-      latitude: x.toString(),
-      longitude: y.toString(),
+      address: addr,
+      latitude: lat.toString(),
+      longitude: lng.toString(),
     });
   };
 
@@ -48,11 +52,25 @@ export default function AddWorkshopForm({merchant}) {
     <div className="fluid container">
       <Breadcrumb>
         <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="/m/merchant/listMerchants">
-          Merchants
+        <Breadcrumb.Item href="/m/workshop/listWorkshops">
+          Workshops
         </Breadcrumb.Item>
         <Breadcrumb.Item active>Add Workshop</Breadcrumb.Item>
       </Breadcrumb>
+      <Card style={{ width: '36rem' }}>
+        <Card.Body>
+          <Card.Title>Name : {merchant.merchant_name}, SN = {merchant.merchant_sn}</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">At {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
+          <Card.Text>
+            {merchant.address}{' '}
+            {merchant.introduction}
+          </Card.Text>
+          <Card.Link href={
+            merchant.website_url == "" ? "#" : merchant.website_url
+          }>Website</Card.Link>
+        </Card.Body>
+      </Card>
+      <hr></hr>
       <Form onSubmit={handleSubmit}>
         <Form.Group as={Row} className="mb-3" controlId="targetForm.sn">
           <Form.Label column sm="2">
@@ -63,6 +81,7 @@ export default function AddWorkshopForm({merchant}) {
               type="text"
               placeholder="SN"
               onChange={(e) => {
+                e.preventDefault();
                 setFormData({ ...formData, workshop_sn: e.target.value });
               }}
               value={formData.workshop_sn}
@@ -79,6 +98,7 @@ export default function AddWorkshopForm({merchant}) {
               type="text"
               placeholder="Name"
               onChange={(e) => {
+                e.preventDefault();
                 setFormData({ ...formData, workshop_name: e.target.value });
               }}
               value={formData.workshop_name}
@@ -99,6 +119,7 @@ export default function AddWorkshopForm({merchant}) {
               type="text"
               placeholder="Introduction"
               onChange={(e) => {
+                e.preventDefault();
                 setFormData({ ...formData, introduction: e.target.value });
               }}
               value={formData.introduction}
@@ -121,6 +142,7 @@ export default function AddWorkshopForm({merchant}) {
               type="text"
               placeholder="Phone number"
               onChange={(e) => {
+                e.preventDefault();
                 setFormData({ ...formData, phone_number: e.target.value });
               }}
               value={formData.phone_number}
@@ -135,23 +157,31 @@ export default function AddWorkshopForm({merchant}) {
           <Col sm="10">
             <Form.Control
               type="text"
-              placeholder="Address"
-              onChange={(e) => {
-                setFormData({ ...formData, address: e.target.value });
-              }}
-              value={formData.address}
+              value={`${formData.address}`}
+              readOnly
+            />
+          </Col>
+        </Form.Group>
+
+        <Form.Group as={Row} className="mb-3" controlId="targetForm.position">
+          <Form.Label column sm="2">
+            Position
+          </Form.Label>
+          <Col sm="10">
+            <Form.Control
+              type="label"
+              value={`latitude = ${formData.latitude}, longitude = ${formData.longitude}`}
+              readOnly
             />
           </Col>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="targetForm.position">
           <Form.Label column sm="2">
-            Position
           </Form.Label>
           <Col sm="10">
-            latitude = {formData.latitude}, longitude = {formData.longitude}
+            <SelectPos setPosition={handleSelectPosition} />
           </Col>
-          <SelectPos setPosition={handleSelect} />
         </Form.Group>
 
         {/* <Button variant="primary" type="submit">

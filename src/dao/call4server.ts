@@ -158,4 +158,14 @@ export const get_session_as_user = async (): Promise<any> => {
     return Promise.resolve(data.data.session);
 }
 
-
+export const extract_user_basicinfo = async () => {
+    const session = await get_session_as_user();
+    if(session == null){
+        return Promise.resolve([null, null, null, null]);
+    }
+    const userId = session.user_id;
+    const role = session.role_option.role;
+    const merchantId = session.role_option.merchant_id;
+    const workshopId = session.role_option.workshop_id;
+    return Promise.resolve([userId, role, merchantId, workshopId]);
+}

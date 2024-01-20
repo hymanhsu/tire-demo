@@ -37,7 +37,6 @@ export function AdminHeader({
         Router.push("/m/auth/login");
         Router.refresh();
       });
-    // window.location.href = "/admin/";
   };
 
   const menuOfAdministrator = () => {
@@ -59,7 +58,7 @@ export function AdminHeader({
     return (
       <>
         <NavDropdown title="Merchant" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/service/maintence">
+          <NavDropdown.Item href="/m/workshop/listWorkshops">
             Workshops
           </NavDropdown.Item>
           <NavDropdown.Item href="/service/fix">
@@ -103,7 +102,7 @@ export function AdminHeader({
       className="bg-body-tertiary"
     >
       <Container>
-        <Navbar.Brand href="/admin/dashboard">Administration</Navbar.Brand>
+        <Navbar.Brand href="/m/dashboard">Administration</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

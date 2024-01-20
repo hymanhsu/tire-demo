@@ -6,7 +6,7 @@ import { useState, useEffect, FormEvent, ChangeEvent } from "react";
 import axios from "axios";
 import { ItemRec } from "@/dao/car";
 import { queryAllBrands } from "@/dao/car_inquiry";
-import useSWR from "swr";
+// import useSWR from "swr";
 
 export default function SearchProductByVehicle() {
   const [brandList, setBrandList] = useState(queryAllBrands());
@@ -21,8 +21,8 @@ export default function SearchProductByVehicle() {
   });
 
   // fetch years
-  async function fetchYears(brand) {
-    await axios({
+  function fetchYears(brand) {
+    axios({
       method: "get",
       url: `/api/car/year?brand=${brand}`,
       responseType: "json",
@@ -31,8 +31,8 @@ export default function SearchProductByVehicle() {
     });
   }
   // fetch models
-  async function fetchModels(brand, year) {
-    await axios({
+  function fetchModels(brand, year) {
+    axios({
       method: "get",
       url: `/api/car/model?brand=${brand}&year=${year}`,
       responseType: "json",
@@ -41,8 +41,8 @@ export default function SearchProductByVehicle() {
     });
   }
   // fetch bodies
-  async function fetchBodies(brand, year, model) {
-    await axios({
+  function fetchBodies(brand, year, model) {
+    axios({
       method: "get",
       url: `/api/car/body?brand=${brand}&year=${year}&model=${model}`,
       responseType: "json",
@@ -119,7 +119,7 @@ export default function SearchProductByVehicle() {
       <Form.Select
         aria-label="Select model"
         name="model"
-        onChange={(ChangeEvent) => {
+        onChange={(event) => {
           const newValue = event.currentTarget.value;
           setSelectedOptions({
             ...selectedOptions,

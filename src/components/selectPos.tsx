@@ -6,12 +6,35 @@ import {
   Marker,
   StandaloneSearchBox,
   Libraries,
-  TrafficLayer ,
-  InfoWindow
+  TrafficLayer,
+  InfoWindow,
 } from "@react-google-maps/api";
-import { CSSProperties, useRef } from "react";
+import {
+  setKey,
+  setDefaults,
+  setLanguage,
+  setRegion,
+  fromAddress,
+  fromLatLng,
+  fromPlaceId,
+  setLocationType,
+  geocode,
+  RequestType,
+  OutputFormat,
+} from "react-geocode";
+import { CSSProperties, useState } from "react";
+// import { GoogleMapsEmbed } from "@next/third-parties/google";
+{
+  /* <GoogleMapsEmbed
+apiKey={atob(process.env.NEXT_PUBLIC_API_KEY as string)}
+height={200}
+width="100%"
+mode="place"
+q="3939 W 16th Ave, Vancouver, BC V6R 2C9, Canada"
+/> */
+}
 
-const libraries : Libraries = ["drawing", 'places'];
+const libraries: Libraries = ["drawing", "places"];
 const mapContainerStyle = {
   width: "80vw",
   height: "50vh",
@@ -19,7 +42,7 @@ const mapContainerStyle = {
 const inputStyle: CSSProperties = {
   boxSizing: `border-box`,
   border: `1px solid transparent`,
-  width: `300px`,
+  width: `400px`,
   height: `32px`,
   padding: `0 12px`,
   borderRadius: `3px`,
@@ -31,22 +54,63 @@ const inputStyle: CSSProperties = {
   top: "10px",
   right: "10px",
 };
-const center = {
-  lat: 49.25443290721618, // default latitude
-  lng: -123.21524388265985, // default longitude
+const ubc_pos = {
+  lat: 49.26089837166032, 
+  lng: -123.24601947735974,
 };
+const ubc_address = "Vancouver, BC V6T 1Z4";
 
-// 
-export default function SelectPos({setPosition}:{setPosition:(x:number,y:number)=>{}}) {
-  const myRef = useRef<StandaloneSearchBox|null|undefined>();
+//
+export default function SelectPos({
+  setPosition,
+}: {
+  setPosition: (addr: string, x: number, y: number) => {};
+}) {
+  const [pos, setPos] = useState(ubc_pos);
+  const [pla, setPla] = useState(ubc_address);
+
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: atob(process.env.NEXT_PUBLIC_API_KEY as string),
     libraries,
   });
 
-  const onClick = (e: google.maps.MapMouseEvent) => {
-    // console.log("onClick args: ", e.latLng?.lat(), " : ", e.latLng?.lng());
-    setPosition(e.latLng?.lat() as number, e.latLng?.lng() as number);
+  setDefaults({
+    key: atob(process.env.NEXT_PUBLIC_API_KEY as string),
+    language: "en",
+    region: "es",
+    outputFormat: OutputFormat.JSON,
+  });
+
+
+  const updatePlace = (address: string, updateCasade: boolean) => {
+    console.log("update place: ", address);
+    setPla(address);
+    if (updateCasade) {
+      geocode(RequestType.ADDRESS, address)
+        .then(({ results }) => {
+          const { lat, lng } = results[0].geometry.location;
+          setPosition(address, lat, lng);
+          updatePosition(lat, lng, false);
+        })
+        .catch(console.error);
+    }
+  };
+
+  const updatePosition = (lat: number, lng: number, updateCasade: boolean) => {
+    console.log("update position: ", lat, lng);
+    setPos({
+      lat: lat,
+      lng: lng,
+    });
+    if (updateCasade) {
+      geocode(RequestType.LATLNG, lat + "," + lng)
+        .then(({ results }) => {
+          const address = results[0].formatted_address;
+          setPosition(address, lat, lng);
+          updatePlace(address, false);
+        })
+        .catch(console.error);
+    }
   };
 
   if (loadError) {
@@ -61,31 +125,51 @@ export default function SelectPos({setPosition}:{setPosition:(x:number,y:number)
     <div>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
-        zoom={10}
-        center={center}
+        zoom={12}
+        center={pos}
       >
-        <StandaloneSearchBox 
-          onPlacesChanged={()=>{
-          console.log("onPlacesChanged!!!!");
-
-        }}>
+        <StandaloneSearchBox
+          onPlacesChanged={() => {
+            // console.log("onPlacesChanged!!!!");
+          }}
+        >
           <input
             type="text"
             placeholder="Search Google Maps"
             style={inputStyle}
+            value={pla}
+            onChange={(e) => {
+              e.preventDefault();
+              setPla(e.target.value);
+            }}
+            onBlur={(e) => {
+              e.preventDefault();
+              const newPlace = e.target.value;
+              if (newPlace == "") {
+                return;
+              }
+              console.log("new place = " + newPlace);
+              updatePlace(newPlace, true);
+            }}
           />
-          
         </StandaloneSearchBox>
-        
-        
-        <Marker position={center} draggable={true} onClick={onClick} />
+
+        <Marker
+          position={pos}
+          draggable={true}
+          onClick={(e: google.maps.MapMouseEvent) => {            
+            const lat = e.latLng?.lat() as number;
+            const lng = e.latLng?.lng() as number;
+            console.log(`new position : lat = ${lat}, lng = ${lng}`);
+            updatePosition(lat, lng, true);
+          }}
+        />
 
         {/* <InfoWindow position={center} >
           <div>hi</div>
         </InfoWindow> */}
 
-        <TrafficLayer/>
-
+        <TrafficLayer />
       </GoogleMap>
     </div>
   );

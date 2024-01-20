@@ -33,7 +33,7 @@ export default function LoginAsUserForm() {
         if (resp.meta.status == true) {
           if (resp.data.role_options == undefined) {
             console.log("------------login as user-------------");
-            Router.push("/admin/");
+            Router.push("/m/");
             Router.refresh();
           } else {
             console.log("------------show role options-------------");
@@ -64,7 +64,7 @@ export default function LoginAsUserForm() {
           console.log(
             "------------after choose role, login as user-------------"
           );
-          Router.push("/admin/");
+          Router.push("/m/");
           Router.refresh();
         }
       });
