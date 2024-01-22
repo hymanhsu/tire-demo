@@ -83,13 +83,13 @@ export function TireHeader({userinfo}:{userinfo:{nick_name:string}}) {
             {userinfo.nick_name == "" && (
               <>
                 <Nav.Link href="/w/auth/signup">Sign up</Nav.Link>
-                <Nav.Link href="/w/auth/login">Login in</Nav.Link>
+                <Nav.Link href="/w/auth/login">Log in</Nav.Link>
               </>
             )}
             {userinfo.nick_name != "" && (
               <>
                 <Navbar.Text>Welcome, {userinfo.nick_name}!</Navbar.Text>
-                <Nav.Link onClick={onLogout}>{">>"}Login out</Nav.Link>
+                <Nav.Link onClick={onLogout}>{">>"}Log out</Nav.Link>
               </>
             )}
           </Nav>

@@ -117,13 +117,13 @@ export function AdminHeader({
           <Nav>
             {userinfo.nick_name == "" && (
               <>
-                <Nav.Link href="/m/auth/login">Login in</Nav.Link>
+                <Nav.Link href="/m/auth/login">Log in</Nav.Link>
               </>
             )}
             {userinfo.nick_name != "" && (
               <>
                 <Navbar.Text>Welcome, {userinfo.nick_name}!</Navbar.Text>
-                <Nav.Link onClick={onLogout}>{">>"}Login out</Nav.Link>
+                <Nav.Link onClick={onLogout}>{">>"}Log out</Nav.Link>
               </>
             )}
           </Nav>

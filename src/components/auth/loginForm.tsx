@@ -61,7 +61,7 @@ export default function LoginForm() {
       {/* <Button variant="primary" type="submit">
         Login in
       </Button> */}
-      <SubmitButton normalLabel="Login in" pendingLabel="Login in ..." />
+      <SubmitButton normalLabel="Log in" pendingLabel="Log in ..." />
     </Form>
   );
 }
