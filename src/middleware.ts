@@ -56,7 +56,7 @@ export async function fileterForCustumer(request: NextRequest) {
             // update token into the cookie if previous token expired in 3 days
             const ntoken = data.data.new_token;
             console.log("response.cookies.set token ... " + ntoken.substr(ntoken.length - 300));
-            const response = NextResponse.redirect(new URL('/w/auth/login', request.url));
+            const response = NextResponse.redirect(new URL('/w/', request.url));
             response.cookies.set({
                 name: 'token',
                 value: ntoken,
@@ -103,7 +103,7 @@ export async function fileterForUser(request: NextRequest) {
             // update token into the cookie if previous token expired in 3 days
             const ntoken = data.data.new_token;
             console.log("response.cookies.set token_u ... " + ntoken.substr(ntoken.length - 300));
-            const response = NextResponse.redirect(new URL('/m/auth/login', request.url));
+            const response = NextResponse.redirect(new URL('/m/', request.url));
             response.cookies.set({
                 name: 'token_u',
                 value: ntoken,
