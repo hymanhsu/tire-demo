@@ -16,12 +16,11 @@ export default function SignupForm() {
     email: "",
     password: "",
   });
-  const [loading, setLoding] = useState(false);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     call_post_as_cust("/api/auth/signup",formData)
-    .then((resp:any) => {
+    .then((resp) => {
       if (resp.meta.status === true) {
         console.log("------------ok-------------");
         Router.push("/w/auth/login");

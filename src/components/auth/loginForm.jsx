@@ -6,6 +6,8 @@ import { FormEvent, useState } from "react";
 // import { useRouter } from "next/navigation";
 import { SubmitButton } from "../submitButton";
 import { useRouter } from "next/navigation";
+import { AlertMessage } from "@/components/alertMessage";
+
 
 export default function LoginForm() {
   const Router = useRouter();
@@ -13,9 +15,10 @@ export default function LoginForm() {
     login_name: "",
     password: "",
   });
-  const [loading, setLoding] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+
+  const handleSubmit = (event) => {
     event.preventDefault();
     fetch(`/w/api/auth/login`, {
       method: "POST",
@@ -25,11 +28,13 @@ export default function LoginForm() {
       body: JSON.stringify(formData),
     })
     .then(response => response.json())
-    .then((resp: any) => {
+    .then((resp) => {
       if (resp.meta.status === true) {
         console.log("------------login as cust-------------");
         Router.push("/w/");
         Router.refresh();
+      }else{
+        setShowAlert(true);
       }
     });
   };
@@ -58,9 +63,10 @@ export default function LoginForm() {
           value={formData.password}
         />
       </Form.Group>
-      {/* <Button variant="primary" type="submit">
-        Login in
-      </Button> */}
+      <AlertMessage title='Login failed'
+          content='Please check your username/password or contact your administrator!'
+          show={showAlert}
+          handleClose={() => setShowAlert(false)} />
       <SubmitButton normalLabel="Log in" pendingLabel="Log in ..." />
     </Form>
   );

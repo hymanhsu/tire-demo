@@ -38,9 +38,7 @@ export default async function BasicLayout({
       <div className="p-2">
         <Container>
           <Row>
-            <Col></Col>
-            <Col xs={6}>{children}</Col>
-            <Col></Col>
+            <Col>{children}</Col>
           </Row>
         </Container>
       </div>

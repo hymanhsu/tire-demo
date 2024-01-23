@@ -6,8 +6,8 @@ import Modal from "react-bootstrap/Modal";
 import { FormEvent, useState } from "react";
 import { SubmitButton } from "../submitButton";
 import { useRouter } from "next/navigation";
+import { AlertMessage } from "@/components/alertMessage";
 
-const temp: any = {};
 
 export default function LoginAsUserForm() {
   const Router = useRouter();
@@ -16,9 +16,10 @@ export default function LoginAsUserForm() {
     password: "",
   });
   const [show, setShow] = useState(false);
-  const [respData, setRespData] = useState(temp);
+  const [respData, setRespData] = useState({});
+  const [showAlert, setShowAlert] = useState(false);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     fetch(`/m/api/auth/loginAsUser`, {
       method: "POST",
@@ -28,7 +29,7 @@ export default function LoginAsUserForm() {
       body: JSON.stringify(formData),
     })
       .then((response) => response.json())
-      .then((resp: any) => {
+      .then((resp) => {
         console.log(resp);
         if (resp.meta.status == true) {
           if (resp.data.role_options == undefined) {
@@ -41,11 +42,13 @@ export default function LoginAsUserForm() {
             setRespData(resp.data);
             setShow(true);
           }
+        } else {
+          setShowAlert(true);
         }
       });
   };
 
-  const handleChoose = (index: number) => {
+  const handleChoose = (index) => {
     setShow(false);
     fetch(`/m/api/auth/loginProceedAsUser`, {
       method: "POST",
@@ -58,7 +61,7 @@ export default function LoginAsUserForm() {
       }),
     })
       .then((response) => response.json())
-      .then((resp: any) => {
+      .then((resp) => {
         console.log(resp);
         if (resp.meta.status == true) {
           console.log(
@@ -82,7 +85,7 @@ export default function LoginAsUserForm() {
         </Modal.Body>
         <Modal.Footer>
           {respData.role_options != undefined &&
-            respData.role_options.map((item: any, index: number) => (
+            respData.role_options.map((item, index) => (
               <Button
                 key={index}
                 variant="secondary"
@@ -119,9 +122,10 @@ export default function LoginAsUserForm() {
             value={formData.password}
           />
         </Form.Group>
-        {/* <Button variant="primary" type="submit">
-        Login in
-      </Button> */}
+        <AlertMessage title='Login failed'
+          content='Please check your username/password or contact your administrator!'
+          show={showAlert}
+          handleClose={() => setShowAlert(false)} />
         <SubmitButton normalLabel="Log in" pendingLabel="Log in ..." />
       </Form>
     </>
