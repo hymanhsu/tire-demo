@@ -58,7 +58,7 @@ export function AdminHeader({
     return (
       <>
         <NavDropdown title="Merchant" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/m/workshop/listWorkshopMembers">
+          <NavDropdown.Item href="/m/workshop/listMerchantMembers">
             Employees
           </NavDropdown.Item>
           <NavDropdown.Item href="/m/workshop/listWorkshops">

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Table } from 'react-bootstrap';
 import CustomPagination from '@/components/CustomPagination';
 import { useRouter } from "next/navigation";
@@ -9,19 +9,20 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from 'react-bootstrap/Button';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import Modal from 'react-bootstrap/Modal';
 import Card from 'react-bootstrap/Card';
-import {ConfirmDialog} from '@/components/confirmDialog';
+import { ConfirmDialog } from '@/components/confirmDialog';
 import { call_post_as_user } from "@/dao/call";
 
 
-const ListMerchantOwners = ({ owners, merchant }) => {
+const ListMerchantMembers = ({ curruser, members, merchant }) => {
   const [show, setShow] = useState(false);
   const [userId, setUserId] = useState("");
   const Router = useRouter();
-  const [apiData, setApiData] = useState(owners); // set the api data 
+  const [apiData, setApiData] = useState(members); // set the api data 
   const [searchFilter, setSearchFilter] = useState(''); // filter the search
   const [currentPage, setCurrentPage] = useState(1); // set the current page
-  const pageSize = 3; // show row in table
+  const pageSize = 5; // show row in table  
 
   useEffect(() => {
     setCurrentPage(1);
@@ -36,9 +37,10 @@ const ListMerchantOwners = ({ owners, merchant }) => {
       return true;
     }
     return item.nick_name.toLowerCase().includes(searchFilter.toLowerCase()) ||
+      item.email.toLowerCase().includes(searchFilter.toLowerCase()) ||
       item.phone_number.toLowerCase().includes(searchFilter.toLowerCase());
   });
-  // console.log("filteredData.length = " + filteredData.length);
+  // console.log("filteredData.length = "+filteredData.length);
   const paginatedData = filteredData.slice(
     (currentPage - 1) * pageSize,
     currentPage * pageSize
@@ -47,7 +49,7 @@ const ListMerchantOwners = ({ owners, merchant }) => {
   const removeRecord = (id) => {
     const result = Array.from(apiData).filter((item) => item.id != id);
     setApiData(result);
-  }; 
+  };
 
   const handleShow = (userId) => {
     setUserId(userId);
@@ -57,27 +59,26 @@ const ListMerchantOwners = ({ owners, merchant }) => {
   const handleSure = () => {
     setShow(false);
     // console.log("delete "+userId);
-    deleteMerchantOwner(userId);
-  };  
-  const deleteMerchantOwner = (userId) => {
-    call_post_as_user("/api/user/deleteUser", {id:userId})
-    .then((resp) => {
-      if (resp.meta.status == true) {
-        removeRecord(userId);
-        Router.push("/m/merchant/listMerchantOwners?merchant="+merchant.id);
-        //Router.refresh();
-      }
-    });
+    deleteWorkshopMember(userId);
+  };
+  const deleteWorkshopMember = (userId) => {
+    call_post_as_user("/api/user/deleteUser", { id: userId })
+      .then((resp) => {
+        if (resp.meta.status == true) {
+          removeRecord(userId);
+          Router.push("/m/workshop/listMerchantMembers");
+          //Router.refresh();
+        }
+      });
   }
 
   return (
     <div className='fluid container'>
       <Breadcrumb>
         <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="/m/merchant/listMerchants">
-          Merchants
+        <Breadcrumb.Item active>
+        Employees
         </Breadcrumb.Item>
-        <Breadcrumb.Item active>Owners</Breadcrumb.Item>
       </Breadcrumb>
       <Card style={{ width: '36rem' }}>
         <Card.Body>
@@ -88,7 +89,7 @@ const ListMerchantOwners = ({ owners, merchant }) => {
             {merchant.introduction}
           </Card.Text>
           <Card.Link href={
-            merchant.website_url == "" ? "#": merchant.website_url
+            merchant.website_url == "" ? "#" : merchant.website_url
           }>Website</Card.Link>
         </Card.Body>
       </Card>
@@ -107,8 +108,8 @@ const ListMerchantOwners = ({ owners, merchant }) => {
           <Col></Col>
           <Col>
             <Button variant="primary" onClick={(e) => {
-              e.preventDefault();              
-              Router.push("/m/merchant/addMerchantOwner?merchant="+merchant.id);
+              e.preventDefault();
+              Router.push("/m/workshop/addMerchantMember");
             }}>Add</Button>{' '}
           </Col>
         </Row>
@@ -130,16 +131,18 @@ const ListMerchantOwners = ({ owners, merchant }) => {
                 <td>{item.phone_number}</td>
                 <td>{item.email}</td>
                 <td>
-                <Button variant="outline-primary" onClick={(e)=>{
-                  e.preventDefault();
-                  handleShow(item.id);
-                }}>Delete</Button>
+                  {item.id != curruser &&
+                    <Button variant="outline-primary" onClick={(e) => {
+                      e.preventDefault();
+                      handleShow(item.id);
+                    }}>Delete</Button>
+                  }
                 </td>
               </tr>
             ))
           ) : (
             <tr>
-              <td colSpan="4">No data found</td>
+              <td colSpan="5">No data found</td>
             </tr>
           )}
         </tbody>
@@ -155,14 +158,14 @@ const ListMerchantOwners = ({ owners, merchant }) => {
           />
         </>
       }
-      <ConfirmDialog 
-        title={'Confirmation for deletion'} 
-        content={'Unable to recover data after deletion! Are you sure to delete data?'} 
-        show={show} 
-        handleClose={handleClose} 
-        handleSure={handleSure}/>
+      <ConfirmDialog
+        title={'Confirmation for deletion'}
+        content={'Unable to recover data after deletion! Are you sure to delete data?'}
+        show={show}
+        handleClose={handleClose}
+        handleSure={handleSure} />
     </div>
   );
 };
 
-export default ListMerchantOwners;
+export default ListMerchantMembers;

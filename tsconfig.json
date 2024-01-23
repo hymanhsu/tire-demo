@@ -37,7 +37,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "build/types/**/*.ts", "src/components/selectPos.jsx", "src/components/selectPos.jsx", "src/components/product/searchProductByVehicle.jsx", "src/components/product/searchProductByTire.jsx", "src/components/product/searchProduct.jsx", "src/components/merchant/addMerchant.jsx", "src/components/merchant/addWorkshop.jsx", "src/components/merchant/addAdministrator.jsx", "src/components/merchant/addMerchantOwner.jsx", "src/components/auth/loginAsUserForm.jsx",
+    "build/types/**/*.ts", "src/components/selectPos.jsx", "src/components/selectPos.jsx", "src/components/product/searchProductByVehicle.jsx", "src/components/product/searchProductByTire.jsx", "src/components/product/searchProduct.jsx", "src/components/merchant/addMerchant.jsx", "src/components/merchant/addWorkshop.jsx", "src/components/merchant/addAdministrator.jsx", "src/components/merchant/addMerchantOwner.jsx", "src/components/auth/loginAsUserForm.jsx", "src/components/auth/signupForm.jsx", "src/components/auth/loginForm.jsx",
    ],
   "exclude": [
     "node_modules"

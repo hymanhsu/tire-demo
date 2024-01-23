@@ -60,7 +60,7 @@ export default function AddWorkshopForm({ merchant }) {
       <Card style={{ width: '36rem' }}>
         <Card.Body>
           <Card.Title>Name : {merchant.merchant_name}, SN = {merchant.merchant_sn}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">At {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
+          <Card.Subtitle className="mb-2 text-muted">In {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
           <Card.Text>
             {merchant.address}{' '}
             {merchant.introduction}

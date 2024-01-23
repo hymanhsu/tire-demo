@@ -15,11 +15,13 @@ export default async  function WorkshopMembersPage({
   params: { slug: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }) {
-  const [userId, role, merchantId, workshopId] = await extract_user_basicinfo();
+  const [userId, role, merchantId, _] = await extract_user_basicinfo();
+  const workshopId = searchParams["workshop"] as string;
   
   const getData = async () => {
-    const data = await post_backend_as_user("/api/merchant/queryMembers",{
-      merchant_id : merchantId
+    const data = await post_backend_as_user("/api/merchant/queryWorkshopMembers",{
+      merchant_id : merchantId,
+      workshop_id : workshopId,
     });
     if (!data.meta.status) {
       return [];
@@ -38,11 +40,23 @@ export default async  function WorkshopMembersPage({
     return data.data;
   };
   const merchant = await getMerchant();
+
+  const getWorkshop = async () => {
+    const data = await post_backend_as_user("/api/merchant/queryOneWorkshop", {
+      id : workshopId
+    });
+    if (!data.meta.status) {
+      return {};
+    }
+    return data.data;
+  };
+  const workshop = await getWorkshop();
+
   return (
     <Container>
       <Row>
         <Col>
-          <ListWorkshopMembers curruser={userId} members={data} merchant={merchant}/>
+          <ListWorkshopMembers members={data} merchant={merchant} workshop={workshop}/>
         </Col>
       </Row>
     </Container>

@@ -11,7 +11,7 @@ import Row from "react-bootstrap/Row";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Card from 'react-bootstrap/Card';
 
-export default function AddMerchantOwnerForm({merchant}) {
+export default function AddMerchantMemberForm({merchant}) {
   const Router = useRouter();
   const [formData, setFormData] = useState({
     merchant_id: merchant.id,
@@ -24,10 +24,10 @@ export default function AddMerchantOwnerForm({merchant}) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    call_post_as_user("/api/user/addMerchantOwner", formData)
+    call_post_as_user("/api/user/addWorkshopStaff", formData)
     .then((resp) => {
       if (resp.meta.status == true) {
-        Router.push("/m/merchant/listMerchantOwners?merchant="+merchant.id);
+        Router.push("/m/workshop/listMerchantMembers");
         Router.refresh();
       }
     });
@@ -37,11 +37,8 @@ export default function AddMerchantOwnerForm({merchant}) {
     <div className="fluid container">
       <Breadcrumb>
         <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="/m/merchant/listMerchants">
-          Merchants
-        </Breadcrumb.Item>
-        <Breadcrumb.Item href={"/m/merchant/listMerchantOwners?merchant="+merchant.id}>
-          Owners
+        <Breadcrumb.Item href="/m/workshop/listMerchantMembers">
+        Employees
         </Breadcrumb.Item>
         <Breadcrumb.Item active>Add</Breadcrumb.Item>
       </Breadcrumb>
@@ -54,7 +51,7 @@ export default function AddMerchantOwnerForm({merchant}) {
             {merchant.introduction}
           </Card.Text>
           <Card.Link href={
-            merchant.website_url == "" ? "#": merchant.website_url
+            merchant.website_url == "" ? "#" : merchant.website_url
           }>Website</Card.Link>
         </Card.Body>
       </Card>

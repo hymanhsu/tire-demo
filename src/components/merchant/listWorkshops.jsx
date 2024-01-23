@@ -80,7 +80,7 @@ const ListWorkshops = ({ workshops, merchant }) => {
       <Card style={{ width: '36rem' }}>
         <Card.Body>
           <Card.Title>Name : {merchant.merchant_name}, SN = {merchant.merchant_sn}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">At {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
+          <Card.Subtitle className="mb-2 text-muted">In {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
           <Card.Text>
             {merchant.address}{' '}
             {merchant.introduction}
@@ -106,7 +106,7 @@ const ListWorkshops = ({ workshops, merchant }) => {
           <Col>
             <Button variant="primary" onClick={(e) => {
               e.preventDefault();
-              Router.push("/m/workshop/addWorkshop?merchant=" + merchant.id);
+              Router.push("/m/workshop/addWorkshop");
             }}>Add</Button>{' '}
           </Col>
         </Row>
@@ -132,6 +132,11 @@ const ListWorkshops = ({ workshops, merchant }) => {
                   e.preventDefault();
                   handleShow(item.id);
                 }}>Delete</Button>
+                {' '}
+                <Button variant="outline-primary" onClick={(e)=>{
+                  e.preventDefault();
+                  Router.push("/m/workshop/listWorkshopMembers?workshop="+item.id);
+                }}>Arrange members</Button>
                 </td>
               </tr>
             ))

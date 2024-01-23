@@ -11,44 +11,54 @@ import Row from "react-bootstrap/Row";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Card from 'react-bootstrap/Card';
 
-export default function AddWorkshopMemberForm({merchant}) {
+export default function AddWorkshopMemberForm({ merchant, workshop, members }) {
   const Router = useRouter();
   const [formData, setFormData] = useState({
     merchant_id: merchant.id,
-    nick_name: "",
-    phone_number: "",
-    email: "",
-    login_name: "",
-    password: ""
+    workshop_id: workshop.id,
+    role: "STAF",
+    user_id: "",
   });
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    call_post_as_user("/api/user/addWorkshopStaff", formData)
-    .then((resp) => {
-      if (resp.meta.status == true) {
-        Router.push("/m/workshop/listWorkshopMembers");
-        Router.refresh();
-      }
-    });
+    // console.log(formData);
+    if(formData.user_id == ""){
+      return;
+    }
+    call_post_as_user("/api/merchant/addWorkshopMember", formData)
+      .then((resp) => {
+        if (resp.meta.status == true) {
+          Router.push("/m/workshop/listWorkshopMembers?workshop=" + workshop.id);
+          Router.refresh();
+        }
+      });
   };
 
   return (
     <div className="fluid container">
       <Breadcrumb>
         <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="/m/workshop/listWorkshopMembers">
-        Employees
+        <Breadcrumb.Item href="/m/workshop/listWorkshops">
+          Workshops
         </Breadcrumb.Item>
-        <Breadcrumb.Item active>Add</Breadcrumb.Item>
+        <Breadcrumb.Item href={"/m/workshop/listWorkshopMembers?workshop=" + workshop.id}>
+          Arrange members
+        </Breadcrumb.Item>
+        <Breadcrumb.Item active>
+          Arrange
+        </Breadcrumb.Item>
       </Breadcrumb>
-      <Card style={{ width: '36rem' }}>
+      <Card style={{ width: '50rem' }}>
         <Card.Body>
-          <Card.Title>Name : {merchant.merchant_name}, SN = {merchant.merchant_sn}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">At {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
+          <Card.Title>Merchant name : {merchant.merchant_name}, SN = {merchant.merchant_sn}</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">In {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
+          <Card.Title>Workshop name : {workshop.workshop_name}, SN = {workshop.workshop_sn}</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">{workshop.latitude}{' , '}{workshop.longitude}</Card.Subtitle>
           <Card.Text>
-            {merchant.address}{' '}
-            {merchant.introduction}
+            Address : {workshop.address}
+            <br />
+            Phone : {workshop.phone_number}
           </Card.Text>
           <Card.Link href={
             merchant.website_url == "" ? "#" : merchant.website_url
@@ -56,95 +66,58 @@ export default function AddWorkshopMemberForm({merchant}) {
         </Card.Body>
       </Card>
       <hr></hr>
+
       <Form onSubmit={handleSubmit}>
-        <Form.Group as={Row} className="mb-3" controlId="targetForm.nation">
+
+        <Form.Group as={Row} className="mb-3" controlId="targetForm.member">
           <Form.Label column sm="2">
-            Nick Name
+            Member
           </Form.Label>
           <Col sm="10">
-            <Form.Control
-              type="text"
-              placeholder="Nick name"
+            <Form.Select
+              value={formData.user_id}
               onChange={(e) => {
-                setFormData({ ...formData, nick_name: e.target.value });
-              }}
-              value={formData.nick_name}
-            />
+                e.preventDefault();
+                // console.log(e.target.value);
+                setFormData({
+                  ...formData,
+                  user_id: e.target.value
+                });
+              }}>
+                <option key={''} value={''} >{'--please select--'}</option>
+              {
+                members.map((item, i) => (
+                  <option key={item.id} value={item.id} >{item.nick_name}</option>
+                ))}
+            </Form.Select>
           </Col>
         </Form.Group>
 
-        <Form.Group
-          as={Row}
-          className="mb-3"
-          controlId="targetForm.phone_number"
-        >
+        <Form.Group as={Row} className="mb-3" controlId="targetForm.role">
           <Form.Label column sm="2">
-            Phone number
+            Position
           </Form.Label>
           <Col sm="10">
-            <Form.Control
-              type="text"
-              placeholder="Phone number"
+            <Form.Select
+              value={formData.role}
               onChange={(e) => {
-                setFormData({ ...formData, phone_number: e.target.value });
-              }}
-              value={formData.phone_number}
-            />
-          </Col>
-        </Form.Group>
-
-        <Form.Group as={Row} className="mb-3" controlId="targetForm.email">
-          <Form.Label column sm="2">
-            Email
-          </Form.Label>
-          <Col sm="10">
-            <Form.Control
-              type="text"
-              placeholder="Email"
-              onChange={(e) => {
-                setFormData({ ...formData, email: e.target.value });
-              }}
-              value={formData.email}
-            />
-          </Col>
-        </Form.Group>
-
-        <Form.Group as={Row} className="mb-3" controlId="targetForm.login_name">
-          <Form.Label column sm="2">
-            Login name
-          </Form.Label>
-          <Col sm="10">
-            <Form.Control
-              type="text"
-              placeholder="Login name"
-              onChange={(e) => {
-                setFormData({ ...formData, login_name: e.target.value });
-              }}
-              value={formData.login_name}
-            />
-          </Col>
-        </Form.Group>
-
-        <Form.Group as={Row} className="mb-3" controlId="targetForm.password">
-          <Form.Label column sm="2">
-            Password
-          </Form.Label>
-          <Col sm="10">
-            <Form.Control
-              type="password"
-              placeholder="Password"
-              onChange={(e) => {
-                setFormData({ ...formData, password: e.target.value });
-              }}
-              value={formData.password}
-            />
+                e.preventDefault();
+                // console.log(e.target.value);
+                setFormData({
+                  ...formData,
+                  role: e.target.value
+                });
+              }}>
+              <option key={'MANR'} value={'MANR'} >{'Manager'}</option>
+              <option key={'STAF'} value={'STAF'} >{'General staff'}</option>
+            </Form.Select>
           </Col>
         </Form.Group>
 
         {/* <Button variant="primary" type="submit">
         Sign up
       </Button> */}
-        <SubmitButton normalLabel="Add" pendingLabel="Add ..." />
+        <SubmitButton normalLabel="Arrange" pendingLabel="Arrange ..." />
       </Form>
     </div>
   );

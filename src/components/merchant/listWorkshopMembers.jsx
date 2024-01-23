@@ -15,9 +15,7 @@ import { ConfirmDialog } from '@/components/confirmDialog';
 import { call_post_as_user } from "@/dao/call";
 
 
-const ListWorkshopMembers = ({ curruser, members, merchant }) => {
-  const [show, setShow] = useState(false);
-  const [userId, setUserId] = useState("");
+const ListWorkshopMembers = ({ members, merchant, workshop }) => {
   const Router = useRouter();
   const [apiData, setApiData] = useState(members); // set the api data 
   const [searchFilter, setSearchFilter] = useState(''); // filter the search
@@ -46,47 +44,58 @@ const ListWorkshopMembers = ({ curruser, members, merchant }) => {
     currentPage * pageSize
   );
 
-  const removeRecord = (id) => {
-    const result = Array.from(apiData).filter((item) => item.id != id);
+  const removeRecord = (id,role) => {
+    const result = Array.from(apiData).filter((item) => !(item.id == id && item.role == role));
     setApiData(result);
   };
 
-  const handleShow = (userId) => {
-    setUserId(userId);
-    setShow(true);
-  };
-  const handleClose = () => setShow(false);
-  const handleSure = () => {
-    setShow(false);
-    // console.log("delete "+userId);
-    deleteWorkshopMember(userId);
-  };
-  const deleteWorkshopMember = (userId) => {
-    call_post_as_user("/api/user/deleteUser", { id: userId })
+  const deleteWorkshopMember = (userId, role) => {
+    call_post_as_user("/api/merchant/removeWorkshopMember", { 
+      merchant_id: merchant.id,
+      workshop_id: workshop.id,
+      user_id: userId,
+      role: role,
+    })
       .then((resp) => {
         if (resp.meta.status == true) {
-          removeRecord(userId);
-          Router.push("/m/workshop/listWorkshopMembers");
+          removeRecord(userId, role);
+          Router.push("/m/workshop/listWorkshopMembers?workshop="+workshop.id);
           //Router.refresh();
         }
       });
+  }
+
+  const displayRole = (role) => {
+    if (role == "MANR") {
+      return "Manager";
+    }
+    if (role == "STAF") {
+      return "General staff";
+    }
+    return '';
   }
 
   return (
     <div className='fluid container'>
       <Breadcrumb>
         <Breadcrumb.Item href="/m">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/m/workshop/listWorkshops">
+          Workshops
+        </Breadcrumb.Item>
         <Breadcrumb.Item active>
-        Employees
+          Arrange members
         </Breadcrumb.Item>
       </Breadcrumb>
-      <Card style={{ width: '36rem' }}>
+      <Card style={{ width: '50rem' }}>
         <Card.Body>
-          <Card.Title>Name : {merchant.merchant_name}, SN = {merchant.merchant_sn}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">At {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
+          <Card.Title>Merchant name : {merchant.merchant_name}, SN = {merchant.merchant_sn}</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">In {merchant.city}, {merchant.province}, {merchant.nation} </Card.Subtitle>
+          <Card.Title>Workshop name : {workshop.workshop_name}, SN = {workshop.workshop_sn}</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">{workshop.latitude}{' , '}{workshop.longitude}</Card.Subtitle>
           <Card.Text>
-            {merchant.address}{' '}
-            {merchant.introduction}
+            Address : {workshop.address}
+            <br />
+            Phone : {workshop.phone_number}
           </Card.Text>
           <Card.Link href={
             merchant.website_url == "" ? "#" : merchant.website_url
@@ -109,8 +118,8 @@ const ListWorkshopMembers = ({ curruser, members, merchant }) => {
           <Col>
             <Button variant="primary" onClick={(e) => {
               e.preventDefault();
-              Router.push("/m/workshop/addWorkshopMember?merchant=" + merchant.id);
-            }}>Add</Button>{' '}
+              Router.push("/m/workshop/addWorkshopMember?workshop=" + workshop.id);
+            }}>Arrange</Button>{' '}
           </Col>
         </Row>
       </Container>
@@ -121,6 +130,7 @@ const ListWorkshopMembers = ({ curruser, members, merchant }) => {
             <th>Name</th>
             <th>Phone</th>
             <th>Email</th>
+            <th>Position</th>
             <th>Operations</th>
           </tr>
           {paginatedData.length > 0 ? (
@@ -130,19 +140,18 @@ const ListWorkshopMembers = ({ curruser, members, merchant }) => {
                 <td>{item.nick_name}</td>
                 <td>{item.phone_number}</td>
                 <td>{item.email}</td>
+                <td>{displayRole(item.role)}</td>
                 <td>
-                  {item.id != curruser &&
-                    <Button variant="outline-primary" onClick={(e) => {
-                      e.preventDefault();
-                      handleShow(item.id);
-                    }}>Delete</Button>
-                  }
+                  <Button variant="outline-primary" onClick={(e) => {
+                    e.preventDefault();
+                    deleteWorkshopMember(item.id, item.role);
+                  }}>Remove</Button>
                 </td>
               </tr>
             ))
           ) : (
             <tr>
-              <td colSpan="5">No data found</td>
+              <td colSpan="6">No data found</td>
             </tr>
           )}
         </tbody>
@@ -158,12 +167,6 @@ const ListWorkshopMembers = ({ curruser, members, merchant }) => {
           />
         </>
       }
-      <ConfirmDialog
-        title={'Confirmation for deletion'}
-        content={'Unable to recover data after deletion! Are you sure to delete data?'}
-        show={show}
-        handleClose={handleClose}
-        handleSure={handleSure} />
     </div>
   );
 };
