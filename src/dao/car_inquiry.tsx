@@ -1,8 +1,6 @@
 import {
     YearModelItem, BrandYearItem, BrandItem, ItemRec, allBrands, sortedBrands
 } from '@/dao/car';
-import { baseLogger } from '@/dao/logger';
-
 
 
 /**
