@@ -1,4 +1,3 @@
-import { generateHeaders } from "@/app/api/utils"
 import fs from 'fs'
 import path from 'path'
 
