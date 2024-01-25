@@ -73,10 +73,54 @@ export default function LoginAsUserForm() {
       });
   };
 
+  const handleClose = () => setShow(false);
+
+  const displayRoleOption = (item, index) => {
+    if(item.role == 'MERT'){
+      return (
+        <Button
+        key={index}
+        variant="warning"
+        onClick={() => {
+          handleChoose(index);
+        }}
+      >
+        {item.merchant_name} - Merchant Owner
+      </Button>
+      );
+    }
+    if(item.role == 'MANR'){
+      return (
+        <Button
+        key={index}
+        variant="success"
+        onClick={() => {
+          handleChoose(index);
+        }}
+      >
+        {item.merchant_name} - {item.workshop_name} - Manager
+      </Button>
+      );
+    }
+    if(item.role == 'STAF'){
+      return (
+        <Button
+        key={index}
+        variant="primary"
+        onClick={() => {
+          handleChoose(index);
+        }}
+      >
+        {item.merchant_name} - {item.workshop_name} - Staff
+      </Button>
+      );
+    }
+  }
+
   return (
     <>
-      <Modal show={show}>
-        <Modal.Header>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
           <Modal.Title>Choose your role</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -85,18 +129,7 @@ export default function LoginAsUserForm() {
         </Modal.Body>
         <Modal.Footer>
           {respData.role_options != undefined &&
-            respData.role_options.map((item, index) => (
-              <Button
-                key={index}
-                variant="secondary"
-                size="lg"
-                onClick={() => {
-                  handleChoose(index);
-                }}
-              >
-                {item.merchant_name} - {item.workshop_id} - {item.role}
-              </Button>
-            ))}
+            respData.role_options.map((item, index) => displayRoleOption(item, index))}
         </Modal.Footer>
       </Modal>
       <Form onSubmit={handleSubmit}>
