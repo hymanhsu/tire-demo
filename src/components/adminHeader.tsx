@@ -50,6 +50,14 @@ export function AdminHeader({
             Merchants
           </NavDropdown.Item>
         </NavDropdown>
+        <NavDropdown title="Product" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/m/product/listCategories">
+            Categories
+          </NavDropdown.Item>
+          <NavDropdown.Item href="/m/product/listBrands">
+            Brands
+          </NavDropdown.Item>
+        </NavDropdown>
       </>
     );
   };
@@ -57,36 +65,72 @@ export function AdminHeader({
   const menuOfMerchantOwner = () => {
     return (
       <>
-        <NavDropdown title="Merchant" id="basic-nav-dropdown">
+        <NavDropdown title="Workshop" id="basic-nav-dropdown">
           <NavDropdown.Item href="/m/workshop/listMerchantMembers">
             Employees
           </NavDropdown.Item>
           <NavDropdown.Item href="/m/workshop/listWorkshops">
             Workshops
           </NavDropdown.Item>
-          <NavDropdown.Item href="/service/installation">
+        </NavDropdown>
+        <NavDropdown title="Inventory" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/m/inventory/listProducts">
             Products
           </NavDropdown.Item>
-          <NavDropdown.Item href="/service/installation">SKU</NavDropdown.Item>
-          <NavDropdown.Item href="/service/installation">
-            Stock
+          <NavDropdown.Item href="/m/inventory/listSKUs">
+            SKU
           </NavDropdown.Item>
-        </NavDropdown>
-        <NavDropdown title="Customer" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/service/maintence">
-            Customers
+          <NavDropdown.Item href="/m/inventory/listStocks">
+            Stocks
           </NavDropdown.Item>
         </NavDropdown>
       </>
     );
   };
 
-  const menuOfWorkshopMember = () => {
+  const menuOfWorkshopManager = () => {
     return (
       <>
         <NavDropdown title="Order" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/service/maintence">Orders</NavDropdown.Item>
-          <NavDropdown.Item href="/service/fix">Refunds</NavDropdown.Item>
+          <NavDropdown.Item href="/m/order/listOrders">
+            Orders
+          </NavDropdown.Item>
+          <NavDropdown.Item href="/m/order/listRefunds">
+            Refunds
+          </NavDropdown.Item>
+        </NavDropdown>
+        <NavDropdown title="Work assignment" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/m/work/listAppointments">
+            Appointments
+          </NavDropdown.Item>
+          <NavDropdown.Item href="/m/work/listUnassignedTasks">
+            Assign Tasks
+          </NavDropdown.Item>
+        </NavDropdown>
+        <NavDropdown title="Task" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/m/task/listMyTasks">
+            My Tasks
+          </NavDropdown.Item>
+        </NavDropdown>
+      </>
+    );
+  };
+
+  const menuOfWorkshopStaff = () => {
+    return (
+      <>
+        <NavDropdown title="Order" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/m/order/listOrders">
+            Orders
+          </NavDropdown.Item>
+          <NavDropdown.Item href="/m/order/listRefunds">
+            Refunds
+          </NavDropdown.Item>
+        </NavDropdown>
+        <NavDropdown title="Task" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/m/task/listMyTasks">
+            My Tasks
+          </NavDropdown.Item>
         </NavDropdown>
       </>
     );
@@ -109,9 +153,14 @@ export function AdminHeader({
             {allowDisplay(role, ["ROOT", "ADMN"]) && (
               <>{menuOfAdministrator()}</>
             )}
-            {allowDisplay(role, ["MERT"]) && <>{menuOfMerchantOwner()}</>}
-            {allowDisplay(role, ["MANR", "STAF"]) && (
-              <>{menuOfWorkshopMember()}</>
+            {allowDisplay(role, ["MERT"]) && (
+              <>{menuOfMerchantOwner()}</>
+            )}
+            {allowDisplay(role, ["MANR"]) && (
+              <>{menuOfWorkshopManager()}</>
+            )}
+            {allowDisplay(role, ["STAF"]) && (
+              <>{menuOfWorkshopStaff()}</>
             )}
           </Nav>
           <Nav>
