@@ -246,14 +246,15 @@ export function CategoryTreeView({ data }) {
                                     <Col sm={1} >{node.priority}</Col>
                                 </>
                             )}
-                            <Col sm={2} >
+                            <Col sm={1} >
                                 {
                                     (node.nodes == undefined || node.nodes.length == 0) && <Button variant="primary" onClick={(e) => {
                                         e.preventDefault();
                                         handleRemove(node.id, node.level, node.parent);
                                     }}>-</Button>
                                 }
-                                {' '}
+                            </Col>
+                            <Col sm={1} >
                                 {
                                     node.level != 3 && <Button variant="primary" onClick={(e) => {
                                         e.preventDefault();
@@ -289,6 +290,7 @@ export function CategoryTreeView({ data }) {
             <div className="p-2">
                 <Modal
                     show={show}
+                    size="lg"
                     onHide={handleClose}
                     backdrop="static"
                     keyboard={false}
@@ -314,7 +316,7 @@ export function CategoryTreeView({ data }) {
                                 value={formData.title}
                             />
                             <br />
-                            <Form.Control size="sm" type="text" placeholder="Introduction"
+                            <Form.Control size="sm" as="textarea" rows={3} placeholder="Introduction"
                                 onChange={(e) => {
                                     e.preventDefault();
                                     setFormData({ ...formData, introduction: e.target.value });
