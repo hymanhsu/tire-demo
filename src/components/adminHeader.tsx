@@ -74,12 +74,13 @@ export function AdminHeader({
           </NavDropdown.Item>
         </NavDropdown>
         <NavDropdown title="Inventory" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/m/inventory/listProducts">
+          <NavDropdown.Item href="/m/product/listAttrTemplates">
+            Attribute Templates
+          </NavDropdown.Item>
+          <NavDropdown.Item href="/m/product/listProducts">
             Products
           </NavDropdown.Item>
-          <NavDropdown.Item href="/m/inventory/listSKUs">
-            SKU
-          </NavDropdown.Item>
+          <NavDropdown.Item href="/m/inventory/listSKUs">SKU</NavDropdown.Item>
           <NavDropdown.Item href="/m/inventory/listStocks">
             Stocks
           </NavDropdown.Item>
@@ -92,9 +93,7 @@ export function AdminHeader({
     return (
       <>
         <NavDropdown title="Order" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/m/order/listOrders">
-            Orders
-          </NavDropdown.Item>
+          <NavDropdown.Item href="/m/order/listOrders">Orders</NavDropdown.Item>
           <NavDropdown.Item href="/m/order/listRefunds">
             Refunds
           </NavDropdown.Item>
@@ -120,9 +119,7 @@ export function AdminHeader({
     return (
       <>
         <NavDropdown title="Order" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/m/order/listOrders">
-            Orders
-          </NavDropdown.Item>
+          <NavDropdown.Item href="/m/order/listOrders">Orders</NavDropdown.Item>
           <NavDropdown.Item href="/m/order/listRefunds">
             Refunds
           </NavDropdown.Item>
@@ -153,15 +150,9 @@ export function AdminHeader({
             {allowDisplay(role, ["ROOT", "ADMN"]) && (
               <>{menuOfAdministrator()}</>
             )}
-            {allowDisplay(role, ["MERT"]) && (
-              <>{menuOfMerchantOwner()}</>
-            )}
-            {allowDisplay(role, ["MANR"]) && (
-              <>{menuOfWorkshopManager()}</>
-            )}
-            {allowDisplay(role, ["STAF"]) && (
-              <>{menuOfWorkshopStaff()}</>
-            )}
+            {allowDisplay(role, ["MERT"]) && <>{menuOfMerchantOwner()}</>}
+            {allowDisplay(role, ["MANR"]) && <>{menuOfWorkshopManager()}</>}
+            {allowDisplay(role, ["STAF"]) && <>{menuOfWorkshopStaff()}</>}
           </Nav>
           <Nav>
             {userinfo.nick_name == "" && (
