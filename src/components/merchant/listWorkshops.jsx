@@ -128,7 +128,7 @@ const ListWorkshops = ({ workshops, merchant }) => {
                 <td>{item.workshop_sn}</td>
                 <td>{item.phone_number}</td>
                 <td>
-                <Button variant="outline-primary" onClick={(e)=>{
+                <Button variant="outline-danger" onClick={(e)=>{
                   e.preventDefault();
                   handleShow(item.id);
                 }}>Delete</Button>

@@ -130,7 +130,7 @@ const ListMerchantOwners = ({ owners, merchant }) => {
                 <td>{item.phone_number}</td>
                 <td>{item.email}</td>
                 <td>
-                <Button variant="outline-primary" onClick={(e)=>{
+                <Button variant="outline-danger" onClick={(e)=>{
                   e.preventDefault();
                   handleShow(item.id);
                 }}>Delete</Button>

@@ -10,6 +10,8 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Toast from 'react-bootstrap/Toast';
+import Card from 'react-bootstrap/Card';
+
 
 export default function AddAttrTemplateDetailForm({ templateId, templateType }) {
   const [showAlert, setShowAlert] = useState(false);
@@ -78,6 +80,26 @@ export default function AddAttrTemplateDetailForm({ templateId, templateType }) 
         <Breadcrumb.Item active>Add</Breadcrumb.Item>
       </Breadcrumb>
 
+      <Card bg='warning' text='light' className="mb-2">
+        <Card.Header as="h5">Pay attention to the length of attribute</Card.Header>
+        <Card.Body>
+          <Card.Text>
+          Each attribute represents a different length. 
+          You need to pay attention to defining the attributes to the appropriate parameters.
+          </Card.Text>
+          <Card.Text>
+          attr_short_xx : its length is 30 chars
+          </Card.Text>
+          <Card.Text>
+          attr_medium_xx : its length is 100 chars
+          </Card.Text>
+          <Card.Text>
+          attr_long_xx : its length is 500 chars
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <br></br>
+      
       <Form onSubmit={handleSubmit}>
         <Form.Group as={Row} className="mb-3" controlId="targetForm.attr_name">
           <Form.Label column sm="2">
@@ -113,7 +135,7 @@ export default function AddAttrTemplateDetailForm({ templateId, templateType }) 
               <option value="NUMBER">NUMBER</option>
               <option value="IMAGES">IMAGES</option>
               <option value="VIDEO">VIDEO</option>
-              <option value="RICHTEXT">RICHTEXT</option>
+              {/* <option value="RICHTEXT">RICHTEXT</option> */}
             </Form.Select>
           </Col>
         </Form.Group>
@@ -124,7 +146,7 @@ export default function AddAttrTemplateDetailForm({ templateId, templateType }) 
           </Form.Label>
           <Col sm="10">
             <Form.Control
-              as="textarea" rows={3}
+              type="text"
               placeholder="Parameter"
               onChange={(e) => {
                 setFormData({ ...formData, param_name: e.target.value });
@@ -140,8 +162,8 @@ export default function AddAttrTemplateDetailForm({ templateId, templateType }) 
           </Form.Label>
           <Col sm="10">
             <Form.Control
-              as="textarea" rows={3}
-              placeholder="Title"
+              type="text"
+              placeholder="01.Title"
               onChange={(e) => {
                 setFormData({ ...formData, title: e.target.value });
               }}
@@ -172,11 +194,11 @@ export default function AddAttrTemplateDetailForm({ templateId, templateType }) 
         <SubmitButton normalLabel="Add" pendingLabel="Add ..." />
 
         <Toast bg={"warning"} show={showAlert} onClose={toggleShowAlert}>
-        <Toast.Header>
-          <strong className="me-auto">Alert</strong>
-        </Toast.Header>
-        <Toast.Body>{alertMessage}</Toast.Body>
-      </Toast>
+          <Toast.Header>
+            <strong className="me-auto">Alert</strong>
+          </Toast.Header>
+          <Toast.Body>{alertMessage}</Toast.Body>
+        </Toast>
 
       </Form>
     </div>

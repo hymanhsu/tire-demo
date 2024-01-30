@@ -132,7 +132,7 @@ const ListMerchantMembers = ({ curruser, members, merchant }) => {
                 <td>{item.email}</td>
                 <td>
                   {item.id != curruser &&
-                    <Button variant="outline-primary" onClick={(e) => {
+                    <Button variant="outline-danger" onClick={(e) => {
                       e.preventDefault();
                       handleShow(item.id);
                     }}>Delete</Button>

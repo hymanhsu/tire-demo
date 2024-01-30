@@ -58,7 +58,7 @@ const ListProducts = ({ products, merchantId }) => {
   const updateRecordStatus = (id, status) => {
     let cloneRecords = _.cloneDeep(apiData);
     Array.from(cloneRecords).forEach((element) => {
-      if(element.id == id){
+      if (element.id == id) {
         element.status = status;
       }
     });
@@ -90,13 +90,13 @@ const ListProducts = ({ products, merchantId }) => {
   const handleSure = () => {
     setShow(false);
     // console.log("delete "+merchantId);
-    if(selectedOperation == "Delete"){
+    if (selectedOperation == "Delete") {
       deleteProduct();
     }
-    if(selectedOperation == "Online"){
+    if (selectedOperation == "Online") {
       changeProductStatus("ONLINE");
     }
-    if(selectedOperation == "Offline"){
+    if (selectedOperation == "Offline") {
       changeProductStatus("OFFLINE");
     }
   };
@@ -186,36 +186,42 @@ const ListProducts = ({ products, merchantId }) => {
                 <td>{item.attr_templ_title}</td>
                 <td>{displayStatus(item.status)}</td>
                 <td>
+                  <Button variant="outline-primary" onClick={(e) => {
+                    e.preventDefault();
+                    Router.push("/m/product/editProductAttributes?product="+item.id);
+                  }}>Set Attributes</Button>
+                  {" "}
                   {
-                    (item.status == "INITIAL" || item.status == "OFFLINE") && 
+                    (item.status == "INITIAL" || item.status == "OFFLINE") &&
                     <>
-                    <Button variant="outline-primary" onClick={(e) => {
-                      e.preventDefault();
-                      handleDelete(item.id);
-                    }}>Delete</Button>
-                    {" "}
+                      <Button variant="outline-danger" onClick={(e) => {
+                        e.preventDefault();
+                        handleDelete(item.id);
+                      }}>Delete</Button>
+                      {" "}
                     </>
                   }
                   {
-                    (item.status == "INITIAL" || item.status == "OFFLINE") && 
+                    (item.status == "INITIAL" || item.status == "OFFLINE") &&
                     <>
-                    <Button variant="outline-primary" onClick={(e) => {
-                      e.preventDefault();
-                      handleOnline(item.id);
-                    }}>Online</Button>
-                    {" "}
+                      <Button variant="outline-primary" onClick={(e) => {
+                        e.preventDefault();
+                        handleOnline(item.id);
+                      }}>Online</Button>
+                      {" "}
                     </>
                   }
                   {
-                    (item.status == "ONLINE") && 
+                    (item.status == "ONLINE") &&
                     <>
-                    <Button variant="outline-primary" onClick={(e) => {
-                      e.preventDefault();
-                      handleOffline(item.id);
-                    }}>Offline</Button>
-                    {" "}
+                      <Button variant="outline-primary" onClick={(e) => {
+                        e.preventDefault();
+                        handleOffline(item.id);
+                      }}>Offline</Button>
+                      {" "}
                     </>
                   }
+
                 </td>
               </tr>
             ))
