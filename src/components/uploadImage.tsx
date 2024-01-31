@@ -35,6 +35,7 @@ export default function ImageUploadPage() {
       {blob && (
         <div>
           Blob url: <a href={blob.url}>{blob.url}</a>
+          <br></br>
           <a href={"/api/image/delete?url="+encodeURIComponent(blob.url)} >Delete this file</a>
         </div>
       )}
