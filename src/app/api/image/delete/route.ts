@@ -6,7 +6,7 @@ import { NextResponse } from 'next/server';
  * @param request 
  * @returns 
  */
-export async function POST(request: Request): Promise<NextResponse> {
+export async function GET(request: Request): Promise<NextResponse> {
 
     try {
         const { searchParams } = new URL(request.url);
