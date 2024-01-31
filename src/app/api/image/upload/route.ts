@@ -12,7 +12,7 @@ export async function POST(request: Request): Promise<NextResponse> {
     try {
         const jsonResponse = await handleUpload({
             body,
-            request,
+            request,  
             onBeforeGenerateToken: async (
                 pathname: string,
                 /* clientPayload?: string, */
