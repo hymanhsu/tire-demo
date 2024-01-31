@@ -28,7 +28,7 @@ export async function middleware(request: NextRequest) {
 
 export async function fileterForCustumer(request: NextRequest) {
     if (judgeExclude(request.nextUrl.pathname, 
-        ["/w/auth/login", "/w/auth/signup", 
+        ["/w/auth/login", "/w/auth/signup", "/w/api/setCookie",
         "/w/api/auth/login", "/w/api/auth/logout"])) {
         return NextResponse.next();
     }

@@ -169,3 +169,14 @@ export const extract_user_basicinfo = async () => {
     const workshopId = session.role_option.workshop_id;
     return Promise.resolve([userId, role, merchantId, workshopId]);
 }
+
+export const extract_customer_basicinfo = async () => {
+    const session = await get_session_as_cust();
+    if(session == null){
+        return Promise.resolve([null]);
+    }
+    const userId = session.user_id;
+    const role = session.role;
+    return Promise.resolve([userId]);
+}
+
