@@ -11,15 +11,15 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
         const urlToDelete = request.nextUrl.searchParams.get("url") as string;
         await del(urlToDelete);
 
-        return NextResponse.json({
+        return Promise.resolve(NextResponse.json({
             status: "ok",
-        });
+        }));
     } catch (error) {
-        return NextResponse.json(
+        return Promise.resolve(NextResponse.json(
             {
                 status: "error",
                 message: (error as Error).message
             }
-        );
+        ));
     }
 }
