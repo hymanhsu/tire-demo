@@ -1,25 +1,23 @@
 import { del } from '@vercel/blob';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 /**
  * /api/image/delete?url=
  * @param request 
  * @returns 
  */
-export async function GET(request: Request): Promise<NextResponse> {
-
+export async function GET(request: NextRequest): Promise<NextResponse> {
     try {
-        const { searchParams } = new URL(request.url);
-        const urlToDelete = searchParams.get('url') as string;
+        const urlToDelete = request.nextUrl.searchParams.get("url") as string;
         await del(urlToDelete);
-        
+
         return NextResponse.json({
-            status : "ok",
+            status: "ok",
         });
     } catch (error) {
         return NextResponse.json(
-            { 
-                status: "error" ,
+            {
+                status: "error",
                 message: (error as Error).message
             }
         );
