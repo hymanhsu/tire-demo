@@ -25,6 +25,7 @@ export async function GET(
             ts: ts.toString(),
             tz: tz,
         },
+        env: process.env,
         data: apisWithPath,
     };
 
